@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELFlightLimitation Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</option>
+		
+		<option value="//api/name/getMaxAscentSpeedWithCompletion:">- getMaxAscentSpeedWithCompletion:</option>
+		
+		<option value="//api/name/getMaxDescentSpeedWithCompletion:">- getMaxDescentSpeedWithCompletion:</option>
+		
+		<option value="//api/name/getMaxFlightHeightWithCompletion:">- getMaxFlightHeightWithCompletion:</option>
+		
+		<option value="//api/name/getMaxFlightHorizontalSpeedWithCompletion:">- getMaxFlightHorizontalSpeedWithCompletion:</option>
+		
+		<option value="//api/name/getMaxFlightRadiusWithCompletion:">- getMaxFlightRadiusWithCompletion:</option>
+		
+		<option value="//api/name/getMaxPitchAngelWithCompletion:">- getMaxPitchAngelWithCompletion:</option>
+		
+		<option value="//api/name/getMaxYawAngleSpeedWithCompletion:">- getMaxYawAngleSpeedWithCompletion:</option>
+		
+		<option value="//api/name/getParam:withCompletion:">- getParam:withCompletion:</option>
+		
+		<option value="//api/name/getRTKCoordinateSysWithCompletion:">- getRTKCoordinateSysWithCompletion:</option>
+		
+		<option value="//api/name/getRTKLocationEnableWithCompletion:">- getRTKLocationEnableWithCompletion:</option>
+		
+		<option value="//api/name/getRTKRecvDiffTypeWithCompletion:">- getRTKRecvDiffTypeWithCompletion:</option>
+		
+		<option value="//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</option>
+		
+		<option value="//api/name/setMaxAscentSpeed:withCompletion:">- setMaxAscentSpeed:withCompletion:</option>
+		
+		<option value="//api/name/setMaxDescentSpeed:withCompletion:">- setMaxDescentSpeed:withCompletion:</option>
+		
+		<option value="//api/name/setMaxFlightHeight:withCompletion:">- setMaxFlightHeight:withCompletion:</option>
+		
+		<option value="//api/name/setMaxFlightHorizontalSpeed:withCompletion:">- setMaxFlightHorizontalSpeed:withCompletion:</option>
+		
+		<option value="//api/name/setMaxFlightRadius:withCompletion:">- setMaxFlightRadius:withCompletion:</option>
+		
+		<option value="//api/name/setMaxPitchAngle:withCompletion:">- setMaxPitchAngle:withCompletion:</option>
+		
+		<option value="//api/name/setMaxYawAngleSpeed:withCompletion:">- setMaxYawAngleSpeed:withCompletion:</option>
+		
+		<option value="//api/name/setParam:paramValue:withCompletion:">- setParam:paramValue:withCompletion:</option>
+		
+		<option value="//api/name/setRTKCoordinateSys:withCompletion:">- setRTKCoordinateSys:withCompletion:</option>
+		
+		<option value="//api/name/setRTKLocationEnable:withCompletion:">- setRTKLocationEnable:withCompletion:</option>
+		
+		<option value="//api/name/setRTKRecvDiffType:withCompletion:">- setRTKRecvDiffType:withCompletion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELFlightLimitation Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELFlightLimitation.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This protocol defines the API for reading and writing the flight limit parameters.</p>
+
+<p>该协议定义了读写飞行限制参数的接口</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setMaxFlightHeight:withCompletion:" title="setMaxFlightHeight:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxFlightHeight:withCompletion:">&ndash;&nbsp;setMaxFlightHeight:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the max flight altitude between 30 m (99 ft) and 800 m (2624 ft).</p>
+
+<p>设置飞行器的最大飞行高度，maxHeight 的可设置范围是30米(99英尺)至800米(2624英尺)。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxFlightHeight:(float)<em>maxHeight</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxHeight</code></th>
+						<td><p>The unit for max flight altitude is meter.</p>
+
+<p>飞行器最大飞行高度，单位为m。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The max flight altitude is the distance between the aircraft and the takeoff point. When the max flight altitude is reached, the aircraft cannot ascend any more. You can check if the aircraft has reached the max flight altitude through <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isReachMaxHeight.
+You can check the aircraft&rsquo;s current max flight altitude through <a href="#//api/name/getMaxFlightHeightWithCompletion:">getMaxFlightHeightWithCompletion:</a>.
+In Beginner mode, this parameter will be ignored, and the max flight altitude is 30 m. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> respectively.</p>
+
+<p>该最大高度是飞行器相对于起飞点的相对高度。当飞行器到达最大高度时，不能再上升。你可以通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isReachMaxHeight 知道飞行器是否到达了最大高度。
+通过 <a href="#//api/name/getMaxFlightHeightWithCompletion:">getMaxFlightHeightWithCompletion:</a> 方法可以查询当前飞行器的最大飞行高度参数值。
+当飞行器新手模式被打开时，飞行器将忽略该参数，最高只能飞行到30米高，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/AUTELDroneMainControllerDelegate.html">AUTELDroneMainControllerDelegate</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getMaxFlightHeightWithCompletion:">- getMaxFlightHeightWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxFlightHeightWithCompletion:" title="getMaxFlightHeightWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxFlightHeightWithCompletion:">&ndash;&nbsp;getMaxFlightHeightWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get max flight heigh limitation from aircraft.</p>
+
+<p>查询飞行器最大飞行高度参数值。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxFlightHeightWithCompletion:(void ( ^ _Nullable ) ( float height , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block，the unit is meter.</p>
+
+<p>完成block，height 的单位为m。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can use <a href="#//api/name/setMaxFlightHeight:withCompletion:">setMaxFlightHeight:withCompletion:</a> to set the aircraft&rsquo;s max flight altitude.
+In Beginner mode, this parameter will be ignored, and the max flight altitude is 30 m. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> respectively.</p>
+
+<p>调用 <a href="#//api/name/setMaxFlightHeight:withCompletion:">setMaxFlightHeight:withCompletion:</a> 方法来设置飞行器最大飞行高度参数。
+当飞行器新手模式被打开时，飞行器将忽略该参数，最高只能飞行到30米高，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setMaxFlightHeight:withCompletion:">- setMaxFlightHeight:withCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxFlightRadius:withCompletion:" title="setMaxFlightRadius:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxFlightRadius:withCompletion:">&ndash;&nbsp;setMaxFlightRadius:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The aircraft&rsquo;s max flight radius is based on the home point as the center point. The maxRadius can be set between 30 m and 10000 m.</p>
+
+<p>设置飞行器的最大飞行半径，该半径已返航点为圆心计算，maxRadius 的可设置范围为30米至10000米</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxFlightRadius:(float)<em>maxRadius</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxRadius</code></th>
+						<td><p>max flight radius,the unit is meter.</p>
+
+<p>飞行器最大飞行半径，单位为m。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When the max flight radius is reached, the aircraft cannot fly out any more. You can check if the aircraft has reached the max flight radius through  isReachMaxRange in <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.
+The flight distance is also relevant to the flight environment. If the control signal is lost during flight, the aircraft will Go Home automatically.
+You can check the max flight radius through <a href="#//api/name/getMaxFlightRadiusWithCompletion:">getMaxFlightRadiusWithCompletion:</a>.
+In Beginner mode, this parameter will be ignored, and the flight radius is 30 m. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a>.</p>
+
+<p>遥控器达到最大半径后，无法再往外飞行，你可以通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a> 的 isReachMaxRange 属性表示飞行器是否到达了最大半径。
+飞行器实际能飞多远，还与飞行环境有关，如果飞行器在飞行过程中发生遥控器信号丢失的情况，飞行器会自动返航。
+你可以通过 <a href="#//api/name/getMaxFlightRadiusWithCompletion:">getMaxFlightRadiusWithCompletion:</a> 可以查询飞行器最大飞行半径参数。
+当飞行器新手模式被打开时，飞行器将忽略该参数，飞行半径为30米，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/AUTELDroneMainControllerDelegate.html">AUTELDroneMainControllerDelegate</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getMaxFlightRadiusWithCompletion:">- getMaxFlightRadiusWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxFlightRadiusWithCompletion:" title="getMaxFlightRadiusWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxFlightRadiusWithCompletion:">&ndash;&nbsp;getMaxFlightRadiusWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get max flight radius limitation from aircraft.</p>
+
+<p>查询新飞行器最大飞行半径。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxFlightRadiusWithCompletion:(void ( ^ _Nullable ) ( float radius , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block,the unit of rudius is meter.</p>
+
+<p>完成block，radius 单位为m。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can use <a href="#//api/name/setMaxFlightRadius:withCompletion:">setMaxFlightRadius:withCompletion:</a> to set the aircraft&rsquo;s max flight radius.
+In Beginner mode, this parameter will be ignored, and the flight radius is 30 m. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a>.</p>
+
+<p>你可以通过 <a href="#//api/name/setMaxFlightRadius:withCompletion:">setMaxFlightRadius:withCompletion:</a> 可以设置飞行器最大飞行半径参数。
+当飞行器新手模式被打开时，飞行器将忽略该参数，飞行半径为30米，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setMaxFlightRadius:withCompletion:">- setMaxFlightRadius:withCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxFlightHorizontalSpeed:withCompletion:" title="setMaxFlightHorizontalSpeed:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxFlightHorizontalSpeed:withCompletion:">&ndash;&nbsp;setMaxFlightHorizontalSpeed:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The max horizontal speed can be set between 2 m/s and 15 m/s.</p>
+
+<p>设置飞行器最大水平速度，maxHorizontalSpeed 的可设置范围为 2m/s 至 15m/s。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxFlightHorizontalSpeed:(float)<em>maxHorizontalSpeed</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxHorizontalSpeed</code></th>
+						<td><p>Max horizontal speed,the unit is m/s.</p>
+
+<p>最大水平速度，单位为m/s。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can use <a href="#//api/name/getMaxFlightHorizontalSpeedWithCompletion:">getMaxFlightHorizontalSpeedWithCompletion:</a> to check the aircraft&rsquo;s max horizontal speed.</p>
+
+<p>In Beginner mode, this parameter will be ignored, and the max horizontal speed is 6 m/s. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a>.</p>
+
+<p>你可以通过 <a href="#//api/name/getMaxFlightHorizontalSpeedWithCompletion:">getMaxFlightHorizontalSpeedWithCompletion:</a> 方法查询飞行器最大水平速度参数。
+当飞行器新手模式被打开时，飞行器将忽略该参数，飞行器最大水平速度为6m/s，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getMaxFlightHorizontalSpeedWithCompletion:">- getMaxFlightHorizontalSpeedWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxFlightHorizontalSpeedWithCompletion:" title="getMaxFlightHorizontalSpeedWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxFlightHorizontalSpeedWithCompletion:">&ndash;&nbsp;getMaxFlightHorizontalSpeedWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request max horizontal speed.</p>
+
+<p>请求飞行最大水平速度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxFlightHorizontalSpeedWithCompletion:(void ( ^ _Nullable ) ( float speed , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.The unit for speed is m/s.</p>
+
+<p>完成block，speed 的单位为 m/s。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can use <a href="#//api/name/setMaxFlightHorizontalSpeed:withCompletion:">setMaxFlightHorizontalSpeed:withCompletion:</a> to set the aircraft&rsquo;s max horizontal speed.</p>
+
+<p>In Beginner mode, this parameter will be ignored, and the max horizontal speed is 6 m/s. You can check and modify the parameter in Beginner mode through <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> and <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a>.</p>
+
+<p>你可以通过 <a href="#//api/name/setMaxFlightHorizontalSpeed:withCompletion:">setMaxFlightHorizontalSpeed:withCompletion:</a> 方法设置飞行器最大水平速度参数
+当飞行器新手模式被打开时，飞行器将忽略该参数，飞行器最大水平速度为6m/s，你可以通过 <a href="#//api/name/getBeginnerModeEnableWithCompletion:">getBeginnerModeEnableWithCompletion:</a> 和 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法来查询和修改新手模式参数</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setMaxFlightHorizontalSpeed:withCompletion:">- setMaxFlightHorizontalSpeed:withCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBeginnerModeEnableWithCompletion:" title="getBeginnerModeEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeginnerModeEnableWithCompletion:">&ndash;&nbsp;getBeginnerModeEnableWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if the Beginner mode is enabled.</p>
+
+<p>查询飞行器是否开启了新手模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBeginnerModeEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can use <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> to enable or disable the Beginner mode.
+In Beginner mode, the max flight altitude is 30 m, the flight radius is 30 m, and the max horizontal speed is 6 m/s.</p>
+
+<p>你可以通过 <a href="#//api/name/setBeginnerMode:withCompletion:">setBeginnerMode:withCompletion:</a> 方法打开或关闭新手模式。
+当新手模式打开时，飞行器的飞行最大高度被限定为30m，飞行半径本限定为30m，最大水平速度限定为6m/s。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setBeginnerMode:withCompletion:">- setBeginnerMode:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBeginnerMode:withCompletion:" title="setBeginnerMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBeginnerMode:withCompletion:">&ndash;&nbsp;setBeginnerMode:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable the Beginner mode</p>
+
+<p>设置飞行器新手模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBeginnerMode:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES: enable Beginner mode. NO: disable Beginner mode.</p>
+
+<p>YES:打开新手模式 NO:关闭新手模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If you are a beginner for flight control, you may enable the Beginner mode.In Beginner mode, the max flight altitude is 30 m, the flight radius is 30 m, and the max horizontal speed is 6 m/s.</p>
+
+<p>当飞行器操控手对操控飞行器不太熟悉时，可以打开飞行器的新手模式。当新手模式打开时，飞行器的飞行最大高度被限定为30m，飞行半径本限定为30m，最大水平速度限定为6m/s。</p><div class="note"><p><strong>Note:</strong> The Beginner mode can only be activated before the flight instead of during the flight. If the enable property is set as YES, execution error will occur, and the block will return the AUTELSDKFlightControllerErrorAircraftFlying error.</p>
+
+<p>如果你想打开新手模式，你必须在飞行器起飞前打开，飞行在飞行过程中，不能将新手模式从关闭变为打开，如果飞行器在飞行过程中，调用此方法，且 enable 为 YES，该方法将执行错误，block 返回 AUTELSDKFlightControllerErrorAircraftFlying 错误。</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getBeginnerModeEnableWithCompletion:">- getBeginnerModeEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxAscentSpeed:withCompletion:" title="setMaxAscentSpeed:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxAscentSpeed:withCompletion:">&ndash;&nbsp;setMaxAscentSpeed:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the maximum ascent speed</p>
+
+<p>设置最大上升速度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxAscentSpeed:(float)<em>speed</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speed</code></th>
+						<td><p>ascent speed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxAscentSpeedWithCompletion:" title="getMaxAscentSpeedWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxAscentSpeedWithCompletion:">&ndash;&nbsp;getMaxAscentSpeedWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the maximum ascent speed</p>
+
+<p>查询最大上升速度值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxAscentSpeedWithCompletion:(void ( ^ _Nullable ) ( float speed , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxDescentSpeed:withCompletion:" title="setMaxDescentSpeed:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxDescentSpeed:withCompletion:">&ndash;&nbsp;setMaxDescentSpeed:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the maximum descent speed</p>
+
+<p>设置最大下降速度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxDescentSpeed:(float)<em>speed</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speed</code></th>
+						<td><p>descent speed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxDescentSpeedWithCompletion:" title="getMaxDescentSpeedWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxDescentSpeedWithCompletion:">&ndash;&nbsp;getMaxDescentSpeedWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the maximum descent speed</p>
+
+<p>查询最大下降速度值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxDescentSpeedWithCompletion:(void ( ^ _Nullable ) ( float speed , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxPitchAngle:withCompletion:" title="setMaxPitchAngle:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxPitchAngle:withCompletion:">&ndash;&nbsp;setMaxPitchAngle:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>set maximum pitch angle</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxPitchAngle:(float)<em>angle</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>angle</code></th>
+						<td><p>pitch angle</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>set maximum pitch angle</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxPitchAngelWithCompletion:" title="getMaxPitchAngelWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxPitchAngelWithCompletion:">&ndash;&nbsp;getMaxPitchAngelWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get maximum pitch angle</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxPitchAngelWithCompletion:(void ( ^ _Nullable ) ( float angle , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>get maximum pitch angle</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMaxYawAngleSpeed:withCompletion:" title="setMaxYawAngleSpeed:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMaxYawAngleSpeed:withCompletion:">&ndash;&nbsp;setMaxYawAngleSpeed:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>set maximum yaw angle speed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMaxYawAngleSpeed:(float)<em>speed</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speed</code></th>
+						<td><p>angle speed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>set maximum yaw angle speed</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMaxYawAngleSpeedWithCompletion:" title="getMaxYawAngleSpeedWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMaxYawAngleSpeedWithCompletion:">&ndash;&nbsp;getMaxYawAngleSpeedWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get maximum yaw angle speed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMaxYawAngleSpeedWithCompletion:(void ( ^ _Nullable ) ( float speed , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>get maximum yaw angle speed</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setParam:paramValue:withCompletion:" title="setParam:paramValue:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setParam:paramValue:withCompletion:">&ndash;&nbsp;setParam:paramValue:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set flight limit parameter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setParam:(NSString *_Nonnull)<em>paramName</em> paramValue:(float)<em>value</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paramName</code></th>
+						<td><p>param name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>param value</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set flight limit parameter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getParam:withCompletion:" title="getParam:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getParam:withCompletion:">&ndash;&nbsp;getParam:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get flight limit parameter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getParam:(NSString *_Nonnull)<em>paramName</em> withCompletion:(void ( ^ _Nullable ) ( float value , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paramName</code></th>
+						<td><p>param name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>get flight limit parameter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRTKLocationEnableWithCompletion:" title="getRTKLocationEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRTKLocationEnableWithCompletion:">&ndash;&nbsp;getRTKLocationEnableWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether the aircraft has RTK location enabled.</p>
+
+<p>查询飞行器是否开启了RTK定位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRTKLocationEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRTKLocationEnable:withCompletion:" title="setRTKLocationEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRTKLocationEnable:withCompletion:">&ndash;&nbsp;setRTKLocationEnable:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable the RTK location</p>
+
+<p>设置飞行器RTK定位使能</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRTKLocationEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES: enable RTK location. NO: disable RTK location.</p>
+
+<p>YES:打开RTK定位使能 NO:关闭RTK定位使能</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRTKRecvDiffTypeWithCompletion:" title="getRTKRecvDiffTypeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRTKRecvDiffTypeWithCompletion:">&ndash;&nbsp;getRTKRecvDiffTypeWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query how the aircraft receives RTK signals.</p>
+
+<p>查询飞行器接收RTK信号方式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRTKRecvDiffTypeWithCompletion:(void ( ^ _Nullable ) ( AUTELRTKRecvDiffType type , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRTKRecvDiffType:withCompletion:" title="setRTKRecvDiffType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRTKRecvDiffType:withCompletion:">&ndash;&nbsp;setRTKRecvDiffType:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the type the aircraft RTK receives RTK signals.</p>
+
+<p>设置飞行器RTK接收RTK信号方式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRTKRecvDiffType:(AUTELRTKRecvDiffType)<em>type</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>the type the aircraft RTK receives RTK signals.</p>
+
+<p>YES:打开RTK定位使能 NO:关闭RTK定位使能</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRTKCoordinateSysWithCompletion:" title="getRTKCoordinateSysWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRTKCoordinateSysWithCompletion:">&ndash;&nbsp;getRTKCoordinateSysWithCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query the aircraft&rsquo;s RTK coordinate system.</p>
+
+<p>查询飞行器RTK坐标系</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRTKCoordinateSysWithCompletion:(void ( ^ _Nullable ) ( AUTELRTKCoordinateSys type , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRTKCoordinateSys:withCompletion:" title="setRTKCoordinateSys:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRTKCoordinateSys:withCompletion:">&ndash;&nbsp;setRTKCoordinateSys:withCompletion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the aircraft RTK coordinate system</p>
+
+<p>设置飞行器RTK坐标系</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRTKCoordinateSys:(AUTELRTKCoordinateSys)<em>type</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>coordinate system type.</p>
+
+<p>YES:打开RTK定位使能 NO:关闭RTK定位使能</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Blok.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightLimitation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

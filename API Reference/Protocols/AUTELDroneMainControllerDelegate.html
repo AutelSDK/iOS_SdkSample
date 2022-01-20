@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELDroneMainControllerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/mainController:didUpdateRTKDiffData:">- mainController:didUpdateRTKDiffData:</option>
+		
+		<option value="//api/name/mainController:didUpdateRTKState:">- mainController:didUpdateRTKState:</option>
+		
+		<option value="//api/name/mainController:didUpdateSystemState:">- mainController:didUpdateSystemState:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELDroneMainControllerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELDroneMainController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This protocol provides delegate methods to update main controller&rsquo;s current state.</p>
+
+<p>该协议提供实时更新主控当前状态的代理方法。</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/mainController:didUpdateSystemState:" title="mainController:didUpdateSystemState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mainController:didUpdateSystemState:">&ndash;&nbsp;mainController:didUpdateSystemState:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Callback function that updates the main controller&rsquo;s current state data. This method gets
+called 5 times per second after startUpdatingFlightControllerCurrentState is called.</p>
+
+<p>该回调方法更新飞行器主控当前数据。在 <a href="../Classes/AUTELDroneMainController.html">AUTELDroneMainController</a> 实例的 startUpdateMCSystemState 方法调用以后，该方法每秒被调用5次。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)mainController:(AUTELDroneMainController *_Nonnull)<em>mc</em> didUpdateSystemState:(AUTELMCSystemState *_Nonnull)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mc</code></th>
+						<td><p>Instance of the main controller for which the data will be updated.</p>
+
+<p>将当前状态告知代理的主控对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>Current state of the main controller.</p>
+
+<p>主控当前状态。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mainController:didUpdateRTKState:" title="mainController:didUpdateRTKState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mainController:didUpdateRTKState:">&ndash;&nbsp;mainController:didUpdateRTKState:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This callback method updates the current status data of the aircraft&rsquo;s RTK. The flight controller reports once every 1s..</p>
+
+<p>该回调方法更新飞行器RTK当前状态数据。飞控1s上报1次。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)mainController:(AUTELDroneMainController *_Nonnull)<em>mc</em> didUpdateRTKState:(AUTELRTKStatusInfoModel *_Nonnull)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mc</code></th>
+						<td><p>Instance of the main controller for which the data will be updated.</p>
+
+<p>将当前状态告知代理的主控对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>Current state of the main controller.</p>
+
+<p>RTK当前状态。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELRTKStatusInfoModel.html">AUTELRTKStatusInfoModel</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mainController:didUpdateRTKDiffData:" title="mainController:didUpdateRTKDiffData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mainController:didUpdateRTKDiffData:">&ndash;&nbsp;mainController:didUpdateRTKDiffData:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This callback method updates the aircraft RTK differential data.</p>
+
+<p>该回调方法更新飞行器RTK差分数据。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)mainController:(AUTELDroneMainController *_Nonnull)<em>mc</em> didUpdateRTKDiffData:(NSData *_Nonnull)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mc</code></th>
+						<td><p>Instance of the main controller for which the data will be updated.</p>
+
+<p>将当前状态告知代理的主控对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>RTK differential data.</p>
+
+<p>RTK当前状态。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELRTKStatusInfoModel.html">AUTELRTKStatusInfoModel</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+framework module AUTELWidget {
+  umbrella header "AUTELWidget.h"
+
+  export *
+  module * { export * }
+}
+
+module AUTELWidget.Swift {
+    header "AUTELWidget-Swift.h"
+    requires objc
+}

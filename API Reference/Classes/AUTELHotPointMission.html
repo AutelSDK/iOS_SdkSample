@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELHotPointMission Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/defaultSpeed">defaultSpeed</option>
+		
+		<option value="//api/name/finishMode">finishMode</option>
+		
+		<option value="//api/name/goHomeAltitude">goHomeAltitude</option>
+		
+		<option value="//api/name/hotPoint">hotPoint</option>
+		
+		<option value="//api/name/hotpointType">hotpointType</option>
+		
+		<option value="//api/name/isClockwise">isClockwise</option>
+		
+		<option value="//api/name/surroundRadius">surroundRadius</option>
+		
+		<option value="//api/name/turns">turns</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELHotPointMission Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/AUTELMission.html">AUTELMission</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELHotPointMission.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class includes hot point mission related functions.</p>
+
+<p>兴趣点飞行任务</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/hotpointType" title="hotpointType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hotpointType">&nbsp;&nbsp;hotpointType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Type of hot point, default type is AUTELHotpointTypeFixedPoint.</p>
+
+<p>兴趣点类型，默认为 AUTELHotpointTypeFixedPoint</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELHotpointType hotpointType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELHotpointType.html">AUTELHotpointType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hotPoint" title="hotPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hotPoint">&nbsp;&nbsp;hotPoint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the coordinate of the hot point.</p>
+
+<p>兴趣点的经纬度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CLLocationCoordinate2D hotPoint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If hotpointType equals to AUTELHotpointTypeFixedPoint, then the aircraft will fly surround the hot point. Else if hotpointType equals to AUTELHotpointTypeMobilePoint, then the aircraft will fly surround the location which is sent by [AUTELNavigation updateUserCoordinate] method.</p>
+
+<p>如果 <a href="#//api/name/hotpointType">hotpointType</a> 为 AUTELHotpointTypeFixedPoint，飞行器以 hotPoint 为兴趣点环绕飞行，
+如果 <a href="#//api/name/hotpointType">hotpointType</a> 为 AUTELHotpointTypeMobilePoint 飞行器将忽略 hotPoint，
+而是以由 <a href="../Classes/AUTELNavigation.html">AUTELNavigation</a> 的 updateUserCoordinate 方法发送给飞行器的位置为兴趣点进行环绕飞行。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELHotpointType.html">AUTELHotpointType</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELNavigation.html">AUTELNavigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/surroundRadius" title="surroundRadius"></a>
+	<h3 class="method-title"><code><a href="#//api/name/surroundRadius">&nbsp;&nbsp;surroundRadius</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets surround radius in meters from 10m to 500m. Before the aircraft starts to execute orbit mission, it will fly to the spot where has a distance around the radius, and then set the hotpoint as center to start the orbit mission. During the mission, the radius varies by controling the aircraft flying further or closer to the hot point. Call <a href="../Classes/AUTELHotPointMissionStatus.html">AUTELHotPointMissionStatus</a>.currentRadius to get the real-time radius.</p>
+
+<p>设置环绕半径（m），范围为 10m 至 500m。飞行器开始执行环绕兴趣点任务时，会先飞到距离兴趣点约等于环绕半径的地方，然后以 surroundRadius 为半径开始环绕。
+执行环绕任务过程中，用户可以通过遥控器使飞行器靠近或远离兴趣点，此时环绕半径会变小或变大。
+你可以通过 <a href="../Classes/AUTELHotPointMissionStatus.html">AUTELHotPointMissionStatus</a>.currentRadius 获取环绕飞行过程中的事实环绕半径。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float surroundRadius</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELNavigationDelegate.html">AUTELNavigationDelegate</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELHotPointMissionStatus.html">AUTELHotPointMissionStatus</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultSpeed" title="defaultSpeed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultSpeed">&nbsp;&nbsp;defaultSpeed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Default speed of aircraft when executes orbit mission (m/s).</p>
+
+<p>飞行器执行环绕兴趣点任务时的默认速率（m/s）。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float defaultSpeed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The value of default speed is only used for reference. The real-time speed of aircraft is affected by radius and the speed controlled by user, so defaultSpeed may not be equal to real-time speed.</p>
+
+<p>这是一个参考速率，但是飞行器的速率还受到环绕半径的影响，且在飞行过车中用户可以用遥控器调整速度，因此飞行器的速率不一定会等于该速率。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isClockwise" title="isClockwise"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isClockwise">&nbsp;&nbsp;isClockwise</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This property describes the direction of surrounding the hot point. Re<a href="#//api/name/turns">turns</a> YES if clockwise, else re<a href="#//api/name/turns">turns</a> NO.</p>
+
+<p>环绕方向，是返回 YES，否则返回 NO</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isClockwise</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/goHomeAltitude" title="goHomeAltitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/goHomeAltitude">&nbsp;&nbsp;goHomeAltitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Go home altitude is the relative altitdue of take off point, its default value is 30m.</p>
+
+<p>返航高度（m），该高度是相对于起飞点的相对高度，默认30m。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float goHomeAltitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>After mission completed, If current altitude of aircraft is not highter than go home altitdue, aircraft will ascend to go home altitdue and then enter into finish mode.</p>
+
+<p>飞行器执行完该任务后，如果此时飞行器的高度大于 goHomeAltitude，飞行器将按照 <a href="#//api/name/finishMode">finishMode</a> 执行结束动作，否则将先上升到 goHomeAltitude 高度在执行结束动作。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/turns" title="turns"></a>
+	<h3 class="method-title"><code><a href="#//api/name/turns">&nbsp;&nbsp;turns</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The number of turns. Set 0 as infinity turns. If turns > 0, then the aircraft enters into finish mode.</p>
+
+<p>环绕圈数，如果 turns > 0 飞行器环绕 turns 后按照 <a href="#//api/name/finishMode">finishMode</a> 执行结束动作。如果 turns = 0，表示不对环绕圈数进行限制。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) uint16_t turns</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For various reasons( eg: low battery), the real number of turns may not equal to the property turns. To get the number of turns which aircraft already flew, read  <a href="../Classes/AUTELHotPointMissionStatus.html">AUTELHotPointMissionStatus</a>.turns property.</p>
+
+<p>由于各种原因（如电量不足），飞行器的实际环绕圈数不一定等于 turns。通过 <a href="../Classes/AUTELHotPointMissionStatus.html">AUTELHotPointMissionStatus</a>.turns 表示当前飞行器已经环绕的圈数。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/finishMode" title="finishMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/finishMode">&nbsp;&nbsp;finishMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the mode after mission finished.</p>
+
+<p>任务结束模式，默认 AUTELNavigationMissionFinishModeGoHome。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELNavigationMissionFinishMode finishMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If finishMode equals to AUTELNavigationMissionFinishModeGoHome, then the aircraft will fly back to the home point after mission completed.
+If finishMode equals to AUTELNavigationMissionFinishModeGoHotPoint, then the aircraft will fly to the hot point after mission completed.
+If finishMode equals AUTELNavigationMissionFinishModeHover, then the aircraft will hover in the air after mission completed.</p>
+
+<p>如果 finishMode 等于 AUTELNavigationMissionFinishModeGoHome，飞行器执行完该任务后，会自动返航。
+如果 finishMode 等于 AUTELNavigationMissionFinishModeGoHotPoint，飞行器在完成该任务后，会自动飞行到兴趣点上方。
+如果 finishMode 等于 AUTELNavigationMissionFinishModeHover，飞行器在完成任务后原地悬停。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELNavigationMissionFinishMode.html">AUTELNavigationMissionFinishMode</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/AUTELMissionHandler.html">AUTELMissionHandler</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELHotPointMission.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

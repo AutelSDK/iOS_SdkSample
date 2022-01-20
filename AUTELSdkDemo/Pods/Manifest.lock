@@ -1,0 +1,42 @@
+PODS:
+  - MJRefresh (3.5.0)
+  - RxSwift (6.1.0)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
+  - Toaster (2.3.0)
+  - XLActionController (5.0.2):
+    - XLActionController/Core (= 5.0.2)
+  - XLActionController/Core (5.0.2)
+
+DEPENDENCIES:
+  - MJRefresh
+  - RxSwift
+  - SnapKit
+  - SwiftyJSON
+  - Toast-Swift
+  - Toaster
+  - XLActionController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MJRefresh
+    - RxSwift
+    - SnapKit
+    - SwiftyJSON
+    - Toast-Swift
+    - Toaster
+    - XLActionController
+
+SPEC CHECKSUMS:
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  XLActionController: f1f2226d2c6629db197d4a41f2da907085a4cb9d
+
+PODFILE CHECKSUM: c5d04a5b787d3388d46820b839dd618c18e57d97
+
+COCOAPODS: 1.10.1

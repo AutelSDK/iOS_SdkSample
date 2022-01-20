@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELCameraMessageType Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELCameraMessageType Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AUTELCameraSettingsDef.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">AUTELCameraMessageType</h3>
+                    
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, AUTELCameraMessageType ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Unknown</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_StartSession</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_GetAllSetting</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_GetAllStates</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_SetCameraClock</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_TakePhoto</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_StopTakePhoto</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_StartRecord</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_StopRecord</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_ResolutionList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_SlowMotionList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_SetResolution</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_GetFpsList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_SetFps</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraSDFileFolderList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraSDFileNameList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Delete_CameraSDFile</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraSDThumbImage</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraPhotoSizeList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPhotoSize</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraPhotoBurstList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPhotoBurst</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraTimeLapse</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraTimeLapseList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraPivList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraVedioTime</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraFSPhotos</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPiv</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraAeb</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraRecordFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPhotoFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraWhiteBalance</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraExposureCompensation</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSharpness</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraMeter</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSystemType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraAntiFlickerType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraFilenumway</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraHisto</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraColor</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraStyle</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraActionWhenConnectionBroken</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSlowPlaybackSpeed</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraDelayedInterval</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraDelayedDuration</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPanoramaStep</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPanoramaAngle</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSelfTimerCount</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraDelayedSavePhoto</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraShutter</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraISO</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraCaptureMode</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraPhotometry</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSubTileSwitch</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraAELock</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSingleCount</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraSlowMotionReso</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraMCTF</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Set_CameraRoom</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELCameraMessageType_Get_CameraPhotoSizeType</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Unknown"></a><code>AUTELCameraMessageType_Unknown</code></dt>
+<dd>
+
+
+<p>Unknown type</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_StartSession"></a><code>AUTELCameraMessageType_StartSession</code></dt>
+<dd>
+
+
+<p>获取session</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_GetAllSetting"></a><code>AUTELCameraMessageType_GetAllSetting</code></dt>
+<dd>
+
+
+<p>获取相机设置项</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_GetAllStates"></a><code>AUTELCameraMessageType_GetAllStates</code></dt>
+<dd>
+
+
+<p>获取相机设置项</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_SetCameraClock"></a><code>AUTELCameraMessageType_SetCameraClock</code></dt>
+<dd>
+
+
+<p>设置相机时间</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_TakePhoto"></a><code>AUTELCameraMessageType_TakePhoto</code></dt>
+<dd>
+
+
+<p>拍照</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_StopTakePhoto"></a><code>AUTELCameraMessageType_StopTakePhoto</code></dt>
+<dd>
+
+
+<p>停止拍照</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_StartRecord"></a><code>AUTELCameraMessageType_StartRecord</code></dt>
+<dd>
+
+
+<p>开始录像</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_StopRecord"></a><code>AUTELCameraMessageType_StopRecord</code></dt>
+<dd>
+
+
+<p>停止录像</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_ResolutionList"></a><code>AUTELCameraMessageType_ResolutionList</code></dt>
+<dd>
+
+
+<p>获取分辨率列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_SlowMotionList"></a><code>AUTELCameraMessageType_SlowMotionList</code></dt>
+<dd>
+
+
+<p>获取小手持慢动作录影分辨率列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_SetResolution"></a><code>AUTELCameraMessageType_SetResolution</code></dt>
+<dd>
+
+
+<p>设置分辨率</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_GetFpsList"></a><code>AUTELCameraMessageType_GetFpsList</code></dt>
+<dd>
+
+
+<p>获取帧率列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_SetFps"></a><code>AUTELCameraMessageType_SetFps</code></dt>
+<dd>
+
+
+<p>设置帧率</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraSDFileFolderList"></a><code>AUTELCameraMessageType_Get_CameraSDFileFolderList</code></dt>
+<dd>
+
+
+<p>获取SD卡文件夹列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraSDFileNameList"></a><code>AUTELCameraMessageType_Get_CameraSDFileNameList</code></dt>
+<dd>
+
+
+<p>获取SD卡文件夹下的文件列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Delete_CameraSDFile"></a><code>AUTELCameraMessageType_Delete_CameraSDFile</code></dt>
+<dd>
+
+
+<p>删除SD卡文件</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraSDThumbImage"></a><code>AUTELCameraMessageType_Get_CameraSDThumbImage</code></dt>
+<dd>
+
+
+<p>获取缩略图</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraPhotoSizeList"></a><code>AUTELCameraMessageType_Get_CameraPhotoSizeList</code></dt>
+<dd>
+
+
+<p>获取照片大小列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPhotoSize"></a><code>AUTELCameraMessageType_Set_CameraPhotoSize</code></dt>
+<dd>
+
+
+<p>设置照片大小</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraPhotoBurstList"></a><code>AUTELCameraMessageType_Get_CameraPhotoBurstList</code></dt>
+<dd>
+
+
+<p>获取burst设置列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPhotoBurst"></a><code>AUTELCameraMessageType_Set_CameraPhotoBurst</code></dt>
+<dd>
+
+
+<p>设置burst</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraTimeLapse"></a><code>AUTELCameraMessageType_Set_CameraTimeLapse</code></dt>
+<dd>
+
+
+<p>设置timelapse</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraTimeLapseList"></a><code>AUTELCameraMessageType_Get_CameraTimeLapseList</code></dt>
+<dd>
+
+
+<p>获取timelapse列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraPivList"></a><code>AUTELCameraMessageType_Get_CameraPivList</code></dt>
+<dd>
+
+
+<p>获取piv列表</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraVedioTime"></a><code>AUTELCameraMessageType_Get_CameraVedioTime</code></dt>
+<dd>
+
+
+<p>获取当前录像时间</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraFSPhotos"></a><code>AUTELCameraMessageType_Get_CameraFSPhotos</code></dt>
+<dd>
+
+
+<p>获取当前可拍照张数</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPiv"></a><code>AUTELCameraMessageType_Set_CameraPiv</code></dt>
+<dd>
+
+
+<p>设置piv</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraAeb"></a><code>AUTELCameraMessageType_Set_CameraAeb</code></dt>
+<dd>
+
+
+<p>设置AEB</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraRecordFormat"></a><code>AUTELCameraMessageType_Set_CameraRecordFormat</code></dt>
+<dd>
+
+
+<p>设置录像格式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPhotoFormat"></a><code>AUTELCameraMessageType_Set_CameraPhotoFormat</code></dt>
+<dd>
+
+
+<p>设置照片格式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraWhiteBalance"></a><code>AUTELCameraMessageType_Set_CameraWhiteBalance</code></dt>
+<dd>
+
+
+<p>设置白平衡</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraExposureCompensation"></a><code>AUTELCameraMessageType_Set_CameraExposureCompensation</code></dt>
+<dd>
+
+
+<p>设置曝光值</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSharpness"></a><code>AUTELCameraMessageType_Set_CameraSharpness</code></dt>
+<dd>
+
+
+<p>设置锐度 A7</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraMeter"></a><code>AUTELCameraMessageType_Set_CameraMeter</code></dt>
+<dd>
+
+
+<p>设置点测光</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSystemType"></a><code>AUTELCameraMessageType_Set_CameraSystemType</code></dt>
+<dd>
+
+
+<p>设置制式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraAntiFlickerType"></a><code>AUTELCameraMessageType_Set_CameraAntiFlickerType</code></dt>
+<dd>
+
+
+<p>设置抗闪烁</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraFormat"></a><code>AUTELCameraMessageType_Set_CameraFormat</code></dt>
+<dd>
+
+
+<p>相机格式化</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraFilenumway"></a><code>AUTELCameraMessageType_Set_CameraFilenumway</code></dt>
+<dd>
+
+
+<p>文件序号模式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraHisto"></a><code>AUTELCameraMessageType_Set_CameraHisto</code></dt>
+<dd>
+
+
+<p>直方图开关</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraColor"></a><code>AUTELCameraMessageType_Set_CameraColor</code></dt>
+<dd>
+
+
+<p>设置颜色</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraStyle"></a><code>AUTELCameraMessageType_Set_CameraStyle</code></dt>
+<dd>
+
+
+<p>设置相机风格</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraActionWhenConnectionBroken"></a><code>AUTELCameraMessageType_Set_CameraActionWhenConnectionBroken</code></dt>
+<dd>
+
+
+<p>设置连接断开是否继续录像</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSlowPlaybackSpeed"></a><code>AUTELCameraMessageType_Set_CameraSlowPlaybackSpeed</code></dt>
+<dd>
+
+
+<p>设置慢动作回放帧率</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraDelayedInterval"></a><code>AUTELCameraMessageType_Set_CameraDelayedInterval</code></dt>
+<dd>
+
+
+<p>设置延时间隔</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraDelayedDuration"></a><code>AUTELCameraMessageType_Set_CameraDelayedDuration</code></dt>
+<dd>
+
+
+<p>设置延时持续时间</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPanoramaStep"></a><code>AUTELCameraMessageType_Set_CameraPanoramaStep</code></dt>
+<dd>
+
+
+<p>设置全景步长</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPanoramaAngle"></a><code>AUTELCameraMessageType_Set_CameraPanoramaAngle</code></dt>
+<dd>
+
+
+<p>设置全景角度</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSelfTimerCount"></a><code>AUTELCameraMessageType_Set_CameraSelfTimerCount</code></dt>
+<dd>
+
+
+<p>倒计时时间设置</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraDelayedSavePhoto"></a><code>AUTELCameraMessageType_Set_CameraDelayedSavePhoto</code></dt>
+<dd>
+
+
+<p>延时拍照片存储</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraShutter"></a><code>AUTELCameraMessageType_Set_CameraShutter</code></dt>
+<dd>
+
+
+<p>设置相机快门</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraISO"></a><code>AUTELCameraMessageType_Set_CameraISO</code></dt>
+<dd>
+
+
+<p>设置相机ISO</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraCaptureMode"></a><code>AUTELCameraMessageType_Set_CameraCaptureMode</code></dt>
+<dd>
+
+
+<p>设置拍照模式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraPhotometry"></a><code>AUTELCameraMessageType_Set_CameraPhotometry</code></dt>
+<dd>
+
+
+<p>设置A9点测光</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSubTileSwitch"></a><code>AUTELCameraMessageType_Set_CameraSubTileSwitch</code></dt>
+<dd>
+
+
+<p>设置字幕开关</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraAELock"></a><code>AUTELCameraMessageType_Set_CameraAELock</code></dt>
+<dd>
+
+
+<p>设置AE锁</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSingleCount"></a><code>AUTELCameraMessageType_Set_CameraSingleCount</code></dt>
+<dd>
+
+
+<p>小手持单拍设置</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraSlowMotionReso"></a><code>AUTELCameraMessageType_Set_CameraSlowMotionReso</code></dt>
+<dd>
+
+
+<p>小手持慢动作录像分辨率</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraMCTF"></a><code>AUTELCameraMessageType_Set_CameraMCTF</code></dt>
+<dd>
+
+
+<p>3D降噪</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Set_CameraRoom"></a><code>AUTELCameraMessageType_Set_CameraRoom</code></dt>
+<dd>
+
+
+<p>变焦</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELCameraMessageType_Get_CameraPhotoSizeType"></a><code>AUTELCameraMessageType_Get_CameraPhotoSizeType</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELCameraSettingsDef.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

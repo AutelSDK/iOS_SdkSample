@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELSDKMissionError Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELSDKMissionError Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>NSError+AUTELSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">AUTELSDKMissionError</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Define Autopilot error</p>
+
+<p>定义自动飞行任务错误</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, AUTELSDKMissionError ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorModeError</a> = -5000,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftBadGPS</a> = -5001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftLowBattery</a> = -5002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftNotInTheAir</a> = -5003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftTakingoff</a> = -5004,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftHomePointNotRecord</a> = -5005,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftInNoFlyZone</a> = -5006,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftRunningMission</a> = -5007,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftNoRunningMission</a> = -5008,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftNoMission</a> = -5009,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftFarAwayMission</a> = -5010,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorMissionTotalDistanceTooLarge</a> = -5011,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorMissionResumeFailed</a> = -5012,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorUploadMissionDataError</a> = -5013,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorIsUploadingOrDownloadingMission</a> = -5014,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorInvalidMissionClass</a> = -5015,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorWaypointNumberOver</a> = -5016,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorNoWaypoint</a> = -5017,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorWaypointCoorditionInvalid</a> = -5018,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorWaypopintTooFarAway</a> = -5019,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorWaypointsExceedLimit</a> = -5020,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorGrondStationBadGPS</a> = -5021,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorHotPointCoorditionInvalid</a> = -5022,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorHotPointTooFarAwayForAircraft</a> = -5023,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorHotPointTooFarAwayForHomePoint</a> = -5024,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorHotPointRadiusTooLarge</a> = -5025,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorNoSupportDownloadMission</a> = -5026,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorNoSupportPauseAndResumMission</a> = -5027,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorMissionNoSupportFinishMode</a> = -5028,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorNoSupportInBeginnerMode</a> = -5029,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorCameraDisconnected</a> = -5030,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorAircraftAltitudeTooLow</a> = -5031,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorReachMaximumTrackingRadius</a> = -5032,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorReachMinimumTrackingRadius</a> = -5033,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorReachMaximumTrackingAltitude</a> = -5034,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorReachMinimumTrackingAltitude</a> = -5035,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELSDKMissionErrorDownloadMissionDataError</a> = -5036,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorModeError"></a><code>AUTELSDKMissionErrorModeError</code></dt>
+<dd>
+
+
+<p>Flight mode or flight status error</p>
+
+<p>主模式或飞行状态错误。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftBadGPS"></a><code>AUTELSDKMissionErrorAircraftBadGPS</code></dt>
+<dd>
+
+
+<p>Aircraft&rsquo;s GPS too weak.</p>
+
+<p>飞行器 GPS 信号弱。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftLowBattery"></a><code>AUTELSDKMissionErrorAircraftLowBattery</code></dt>
+<dd>
+
+
+<p>Aircraft&rsquo;s battery too low.</p>
+
+<p>飞行器电量低。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftNotInTheAir"></a><code>AUTELSDKMissionErrorAircraftNotInTheAir</code></dt>
+<dd>
+
+
+<p>Aircraft&rsquo;s not in the air.</p>
+
+<p>飞行器没有在飞行。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftTakingoff"></a><code>AUTELSDKMissionErrorAircraftTakingoff</code></dt>
+<dd>
+
+
+<p>Aircraft is taking off.</p>
+
+<p>飞行器起飞错误。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftHomePointNotRecord"></a><code>AUTELSDKMissionErrorAircraftHomePointNotRecord</code></dt>
+<dd>
+
+
+<p>Aircraft&rsquo;s home point not record.</p>
+
+<p>飞行器返航点无效。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftInNoFlyZone"></a><code>AUTELSDKMissionErrorAircraftInNoFlyZone</code></dt>
+<dd>
+
+
+<p>Aircraft is in no fly zone.</p>
+
+<p>飞行器到达禁飞区。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftRunningMission"></a><code>AUTELSDKMissionErrorAircraftRunningMission</code></dt>
+<dd>
+
+
+<p>Aircraft is running a mission.</p>
+
+<p>飞行器正在执行任务。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftNoRunningMission"></a><code>AUTELSDKMissionErrorAircraftNoRunningMission</code></dt>
+<dd>
+
+
+<p>Aircraft no running mission.</p>
+
+<p>飞行器没有在执行任务。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftNoMission"></a><code>AUTELSDKMissionErrorAircraftNoMission</code></dt>
+<dd>
+
+
+<p>Aircraft no mission.</p>
+
+<p>飞行器没有任务。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftFarAwayMission"></a><code>AUTELSDKMissionErrorAircraftFarAwayMission</code></dt>
+<dd>
+
+
+<p>Aircraft is too far away to the mission.</p>
+
+<p>飞行器在执行追踪任务追踪点离飞行器距离过远或兴趣点环绕任务时兴趣点离飞行器过远。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorMissionTotalDistanceTooLarge"></a><code>AUTELSDKMissionErrorMissionTotalDistanceTooLarge</code></dt>
+<dd>
+
+
+<p>Mission&rsquo;s total distance is too large.</p>
+
+<p>航点任务的中距离过长。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorMissionResumeFailed"></a><code>AUTELSDKMissionErrorMissionResumeFailed</code></dt>
+<dd>
+
+
+<p>Mission resume failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorUploadMissionDataError"></a><code>AUTELSDKMissionErrorUploadMissionDataError</code></dt>
+<dd>
+
+
+<p>Uploading waypoints error.</p>
+
+<p>上传任务数据出错。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorIsUploadingOrDownloadingMission"></a><code>AUTELSDKMissionErrorIsUploadingOrDownloadingMission</code></dt>
+<dd>
+
+
+<p>The aircraft is uploading or downloading the task data.</p>
+
+<p>飞行器正在上传或下载任务数据。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorInvalidMissionClass"></a><code>AUTELSDKMissionErrorInvalidMissionClass</code></dt>
+<dd>
+
+
+<p>Task type error</p>
+
+<p>任务类型错误。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorWaypointNumberOver"></a><code>AUTELSDKMissionErrorWaypointNumberOver</code></dt>
+<dd>
+
+
+<p>The waypoint number exceeds the allowable value.</p>
+
+<p>航点个数过多。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorNoWaypoint"></a><code>AUTELSDKMissionErrorNoWaypoint</code></dt>
+<dd>
+
+
+<p>The waypoint number is 0.</p>
+
+<p>航点个数为0。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorWaypointCoorditionInvalid"></a><code>AUTELSDKMissionErrorWaypointCoorditionInvalid</code></dt>
+<dd>
+
+
+<p>The waypoint coordinate is invalid.</p>
+
+<p>航点坐标无效。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorWaypopintTooFarAway"></a><code>AUTELSDKMissionErrorWaypopintTooFarAway</code></dt>
+<dd>
+
+
+<p>The distance between the waypoint and the home point exceeds the allowable value.</p>
+
+<p>航点离Home点太远。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorWaypointsExceedLimit"></a><code>AUTELSDKMissionErrorWaypointsExceedLimit</code></dt>
+<dd>
+
+
+<p>The waypoint exceeds the limt.</p>
+
+<p>航点超出限制</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorGrondStationBadGPS"></a><code>AUTELSDKMissionErrorGrondStationBadGPS</code></dt>
+<dd>
+
+
+<p>The GPS signal sent from the ground station is weak, or no GPS signal is sent.</p>
+
+<p>地面站发送的 GPS 信号弱或没有发送 GPS。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorHotPointCoorditionInvalid"></a><code>AUTELSDKMissionErrorHotPointCoorditionInvalid</code></dt>
+<dd>
+
+
+<p>The POI coordinate is invalid.</p>
+
+<p>兴趣点坐标无效。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorHotPointTooFarAwayForAircraft"></a><code>AUTELSDKMissionErrorHotPointTooFarAwayForAircraft</code></dt>
+<dd>
+
+
+<p>The distance between the POI and the aircraft exceeds the allowable value.</p>
+
+<p>兴趣点离飞行器太远。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorHotPointTooFarAwayForHomePoint"></a><code>AUTELSDKMissionErrorHotPointTooFarAwayForHomePoint</code></dt>
+<dd>
+
+
+<p>The distance between the POI and the home point exceeds the allowable value.</p>
+
+<p>兴趣点离Home点太远。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorHotPointRadiusTooLarge"></a><code>AUTELSDKMissionErrorHotPointRadiusTooLarge</code></dt>
+<dd>
+
+
+<p>The Orbit radius is too large.</p>
+
+<p>兴趣点环绕半径太大。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorNoSupportDownloadMission"></a><code>AUTELSDKMissionErrorNoSupportDownloadMission</code></dt>
+<dd>
+
+
+<p>Downloading task data not supported.</p>
+
+<p>不支持下载任务数据。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorNoSupportPauseAndResumMission"></a><code>AUTELSDKMissionErrorNoSupportPauseAndResumMission</code></dt>
+<dd>
+
+
+<p>Pausing and restarting task not supported.</p>
+
+<p>不支持暂停和重启任务。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorMissionNoSupportFinishMode"></a><code>AUTELSDKMissionErrorMissionNoSupportFinishMode</code></dt>
+<dd>
+
+
+<p>The Go Home mode is not supported.</p>
+
+<p>不支持该返航模式。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorNoSupportInBeginnerMode"></a><code>AUTELSDKMissionErrorNoSupportInBeginnerMode</code></dt>
+<dd>
+
+
+<p>Autopilot not supported in Beginner mode.</p>
+
+<p>新手模式不支持智能飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorCameraDisconnected"></a><code>AUTELSDKMissionErrorCameraDisconnected</code></dt>
+<dd>
+
+
+<p>相机未连接</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorAircraftAltitudeTooLow"></a><code>AUTELSDKMissionErrorAircraftAltitudeTooLow</code></dt>
+<dd>
+
+
+<p>飞行器高度过低</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorReachMaximumTrackingRadius"></a><code>AUTELSDKMissionErrorReachMaximumTrackingRadius</code></dt>
+<dd>
+
+
+<p>飞行器达到最大追踪半径</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorReachMinimumTrackingRadius"></a><code>AUTELSDKMissionErrorReachMinimumTrackingRadius</code></dt>
+<dd>
+
+
+<p>飞行器达到最大追踪半径</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorReachMaximumTrackingAltitude"></a><code>AUTELSDKMissionErrorReachMaximumTrackingAltitude</code></dt>
+<dd>
+
+
+<p>飞行器达到最大追踪半径</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorReachMinimumTrackingAltitude"></a><code>AUTELSDKMissionErrorReachMinimumTrackingAltitude</code></dt>
+<dd>
+
+
+<p>飞行器达到最大追踪半径</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELSDKMissionErrorDownloadMissionDataError"></a><code>AUTELSDKMissionErrorDownloadMissionDataError</code></dt>
+<dd>
+
+
+<p>Download waypoints error.</p>
+
+<p>下载任务数据出错。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">NSError+AUTELSDK.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">NSError+AUTELSDK.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

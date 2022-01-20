@@ -1,0 +1,6 @@
+framework module AUTELSDK {
+  umbrella header "AUTELSDK.h"
+
+  export *
+  module * { export * }
+}

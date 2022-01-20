@@ -1,0 +1,35 @@
+
+  # Uncomment the next line to define a global platform for your project
+  platform :ios, '11.0'
+  
+  source 'https://github.com/CocoaPods/Specs.git'
+  
+def privatePods
+
+end
+
+
+def commonPods
+  
+  pod 'MJRefresh'#, '~> 3.5.0'
+
+  pod 'SnapKit'#, '~> 5.0.1'
+  pod 'SwiftyJSON'#, '~> 5.0.0'
+  pod 'Toast-Swift'#, '~> 5.0.1'
+  pod 'XLActionController'#, '~> 5.0.2'
+  pod 'Toaster'#, '~> 2.2.0'
+  pod 'RxSwift'
+
+
+end
+
+target 'AUTELSdkDemo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for AUTELSdkDemo
+  privatePods
+  commonPods
+  
+
+end

@@ -1,0 +1,1345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76F995882467FCD600BD7F19 /* MissionManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F995862467FCD600BD7F19 /* MissionManagerViewController.swift */; };
+		76F9958B2467FD8000BD7F19 /* MissionBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9958A2467FD8000BD7F19 /* MissionBaseViewController.swift */; };
+		76F9958D2467FE8A00BD7F19 /* WaypointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9958C2467FE8A00BD7F19 /* WaypointViewModel.swift */; };
+		76F995942467FFCA00BD7F19 /* EarthStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F995912467FFCA00BD7F19 /* EarthStationViewController.swift */; };
+		76F995952467FFCA00BD7F19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F995922467FFCA00BD7F19 /* BaseViewController.swift */; };
+		76F995962467FFCA00BD7F19 /* AUTELNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F995932467FFCA00BD7F19 /* AUTELNavigationController.swift */; };
+		76F99598246800F600BD7F19 /* EarthStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F99597246800F600BD7F19 /* EarthStationViewModel.swift */; };
+		76F9959B2468070200BD7F19 /* MissionDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9959A2468070200BD7F19 /* MissionDef.swift */; };
+		76F9959D24683A3C00BD7F19 /* MapCorrectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9959C24683A3C00BD7F19 /* MapCorrectUtils.swift */; };
+		7F23C710246B8B00000650E8 /* CameraActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C70F246B8B00000650E8 /* CameraActionsViewController.swift */; };
+		7F23C712246B8B12000650E8 /* CameraWorkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C711246B8B12000650E8 /* CameraWorkModeViewController.swift */; };
+		7F23C7E4246B9692000650E8 /* ActionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7D7246B9692000650E8 /* ActionData.swift */; };
+		7F23C7E5246B9692000650E8 /* TwitterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F23C7D8246B9692000650E8 /* TwitterCell.xib */; };
+		7F23C7E8246B9692000650E8 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7DB246B9692000650E8 /* Twitter.swift */; };
+		7F23C7EE246B9F46000650E8 /* CameraSupporParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7ED246B9F46000650E8 /* CameraSupporParameters.swift */; };
+		7F23C7F1246C28E3000650E8 /* CameraPhotoSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7F0246C28E3000650E8 /* CameraPhotoSizeViewController.swift */; };
+		7F23C7FE246CE0F3000650E8 /* CustomMKCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7FB246CE0F3000650E8 /* CustomMKCircle.swift */; };
+		7F23C7FF246CE0F3000650E8 /* AutelAircraftAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7FC246CE0F3000650E8 /* AutelAircraftAnnotation.swift */; };
+		7F23C800246CE0F3000650E8 /* AutelHomeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7FD246CE0F3000650E8 /* AutelHomeAnnotation.swift */; };
+		7F23C807246CE15F000650E8 /* AutelAircraftAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C803246CE15F000650E8 /* AutelAircraftAnnotationView.swift */; };
+		7F23C808246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C804246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift */; };
+		7F23C809246CE15F000650E8 /* AutelHomeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C805246CE15F000650E8 /* AutelHomeAnnotationView.swift */; };
+		7F3C8DAB26F22C8500A3A99D /* AUTELSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */; };
+		7F3C8DAC26F22C8500A3A99D /* AUTELSDK.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F3C8DAD26F22C8700A3A99D /* AUTELWidget.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */; };
+		7F3C8DAE26F22C8700A3A99D /* AUTELWidget.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F48251024653CC70021F001 /* MapCorrect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48250E24653CC70021F001 /* MapCorrect.m */; };
+		7F48251224655C990021F001 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48251124655C990021F001 /* UIImageExtension.swift */; };
+		7F4E62CB25F7AC8C006F219F /* GimbalChangeSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E62C925F7AC8C006F219F /* GimbalChangeSubmission.swift */; };
+		7F768730245C031600F5C73E /* FlightAssistantConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76871C245C031600F5C73E /* FlightAssistantConnection.swift */; };
+		7F768731245C031600F5C73E /* MainControllerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76871D245C031600F5C73E /* MainControllerConnection.swift */; };
+		7F768732245C031600F5C73E /* GimbalConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76871E245C031600F5C73E /* GimbalConnection.swift */; };
+		7F768733245C031600F5C73E /* SDKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76871F245C031600F5C73E /* SDKConnection.swift */; };
+		7F768734245C031600F5C73E /* DroneConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768720245C031600F5C73E /* DroneConnection.swift */; };
+		7F768735245C031600F5C73E /* BatteryConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768721245C031600F5C73E /* BatteryConnection.swift */; };
+		7F768736245C031600F5C73E /* AUTELNavigationDelegateConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768722245C031600F5C73E /* AUTELNavigationDelegateConnection.swift */; };
+		7F768737245C031600F5C73E /* CameraConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768723245C031600F5C73E /* CameraConnection.swift */; };
+		7F768738245C031600F5C73E /* AirLinkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768724245C031600F5C73E /* AirLinkConnection.swift */; };
+		7F768739245C031600F5C73E /* RemoteControllerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768725245C031600F5C73E /* RemoteControllerConnection.swift */; };
+		7F76873A245C031600F5C73E /* CheckProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768727245C031600F5C73E /* CheckProtocol.swift */; };
+		7F76873B245C031600F5C73E /* BatteryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768728245C031600F5C73E /* BatteryProtocol.swift */; };
+		7F76873C245C031600F5C73E /* CameraProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768729245C031600F5C73E /* CameraProtocol.swift */; };
+		7F76873D245C031600F5C73E /* FlightAssistantProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872A245C031600F5C73E /* FlightAssistantProtocol.swift */; };
+		7F76873E245C031600F5C73E /* MainControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872B245C031600F5C73E /* MainControllerProtocol.swift */; };
+		7F76873F245C031600F5C73E /* GimbalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872C245C031600F5C73E /* GimbalProtocol.swift */; };
+		7F768740245C031600F5C73E /* RemoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872D245C031600F5C73E /* RemoteControllerProtocol.swift */; };
+		7F768741245C031600F5C73E /* AirLinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872E245C031600F5C73E /* AirLinkProtocol.swift */; };
+		7F768742245C031600F5C73E /* DroneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76872F245C031600F5C73E /* DroneProtocol.swift */; };
+		7F768752245C07D100F5C73E /* UIColor+AUTELExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F768751245C07D100F5C73E /* UIColor+AUTELExtension.swift */; };
+		7F91F854245BFF39004412D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91F853245BFF39004412D4 /* AppDelegate.swift */; };
+		7F91F856245BFF39004412D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91F855245BFF39004412D4 /* SceneDelegate.swift */; };
+		7F91F85D245BFF3B004412D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F91F85C245BFF3B004412D4 /* Assets.xcassets */; };
+		7F91F860245BFF3B004412D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91F85E245BFF3B004412D4 /* LaunchScreen.storyboard */; };
+		7F9FC5E2246D59ED001CD6DA /* AircraftStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5DF246D59ED001CD6DA /* AircraftStatusViewController.swift */; };
+		7F9FC5E4246D5A30001CD6DA /* AircraftStatusParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5E3246D5A30001CD6DA /* AircraftStatusParameters.swift */; };
+		7F9FC5E6246D5B65001CD6DA /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5E5246D5B65001CD6DA /* NSObjectExtension.swift */; };
+		7F9FC5E8246D5C7A001CD6DA /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5E7246D5C7A001CD6DA /* NumberExtension.swift */; };
+		7FA25FD6262976940096A4FC /* BaseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA25FD5262976940096A4FC /* BaseVideoViewController.swift */; };
+		7FA25FD826297C7D0096A4FC /* GimbalDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA25FD726297C7D0096A4FC /* GimbalDemoViewController.swift */; };
+		7FA25FDB2629826B0096A4FC /* WaypointDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA25FD92629826B0096A4FC /* WaypointDemoViewController.swift */; };
+		7FA25FDC2629826B0096A4FC /* OrbitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA25FDA2629826B0096A4FC /* OrbitDemoViewController.swift */; };
+		7FA25FDE2629838C0096A4FC /* ObritViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA25FDD2629838C0096A4FC /* ObritViewModel.swift */; };
+		7FE522D6245C11CD00A438D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE522D3245C11CD00A438D5 /* ViewController.swift */; };
+		7FE522D7245C11CD00A438D5 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE522D4245C11CD00A438D5 /* OCViewController.m */; };
+		7FE522DE245C11D700A438D5 /* ImageTransimissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE522DA245C11D700A438D5 /* ImageTransimissionViewController.swift */; };
+		7FE522E3245C126B00A438D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE522E1245C126B00A438D5 /* Main.storyboard */; };
+		7FE522ED245C17D900A438D5 /* CameraCommandDeliver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE522E6245C17D900A438D5 /* CameraCommandDeliver.swift */; };
+		7FE5230E245C1F3800A438D5 /* CameraModelAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5230D245C1F3700A438D5 /* CameraModelAbout.swift */; };
+		7FE52310245C214100A438D5 /* AutelEnumExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5230F245C214100A438D5 /* AutelEnumExtension.swift */; };
+		E7F53128FFB2FBFBB29A106C /* Pods_AUTELSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77E48E3C629347FCDE3228F /* Pods_AUTELSdkDemo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FE00ECF72694374900B85EB7 /* MissionAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ECF62694374900B85EB7 /* MissionAnotation.swift */; };
+		FE00ECF9269437F700B85EB7 /* AutelUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ECF8269437F700B85EB7 /* AutelUtil.swift */; };
+		FE00ECFB269438AC00B85EB7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ECFA269438AC00B85EB7 /* DateExtension.swift */; };
+		FE00ECFF26944B4200B85EB7 /* AppColorsDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ECFE26944B4200B85EB7 /* AppColorsDefine.swift */; };
+		FE00ED01269459E000B85EB7 /* MCMarkAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ED00269459E000B85EB7 /* MCMarkAnnotationView.swift */; };
+		FE00ED0C26945D1600B85EB7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ED0B26945D1600B85EB7 /* UIViewExtension.swift */; };
+		FE00ED102694996700B85EB7 /* MCMissionAddIconAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00ED0F2694996700B85EB7 /* MCMissionAddIconAnnotationView.swift */; };
+		FE11487D269844460025696E /* WayPointParameterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE11487C269844460025696E /* WayPointParameterViewController.swift */; };
+		FE11487F269855060025696E /* WaypointViewModel+Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE11487E269855060025696E /* WaypointViewModel+Mapview.swift */; };
+		FE3FFB2D26CB9C4000610EBF /* ATVideoStreamHardwareDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FFB2C26CB9C4000610EBF /* ATVideoStreamHardwareDecoder.swift */; };
+		FE3FFB3026CB9DBB00610EBF /* ATVideoDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FFB2F26CB9DBB00610EBF /* ATVideoDataParser.swift */; };
+		FE3FFB3226CB9E7000610EBF /* ATVideoDecodeStreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FFB3126CB9E7000610EBF /* ATVideoDecodeStreamHandler.swift */; };
+		FE3FFB3426CB9EA100610EBF /* ATVideoStreamCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3FFB3326CB9EA100610EBF /* ATVideoStreamCommon.swift */; };
+		FE48D845269404D800ADBFA0 /* MCMissionLineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48D844269404D800ADBFA0 /* MCMissionLineRenderer.swift */; };
+		FE48D8472694066E00ADBFA0 /* MissionConnectionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48D8462694066E00ADBFA0 /* MissionConnectionLine.swift */; };
+		FE48D84A2694356200ADBFA0 /* WayPointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48D8492694356200ADBFA0 /* WayPointManager.swift */; };
+		FE48D84C2694357F00ADBFA0 /* WayPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48D84B2694357F00ADBFA0 /* WayPointModel.swift */; };
+		FE7F8F1B25F35B4C0030B2AA /* shader_fsh_myExpose.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7F8F1925F35B4C0030B2AA /* shader_fsh_myExpose.strings */; };
+		FE7F8F1C25F35B4C0030B2AA /* shader_vsh_myExpose.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7F8F1A25F35B4C0030B2AA /* shader_vsh_myExpose.strings */; };
+		FE8B57C326CCF31C00DC7BC8 /* ATVideoStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B57C226CCF31C00DC7BC8 /* ATVideoStreamManager.swift */; };
+		FEB2B7F526957B8E007EA9D8 /* DragableAnnotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B7F426957B8E007EA9D8 /* DragableAnnotionView.swift */; };
+		FEB2B7F72695B230007EA9D8 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB2B7F62695B230007EA9D8 /* GCDTimer.swift */; };
+		FEB6B6D8269E8DBD00499E09 /* MCMissionInterestingPointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6D7269E8DBD00499E09 /* MCMissionInterestingPointAnnotationView.swift */; };
+		FEB6B6DA269E8E7500499E09 /* MCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6D9269E8E7500499E09 /* MCAnnotation.swift */; };
+		FEB6B6E1269E93A200499E09 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6E0269E93A200499E09 /* ToolBar.swift */; };
+		FEB6B6E4269E94AA00499E09 /* ToorBarAdding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6E3269E94AA00499E09 /* ToorBarAdding.swift */; };
+		FEB6B6E6269EC2A200499E09 /* Snap+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6E5269EC2A200499E09 /* Snap+.swift */; };
+		FEB6B6E8269EDC5700499E09 /* WayPointViewModel+ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6E7269EDC5700499E09 /* WayPointViewModel+ToolBar.swift */; };
+		FEB6B6EA269EE8C900499E09 /* PointOfInterestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6E9269EE8C900499E09 /* PointOfInterestModel.swift */; };
+		FEB6B6EC269F035A00499E09 /* EarthStationViewModel+Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6EB269F035A00499E09 /* EarthStationViewModel+Mapview.swift */; };
+		FEB6B6F0269F06D600499E09 /* EarthStationViewModel+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6EF269F06D600499E09 /* EarthStationViewModel+Draw.swift */; };
+		FEB6B6F2269F0AA600499E09 /* EarthStationViewController+MainControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6B6F1269F0AA600499E09 /* EarthStationViewController+MainControl.swift */; };
+		FEB700BF26996C7E004D3037 /* WaypointViewModel+Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700BE26996C7E004D3037 /* WaypointViewModel+Mission.swift */; };
+		FEB700C226996D6A004D3037 /* WaypointViewModel+Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700C126996D6A004D3037 /* WaypointViewModel+Parameter.swift */; };
+		FEB700C426998C65004D3037 /* WaypointParameterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700C326998C65004D3037 /* WaypointParameterViewModel.swift */; };
+		FEB700C626999203004D3037 /* ReuseableCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700C526999203004D3037 /* ReuseableCell+Extension.swift */; };
+		FEB700C826999371004D3037 /* WayPointParamterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700C726999371004D3037 /* WayPointParamterSection.swift */; };
+		FEB700CB26999A50004D3037 /* WaypointParameterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700CA26999A50004D3037 /* WaypointParameterCell.swift */; };
+		FEB700CD26999EF6004D3037 /* ExpandHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700CC26999EF6004D3037 /* ExpandHeader.swift */; };
+		FEB700D02699ADB3004D3037 /* MissionSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700CF2699ADB3004D3037 /* MissionSliderView.swift */; };
+		FEB700D42699AE1C004D3037 /* MenuBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700D32699AE1C004D3037 /* MenuBGView.swift */; };
+		FEB700D82699AE70004D3037 /* MissionLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700D72699AE70004D3037 /* MissionLable.swift */; };
+		FEB700DA2699B0D6004D3037 /* MCUnitTypeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700D92699B0D6004D3037 /* MCUnitTypeTool.swift */; };
+		FEB700DF2699B1EE004D3037 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700DC2699B1EE004D3037 /* UserSettings.swift */; };
+		FEB700E02699B1EE004D3037 /* DefaultUserSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEB700DD2699B1EE004D3037 /* DefaultUserSettings.plist */; };
+		FEB700E12699B1EE004D3037 /* UserSettingsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700DE2699B1EE004D3037 /* UserSettingsKey.swift */; };
+		FEB700E32699B38F004D3037 /* Float+MeasuringUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB700E22699B38F004D3037 /* Float+MeasuringUnit.swift */; };
+		FEB9F322269C2E5B00A8DB30 /* AutelEdgeInsetsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9F321269C2E5B00A8DB30 /* AutelEdgeInsetsLabel.swift */; };
+		FEB9F324269C2FFF00A8DB30 /* SubMenuLongAndLatEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9F323269C2FFF00A8DB30 /* SubMenuLongAndLatEditorView.swift */; };
+		FEB9F326269C3D2A00A8DB30 /* SelectCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9F325269C3D2A00A8DB30 /* SelectCollectionView.swift */; };
+		FEB9F329269C408900A8DB30 /* SelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB9F327269C408900A8DB30 /* SelectCollectionViewCell.xib */; };
+		FEB9F32A269C408900A8DB30 /* SelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9F328269C408900A8DB30 /* SelectCollectionViewCell.swift */; };
+		FEB9F32D269C40D600A8DB30 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9F32C269C40D600A8DB30 /* StringExtension.swift */; };
+		FECA5A262697FD3000D16D5F /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECA5A252697FD3000D16D5F /* MKMapViewExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F81CED226CF41E800A1AC86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F3C8DAC26F22C8500A3A99D /* AUTELSDK.xcframework in CopyFiles */,
+				7F3C8DAE26F22C8700A3A99D /* AUTELWidget.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F81CED326CF420700A1AC86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FB3D0CF1002A61330C3D283 /* Pods-AUTELSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUTELSdkDemo.debug.xcconfig"; path = "Target Support Files/Pods-AUTELSdkDemo/Pods-AUTELSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		76F995862467FCD600BD7F19 /* MissionManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionManagerViewController.swift; sourceTree = "<group>"; };
+		76F9958A2467FD8000BD7F19 /* MissionBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionBaseViewController.swift; sourceTree = "<group>"; };
+		76F9958C2467FE8A00BD7F19 /* WaypointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointViewModel.swift; sourceTree = "<group>"; };
+		76F995912467FFCA00BD7F19 /* EarthStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthStationViewController.swift; sourceTree = "<group>"; };
+		76F995922467FFCA00BD7F19 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		76F995932467FFCA00BD7F19 /* AUTELNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUTELNavigationController.swift; sourceTree = "<group>"; };
+		76F99597246800F600BD7F19 /* EarthStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthStationViewModel.swift; sourceTree = "<group>"; };
+		76F9959A2468070200BD7F19 /* MissionDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDef.swift; sourceTree = "<group>"; };
+		76F9959C24683A3C00BD7F19 /* MapCorrectUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCorrectUtils.swift; sourceTree = "<group>"; };
+		7F23C70F246B8B00000650E8 /* CameraActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraActionsViewController.swift; sourceTree = "<group>"; };
+		7F23C711246B8B12000650E8 /* CameraWorkModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWorkModeViewController.swift; sourceTree = "<group>"; };
+		7F23C7D7246B9692000650E8 /* ActionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionData.swift; sourceTree = "<group>"; };
+		7F23C7D8246B9692000650E8 /* TwitterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterCell.xib; sourceTree = "<group>"; };
+		7F23C7DB246B9692000650E8 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		7F23C7ED246B9F46000650E8 /* CameraSupporParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSupporParameters.swift; sourceTree = "<group>"; };
+		7F23C7F0246C28E3000650E8 /* CameraPhotoSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPhotoSizeViewController.swift; sourceTree = "<group>"; };
+		7F23C7FB246CE0F3000650E8 /* CustomMKCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMKCircle.swift; sourceTree = "<group>"; };
+		7F23C7FC246CE0F3000650E8 /* AutelAircraftAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelAircraftAnnotation.swift; sourceTree = "<group>"; };
+		7F23C7FD246CE0F3000650E8 /* AutelHomeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelHomeAnnotation.swift; sourceTree = "<group>"; };
+		7F23C803246CE15F000650E8 /* AutelAircraftAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelAircraftAnnotationView.swift; sourceTree = "<group>"; };
+		7F23C804246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelAircraftToHomeLacationLine.swift; sourceTree = "<group>"; };
+		7F23C805246CE15F000650E8 /* AutelHomeAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelHomeAnnotationView.swift; sourceTree = "<group>"; };
+		7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AUTELSDK.xcframework; sourceTree = "<group>"; };
+		7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AUTELWidget.xcframework; sourceTree = "<group>"; };
+		7F48250E24653CC70021F001 /* MapCorrect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCorrect.m; sourceTree = "<group>"; };
+		7F48250F24653CC70021F001 /* MapCorrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCorrect.h; sourceTree = "<group>"; };
+		7F48251124655C990021F001 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7F4E62C925F7AC8C006F219F /* GimbalChangeSubmission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalChangeSubmission.swift; sourceTree = "<group>"; };
+		7F7686ED245C014400F5C73E /* AUTELSdkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AUTELSdkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F76871C245C031600F5C73E /* FlightAssistantConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightAssistantConnection.swift; sourceTree = "<group>"; };
+		7F76871D245C031600F5C73E /* MainControllerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControllerConnection.swift; sourceTree = "<group>"; };
+		7F76871E245C031600F5C73E /* GimbalConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalConnection.swift; sourceTree = "<group>"; };
+		7F76871F245C031600F5C73E /* SDKConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKConnection.swift; sourceTree = "<group>"; };
+		7F768720245C031600F5C73E /* DroneConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneConnection.swift; sourceTree = "<group>"; };
+		7F768721245C031600F5C73E /* BatteryConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryConnection.swift; sourceTree = "<group>"; };
+		7F768722245C031600F5C73E /* AUTELNavigationDelegateConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUTELNavigationDelegateConnection.swift; sourceTree = "<group>"; };
+		7F768723245C031600F5C73E /* CameraConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraConnection.swift; sourceTree = "<group>"; };
+		7F768724245C031600F5C73E /* AirLinkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirLinkConnection.swift; sourceTree = "<group>"; };
+		7F768725245C031600F5C73E /* RemoteControllerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControllerConnection.swift; sourceTree = "<group>"; };
+		7F768727245C031600F5C73E /* CheckProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckProtocol.swift; sourceTree = "<group>"; };
+		7F768728245C031600F5C73E /* BatteryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryProtocol.swift; sourceTree = "<group>"; };
+		7F768729245C031600F5C73E /* CameraProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraProtocol.swift; sourceTree = "<group>"; };
+		7F76872A245C031600F5C73E /* FlightAssistantProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightAssistantProtocol.swift; sourceTree = "<group>"; };
+		7F76872B245C031600F5C73E /* MainControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControllerProtocol.swift; sourceTree = "<group>"; };
+		7F76872C245C031600F5C73E /* GimbalProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalProtocol.swift; sourceTree = "<group>"; };
+		7F76872D245C031600F5C73E /* RemoteControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControllerProtocol.swift; sourceTree = "<group>"; };
+		7F76872E245C031600F5C73E /* AirLinkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirLinkProtocol.swift; sourceTree = "<group>"; };
+		7F76872F245C031600F5C73E /* DroneProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneProtocol.swift; sourceTree = "<group>"; };
+		7F768751245C07D100F5C73E /* UIColor+AUTELExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AUTELExtension.swift"; sourceTree = "<group>"; };
+		7F91F850245BFF39004412D4 /* AUTELSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUTELSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F91F853245BFF39004412D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F91F855245BFF39004412D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F91F85C245BFF3B004412D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F91F85F245BFF3B004412D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F91F861245BFF3B004412D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9FC5DF246D59ED001CD6DA /* AircraftStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AircraftStatusViewController.swift; sourceTree = "<group>"; };
+		7F9FC5E3246D5A30001CD6DA /* AircraftStatusParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AircraftStatusParameters.swift; sourceTree = "<group>"; };
+		7F9FC5E5246D5B65001CD6DA /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		7F9FC5E7246D5C7A001CD6DA /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		7FA25FD5262976940096A4FC /* BaseVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVideoViewController.swift; sourceTree = "<group>"; };
+		7FA25FD726297C7D0096A4FC /* GimbalDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalDemoViewController.swift; sourceTree = "<group>"; };
+		7FA25FD92629826B0096A4FC /* WaypointDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaypointDemoViewController.swift; sourceTree = "<group>"; };
+		7FA25FDA2629826B0096A4FC /* OrbitDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrbitDemoViewController.swift; sourceTree = "<group>"; };
+		7FA25FDD2629838C0096A4FC /* ObritViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObritViewModel.swift; sourceTree = "<group>"; };
+		7FE522D3245C11CD00A438D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FE522D4245C11CD00A438D5 /* OCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
+		7FE522D5245C11CD00A438D5 /* OCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
+		7FE522DA245C11D700A438D5 /* ImageTransimissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransimissionViewController.swift; sourceTree = "<group>"; };
+		7FE522E2245C126B00A438D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FE522E6245C17D900A438D5 /* CameraCommandDeliver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCommandDeliver.swift; sourceTree = "<group>"; };
+		7FE5230D245C1F3700A438D5 /* CameraModelAbout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraModelAbout.swift; sourceTree = "<group>"; };
+		7FE5230F245C214100A438D5 /* AutelEnumExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelEnumExtension.swift; sourceTree = "<group>"; };
+		C77E48E3C629347FCDE3228F /* Pods_AUTELSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUTELSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2CB27929CC3623FB1762EB /* Pods-AUTELSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUTELSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-AUTELSdkDemo/Pods-AUTELSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE00ECF62694374900B85EB7 /* MissionAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionAnotation.swift; sourceTree = "<group>"; };
+		FE00ECF8269437F700B85EB7 /* AutelUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelUtil.swift; sourceTree = "<group>"; };
+		FE00ECFA269438AC00B85EB7 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FE00ECFE26944B4200B85EB7 /* AppColorsDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorsDefine.swift; sourceTree = "<group>"; };
+		FE00ED00269459E000B85EB7 /* MCMarkAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMarkAnnotationView.swift; sourceTree = "<group>"; };
+		FE00ED0B26945D1600B85EB7 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FE00ED0F2694996700B85EB7 /* MCMissionAddIconAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMissionAddIconAnnotationView.swift; sourceTree = "<group>"; };
+		FE11487C269844460025696E /* WayPointParameterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointParameterViewController.swift; sourceTree = "<group>"; };
+		FE11487E269855060025696E /* WaypointViewModel+Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaypointViewModel+Mapview.swift"; sourceTree = "<group>"; };
+		FE3FFB2C26CB9C4000610EBF /* ATVideoStreamHardwareDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATVideoStreamHardwareDecoder.swift; sourceTree = "<group>"; };
+		FE3FFB2F26CB9DBB00610EBF /* ATVideoDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATVideoDataParser.swift; sourceTree = "<group>"; };
+		FE3FFB3126CB9E7000610EBF /* ATVideoDecodeStreamHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATVideoDecodeStreamHandler.swift; sourceTree = "<group>"; };
+		FE3FFB3326CB9EA100610EBF /* ATVideoStreamCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATVideoStreamCommon.swift; sourceTree = "<group>"; };
+		FE48D844269404D800ADBFA0 /* MCMissionLineRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMissionLineRenderer.swift; sourceTree = "<group>"; };
+		FE48D8462694066E00ADBFA0 /* MissionConnectionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionConnectionLine.swift; sourceTree = "<group>"; };
+		FE48D8492694356200ADBFA0 /* WayPointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointManager.swift; sourceTree = "<group>"; };
+		FE48D84B2694357F00ADBFA0 /* WayPointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointModel.swift; sourceTree = "<group>"; };
+		FE7F8F1925F35B4C0030B2AA /* shader_fsh_myExpose.strings */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; name = shader_fsh_myExpose.strings; path = AUTELSDKDemo/AUTELSDK/shader_fsh_myExpose.strings; sourceTree = SOURCE_ROOT; };
+		FE7F8F1A25F35B4C0030B2AA /* shader_vsh_myExpose.strings */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; name = shader_vsh_myExpose.strings; path = AUTELSDKDemo/AUTELSDK/shader_vsh_myExpose.strings; sourceTree = SOURCE_ROOT; };
+		FE8B57C226CCF31C00DC7BC8 /* ATVideoStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATVideoStreamManager.swift; sourceTree = "<group>"; };
+		FEB2B7F426957B8E007EA9D8 /* DragableAnnotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableAnnotionView.swift; sourceTree = "<group>"; };
+		FEB2B7F62695B230007EA9D8 /* GCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
+		FEB6B6D7269E8DBD00499E09 /* MCMissionInterestingPointAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMissionInterestingPointAnnotationView.swift; sourceTree = "<group>"; };
+		FEB6B6D9269E8E7500499E09 /* MCAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCAnnotation.swift; sourceTree = "<group>"; };
+		FEB6B6E0269E93A200499E09 /* ToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
+		FEB6B6E3269E94AA00499E09 /* ToorBarAdding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToorBarAdding.swift; sourceTree = "<group>"; };
+		FEB6B6E5269EC2A200499E09 /* Snap+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Snap+.swift"; sourceTree = "<group>"; };
+		FEB6B6E7269EDC5700499E09 /* WayPointViewModel+ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WayPointViewModel+ToolBar.swift"; sourceTree = "<group>"; };
+		FEB6B6E9269EE8C900499E09 /* PointOfInterestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestModel.swift; sourceTree = "<group>"; };
+		FEB6B6EB269F035A00499E09 /* EarthStationViewModel+Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarthStationViewModel+Mapview.swift"; sourceTree = "<group>"; };
+		FEB6B6EF269F06D600499E09 /* EarthStationViewModel+Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarthStationViewModel+Draw.swift"; sourceTree = "<group>"; };
+		FEB6B6F1269F0AA600499E09 /* EarthStationViewController+MainControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarthStationViewController+MainControl.swift"; sourceTree = "<group>"; };
+		FEB700BE26996C7E004D3037 /* WaypointViewModel+Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaypointViewModel+Mission.swift"; sourceTree = "<group>"; };
+		FEB700C126996D6A004D3037 /* WaypointViewModel+Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaypointViewModel+Parameter.swift"; sourceTree = "<group>"; };
+		FEB700C326998C65004D3037 /* WaypointParameterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointParameterViewModel.swift; sourceTree = "<group>"; };
+		FEB700C526999203004D3037 /* ReuseableCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReuseableCell+Extension.swift"; sourceTree = "<group>"; };
+		FEB700C726999371004D3037 /* WayPointParamterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayPointParamterSection.swift; sourceTree = "<group>"; };
+		FEB700CA26999A50004D3037 /* WaypointParameterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointParameterCell.swift; sourceTree = "<group>"; };
+		FEB700CC26999EF6004D3037 /* ExpandHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandHeader.swift; sourceTree = "<group>"; };
+		FEB700CF2699ADB3004D3037 /* MissionSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionSliderView.swift; sourceTree = "<group>"; };
+		FEB700D32699AE1C004D3037 /* MenuBGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBGView.swift; sourceTree = "<group>"; };
+		FEB700D72699AE70004D3037 /* MissionLable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionLable.swift; sourceTree = "<group>"; };
+		FEB700D92699B0D6004D3037 /* MCUnitTypeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUnitTypeTool.swift; sourceTree = "<group>"; };
+		FEB700DC2699B1EE004D3037 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		FEB700DD2699B1EE004D3037 /* DefaultUserSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultUserSettings.plist; sourceTree = "<group>"; };
+		FEB700DE2699B1EE004D3037 /* UserSettingsKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsKey.swift; sourceTree = "<group>"; };
+		FEB700E22699B38F004D3037 /* Float+MeasuringUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+MeasuringUnit.swift"; sourceTree = "<group>"; };
+		FEB9F321269C2E5B00A8DB30 /* AutelEdgeInsetsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelEdgeInsetsLabel.swift; sourceTree = "<group>"; };
+		FEB9F323269C2FFF00A8DB30 /* SubMenuLongAndLatEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuLongAndLatEditorView.swift; sourceTree = "<group>"; };
+		FEB9F325269C3D2A00A8DB30 /* SelectCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCollectionView.swift; sourceTree = "<group>"; };
+		FEB9F327269C408900A8DB30 /* SelectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		FEB9F328269C408900A8DB30 /* SelectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		FEB9F32C269C40D600A8DB30 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FECA5A252697FD3000D16D5F /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F91F84D245BFF39004412D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F53128FFB2FBFBB29A106C /* Pods_AUTELSdkDemo.framework in Frameworks */,
+				7F3C8DAD26F22C8700A3A99D /* AUTELWidget.xcframework in Frameworks */,
+				7F3C8DAB26F22C8500A3A99D /* AUTELSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65E4FE64DD4098CA3A44D01F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77E48E3C629347FCDE3228F /* Pods_AUTELSdkDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F995832467FCB100BD7F19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76F9958A2467FD8000BD7F19 /* MissionBaseViewController.swift */,
+				76F995862467FCD600BD7F19 /* MissionManagerViewController.swift */,
+				7FA25FD92629826B0096A4FC /* WaypointDemoViewController.swift */,
+				7FA25FDA2629826B0096A4FC /* OrbitDemoViewController.swift */,
+				FE11487C269844460025696E /* WayPointParameterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76F995842467FCB100BD7F19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76F9959A2468070200BD7F19 /* MissionDef.swift */,
+				FE48D84D2694365C00ADBFA0 /* WayPointManager */,
+				FEB6B6DF269E918A00499E09 /* Parameter */,
+				FEB6B6DB269E902000499E09 /* Annotions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76F9958E2467FFCA00BD7F19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6F4269F103900499E09 /* EarthStationViewModel */,
+				7F23C7FA246CE0F3000650E8 /* Annotation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76F9958F2467FFCA00BD7F19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C801246CE15F000650E8 /* MapViews */,
+				7F23C7D1246B9692000650E8 /* CustomActionControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76F995902467FFCA00BD7F19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76F995922467FFCA00BD7F19 /* BaseViewController.swift */,
+				7FA25FD5262976940096A4FC /* BaseVideoViewController.swift */,
+				76F995932467FFCA00BD7F19 /* AUTELNavigationController.swift */,
+				FEB6B6F3269F0ACF00499E09 /* EarthStationViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F21D9C9246442ED000DF84F /* MissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				76F995832467FCB100BD7F19 /* Controller */,
+				FEB700C92699957D004D3037 /* ViewModel */,
+				76F995842467FCB100BD7F19 /* Model */,
+				FE48D8432694044400ADBFA0 /* View */,
+			);
+			path = MissionManager;
+			sourceTree = "<group>";
+		};
+		7F23C708246B8A87000650E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C70F246B8B00000650E8 /* CameraActionsViewController.swift */,
+				7F23C711246B8B12000650E8 /* CameraWorkModeViewController.swift */,
+				7F23C7F0246C28E3000650E8 /* CameraPhotoSizeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F23C70B246B8A87000650E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F23C70C246B8A87000650E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F23C7D1246B9692000650E8 /* CustomActionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C7D7246B9692000650E8 /* ActionData.swift */,
+				7F23C7D8246B9692000650E8 /* TwitterCell.xib */,
+				7F23C7DB246B9692000650E8 /* Twitter.swift */,
+			);
+			path = CustomActionControllers;
+			sourceTree = "<group>";
+		};
+		7F23C7FA246CE0F3000650E8 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C7FB246CE0F3000650E8 /* CustomMKCircle.swift */,
+				7F23C7FC246CE0F3000650E8 /* AutelAircraftAnnotation.swift */,
+				7F23C7FD246CE0F3000650E8 /* AutelHomeAnnotation.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		7F23C801246CE15F000650E8 /* MapViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C803246CE15F000650E8 /* AutelAircraftAnnotationView.swift */,
+				7F23C804246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift */,
+				7F23C805246CE15F000650E8 /* AutelHomeAnnotationView.swift */,
+			);
+			path = MapViews;
+			sourceTree = "<group>";
+		};
+		7F48250D24653CC70021F001 /* MapCorrect */ = {
+			isa = PBXGroup;
+			children = (
+				7F48250F24653CC70021F001 /* MapCorrect.h */,
+				7F48250E24653CC70021F001 /* MapCorrect.m */,
+				76F9959C24683A3C00BD7F19 /* MapCorrectUtils.swift */,
+			);
+			path = MapCorrect;
+			sourceTree = "<group>";
+		};
+		7F4E62C625F7AC8C006F219F /* Gimbal */ = {
+			isa = PBXGroup;
+			children = (
+				7F4E62C725F7AC8C006F219F /* Controller */,
+				7F4E62C825F7AC8C006F219F /* Model */,
+				7F4E62CA25F7AC8C006F219F /* View */,
+			);
+			path = Gimbal;
+			sourceTree = "<group>";
+		};
+		7F4E62C725F7AC8C006F219F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FA25FD726297C7D0096A4FC /* GimbalDemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F4E62C825F7AC8C006F219F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F4E62C925F7AC8C006F219F /* GimbalChangeSubmission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F4E62CA25F7AC8C006F219F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F76871A245C031600F5C73E /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7F76871B245C031600F5C73E /* Connection */,
+				7F768726245C031600F5C73E /* Protocol */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		7F76871B245C031600F5C73E /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				7F76871C245C031600F5C73E /* FlightAssistantConnection.swift */,
+				7F76871D245C031600F5C73E /* MainControllerConnection.swift */,
+				7F76871E245C031600F5C73E /* GimbalConnection.swift */,
+				7F76871F245C031600F5C73E /* SDKConnection.swift */,
+				7F768720245C031600F5C73E /* DroneConnection.swift */,
+				7F768721245C031600F5C73E /* BatteryConnection.swift */,
+				7F768722245C031600F5C73E /* AUTELNavigationDelegateConnection.swift */,
+				7F768723245C031600F5C73E /* CameraConnection.swift */,
+				7F768724245C031600F5C73E /* AirLinkConnection.swift */,
+				7F768725245C031600F5C73E /* RemoteControllerConnection.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		7F768726245C031600F5C73E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7F768727245C031600F5C73E /* CheckProtocol.swift */,
+				7F768728245C031600F5C73E /* BatteryProtocol.swift */,
+				7F768729245C031600F5C73E /* CameraProtocol.swift */,
+				7F76872A245C031600F5C73E /* FlightAssistantProtocol.swift */,
+				7F76872B245C031600F5C73E /* MainControllerProtocol.swift */,
+				7F76872C245C031600F5C73E /* GimbalProtocol.swift */,
+				7F76872D245C031600F5C73E /* RemoteControllerProtocol.swift */,
+				7F76872E245C031600F5C73E /* AirLinkProtocol.swift */,
+				7F76872F245C031600F5C73E /* DroneProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7F768743245C034F00F5C73E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7F48250D24653CC70021F001 /* MapCorrect */,
+				7F768751245C07D100F5C73E /* UIColor+AUTELExtension.swift */,
+				7F48251124655C990021F001 /* UIImageExtension.swift */,
+				7F9FC5E5246D5B65001CD6DA /* NSObjectExtension.swift */,
+				7F9FC5E7246D5C7A001CD6DA /* NumberExtension.swift */,
+				FE00ECF8269437F700B85EB7 /* AutelUtil.swift */,
+				FE00ECFA269438AC00B85EB7 /* DateExtension.swift */,
+				FE00ECFE26944B4200B85EB7 /* AppColorsDefine.swift */,
+				FE00ED0B26945D1600B85EB7 /* UIViewExtension.swift */,
+				FEB2B7F62695B230007EA9D8 /* GCDTimer.swift */,
+				FECA5A252697FD3000D16D5F /* MKMapViewExtension.swift */,
+				FEB700C526999203004D3037 /* ReuseableCell+Extension.swift */,
+				FEB700D92699B0D6004D3037 /* MCUnitTypeTool.swift */,
+				FEB700E22699B38F004D3037 /* Float+MeasuringUnit.swift */,
+				FEB9F321269C2E5B00A8DB30 /* AutelEdgeInsetsLabel.swift */,
+				FEB9F32C269C40D600A8DB30 /* StringExtension.swift */,
+				FEB6B6E5269EC2A200499E09 /* Snap+.swift */,
+			);
+			name = Tools;
+			path = AUTELSdkDemo/Tools;
+			sourceTree = SOURCE_ROOT;
+		};
+		7F91F847245BFF39004412D4 = {
+			isa = PBXGroup;
+			children = (
+				7F91F852245BFF39004412D4 /* AUTELSdkDemo */,
+				7F91F851245BFF39004412D4 /* Products */,
+				DFC4E1939920E046562D7392 /* Pods */,
+				65E4FE64DD4098CA3A44D01F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F91F851245BFF39004412D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F91F850245BFF39004412D4 /* AUTELSdkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F91F852245BFF39004412D4 /* AUTELSdkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7FE4D83A247010BC009BBA18 /* AUTELSDK */,
+				7F768743245C034F00F5C73E /* Tools */,
+				7F91F853245BFF39004412D4 /* AppDelegate.swift */,
+				7F91F855245BFF39004412D4 /* SceneDelegate.swift */,
+				7FE522D2245C11CD00A438D5 /* Startup */,
+				7FE522D8245C11D700A438D5 /* Demo */,
+				7F76871A245C031600F5C73E /* DataLayer */,
+				7F91F85C245BFF3B004412D4 /* Assets.xcassets */,
+				7F91F85E245BFF3B004412D4 /* LaunchScreen.storyboard */,
+				7FE522E1245C126B00A438D5 /* Main.storyboard */,
+				7F91F861245BFF3B004412D4 /* Info.plist */,
+				7F7686ED245C014400F5C73E /* AUTELSdkDemo-Bridging-Header.h */,
+			);
+			path = AUTELSdkDemo;
+			sourceTree = "<group>";
+		};
+		7F9FC5DD246D59ED001CD6DA /* AircraftStatus */ = {
+			isa = PBXGroup;
+			children = (
+				7F9FC5DE246D59ED001CD6DA /* Controller */,
+				7F9FC5E0246D59ED001CD6DA /* Model */,
+				7F9FC5E1246D59ED001CD6DA /* View */,
+			);
+			path = AircraftStatus;
+			sourceTree = "<group>";
+		};
+		7F9FC5DE246D59ED001CD6DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F9FC5DF246D59ED001CD6DA /* AircraftStatusViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F9FC5E0246D59ED001CD6DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F9FC5E3246D5A30001CD6DA /* AircraftStatusParameters.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F9FC5E1246D59ED001CD6DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FE4D83A247010BC009BBA18 /* AUTELSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */,
+				7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */,
+				FE7F8F1925F35B4C0030B2AA /* shader_fsh_myExpose.strings */,
+				FE7F8F1A25F35B4C0030B2AA /* shader_vsh_myExpose.strings */,
+			);
+			path = AUTELSDK;
+			sourceTree = "<group>";
+		};
+		7FE522D2245C11CD00A438D5 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				7FE522D3245C11CD00A438D5 /* ViewController.swift */,
+				7FE522D5245C11CD00A438D5 /* OCViewController.h */,
+				7FE522D4245C11CD00A438D5 /* OCViewController.m */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		7FE522D8245C11D700A438D5 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7FE522DB245C11D700A438D5 /* Common */,
+				7F4E62C625F7AC8C006F219F /* Gimbal */,
+				7F9FC5DD246D59ED001CD6DA /* AircraftStatus */,
+				7FE522E4245C17D900A438D5 /* Camera */,
+				7FE522D9245C11D700A438D5 /* ImageTransimission */,
+				7F21D9C9246442ED000DF84F /* MissionManager */,
+				FE3FFB2E26CB9C4800610EBF /* VideoStreamExample */,
+				FEB700DB2699B1EE004D3037 /* UserSettings */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		7FE522D9245C11D700A438D5 /* ImageTransimission */ = {
+			isa = PBXGroup;
+			children = (
+				7FE522DA245C11D700A438D5 /* ImageTransimissionViewController.swift */,
+			);
+			path = ImageTransimission;
+			sourceTree = "<group>";
+		};
+		7FE522DB245C11D700A438D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76F995902467FFCA00BD7F19 /* Controller */,
+				76F9958E2467FFCA00BD7F19 /* Model */,
+				76F9958F2467FFCA00BD7F19 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7FE522E4245C17D900A438D5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				7F23C708246B8A87000650E8 /* Controller */,
+				7F23C70B246B8A87000650E8 /* Model */,
+				7F23C70C246B8A87000650E8 /* View */,
+				7FE522E5245C17D900A438D5 /* CameraInteractor */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		7FE522E5245C17D900A438D5 /* CameraInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				7FE5230F245C214100A438D5 /* AutelEnumExtension.swift */,
+				7FE522E6245C17D900A438D5 /* CameraCommandDeliver.swift */,
+				7FE5230D245C1F3700A438D5 /* CameraModelAbout.swift */,
+				7F23C7ED246B9F46000650E8 /* CameraSupporParameters.swift */,
+			);
+			path = CameraInteractor;
+			sourceTree = "<group>";
+		};
+		DFC4E1939920E046562D7392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FB3D0CF1002A61330C3D283 /* Pods-AUTELSdkDemo.debug.xcconfig */,
+				CE2CB27929CC3623FB1762EB /* Pods-AUTELSdkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE3FFB2E26CB9C4800610EBF /* VideoStreamExample */ = {
+			isa = PBXGroup;
+			children = (
+				FE3FFB3326CB9EA100610EBF /* ATVideoStreamCommon.swift */,
+				FE8B57C226CCF31C00DC7BC8 /* ATVideoStreamManager.swift */,
+				FE3FFB2C26CB9C4000610EBF /* ATVideoStreamHardwareDecoder.swift */,
+				FE3FFB2F26CB9DBB00610EBF /* ATVideoDataParser.swift */,
+				FE3FFB3126CB9E7000610EBF /* ATVideoDecodeStreamHandler.swift */,
+			);
+			path = VideoStreamExample;
+			sourceTree = "<group>";
+		};
+		FE48D8432694044400ADBFA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6E2269E948B00499E09 /* ToolBar */,
+				FEB700D12699ADD6004D3037 /* Mapview */,
+				FEB700D22699ADFC004D3037 /* Parameter */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE48D8482694076A00ADBFA0 /* MissionLine */ = {
+			isa = PBXGroup;
+			children = (
+				FE48D8462694066E00ADBFA0 /* MissionConnectionLine.swift */,
+				FE48D844269404D800ADBFA0 /* MCMissionLineRenderer.swift */,
+			);
+			path = MissionLine;
+			sourceTree = "<group>";
+		};
+		FE48D84D2694365C00ADBFA0 /* WayPointManager */ = {
+			isa = PBXGroup;
+			children = (
+				FE48D8492694356200ADBFA0 /* WayPointManager.swift */,
+				FE48D84B2694357F00ADBFA0 /* WayPointModel.swift */,
+				FEB6B6E9269EE8C900499E09 /* PointOfInterestModel.swift */,
+			);
+			path = WayPointManager;
+			sourceTree = "<group>";
+		};
+		FEB6B6DB269E902000499E09 /* Annotions */ = {
+			isa = PBXGroup;
+			children = (
+				FE00ECF62694374900B85EB7 /* MissionAnotation.swift */,
+				FEB6B6D9269E8E7500499E09 /* MCAnnotation.swift */,
+			);
+			path = Annotions;
+			sourceTree = "<group>";
+		};
+		FEB6B6DC269E904600499E09 /* AnnotionViews */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6D7269E8DBD00499E09 /* MCMissionInterestingPointAnnotationView.swift */,
+				FE00ED0F2694996700B85EB7 /* MCMissionAddIconAnnotationView.swift */,
+				FE00ED00269459E000B85EB7 /* MCMarkAnnotationView.swift */,
+				FEB2B7F426957B8E007EA9D8 /* DragableAnnotionView.swift */,
+			);
+			path = AnnotionViews;
+			sourceTree = "<group>";
+		};
+		FEB6B6DD269E909F00499E09 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6DE269E90C400499E09 /* Waypoint */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FEB6B6DE269E90C400499E09 /* Waypoint */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700D62699AE43004D3037 /* Slider */,
+				FEB9F32B269C408F00A8DB30 /* SelectColletionView */,
+				FEB9F323269C2FFF00A8DB30 /* SubMenuLongAndLatEditorView.swift */,
+				FEB700D72699AE70004D3037 /* MissionLable.swift */,
+			);
+			path = Waypoint;
+			sourceTree = "<group>";
+		};
+		FEB6B6DF269E918A00499E09 /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700C726999371004D3037 /* WayPointParamterSection.swift */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
+		FEB6B6E2269E948B00499E09 /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6E0269E93A200499E09 /* ToolBar.swift */,
+				FEB6B6E3269E94AA00499E09 /* ToorBarAdding.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
+		FEB6B6F3269F0ACF00499E09 /* EarthStationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76F995912467FFCA00BD7F19 /* EarthStationViewController.swift */,
+				FEB6B6F1269F0AA600499E09 /* EarthStationViewController+MainControl.swift */,
+			);
+			path = EarthStationViewController;
+			sourceTree = "<group>";
+		};
+		FEB6B6F4269F103900499E09 /* EarthStationViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76F99597246800F600BD7F19 /* EarthStationViewModel.swift */,
+				FEB6B6EB269F035A00499E09 /* EarthStationViewModel+Mapview.swift */,
+				FEB6B6EF269F06D600499E09 /* EarthStationViewModel+Draw.swift */,
+			);
+			path = EarthStationViewModel;
+			sourceTree = "<group>";
+		};
+		FEB700C026996CDF004D3037 /* WaypointViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76F9958C2467FE8A00BD7F19 /* WaypointViewModel.swift */,
+				FE11487E269855060025696E /* WaypointViewModel+Mapview.swift */,
+				FEB700BE26996C7E004D3037 /* WaypointViewModel+Mission.swift */,
+				FEB700C126996D6A004D3037 /* WaypointViewModel+Parameter.swift */,
+				FEB6B6E7269EDC5700499E09 /* WayPointViewModel+ToolBar.swift */,
+			);
+			path = WaypointViewModel;
+			sourceTree = "<group>";
+		};
+		FEB700C92699957D004D3037 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700C026996CDF004D3037 /* WaypointViewModel */,
+				7FA25FDD2629838C0096A4FC /* ObritViewModel.swift */,
+				FEB700C326998C65004D3037 /* WaypointParameterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FEB700D12699ADD6004D3037 /* Mapview */ = {
+			isa = PBXGroup;
+			children = (
+				FEB6B6DC269E904600499E09 /* AnnotionViews */,
+				FE48D8482694076A00ADBFA0 /* MissionLine */,
+			);
+			path = Mapview;
+			sourceTree = "<group>";
+		};
+		FEB700D22699ADFC004D3037 /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700D52699AE2E004D3037 /* TableView */,
+				FEB6B6DD269E909F00499E09 /* Settings */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
+		FEB700D52699AE2E004D3037 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700CC26999EF6004D3037 /* ExpandHeader.swift */,
+				FEB700CA26999A50004D3037 /* WaypointParameterCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FEB700D62699AE43004D3037 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700CF2699ADB3004D3037 /* MissionSliderView.swift */,
+				FEB700D32699AE1C004D3037 /* MenuBGView.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		FEB700DB2699B1EE004D3037 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				FEB700DC2699B1EE004D3037 /* UserSettings.swift */,
+				FEB700DD2699B1EE004D3037 /* DefaultUserSettings.plist */,
+				FEB700DE2699B1EE004D3037 /* UserSettingsKey.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		FEB9F32B269C408F00A8DB30 /* SelectColletionView */ = {
+			isa = PBXGroup;
+			children = (
+				FEB9F325269C3D2A00A8DB30 /* SelectCollectionView.swift */,
+				FEB9F328269C408900A8DB30 /* SelectCollectionViewCell.swift */,
+				FEB9F327269C408900A8DB30 /* SelectCollectionViewCell.xib */,
+			);
+			path = SelectColletionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F91F84F245BFF39004412D4 /* AUTELSdkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F91F864245BFF3B004412D4 /* Build configuration list for PBXNativeTarget "AUTELSdkDemo" */;
+			buildPhases = (
+				349B0CDDED44549C1249752E /* [CP] Check Pods Manifest.lock */,
+				7F91F84C245BFF39004412D4 /* Sources */,
+				7F91F84D245BFF39004412D4 /* Frameworks */,
+				7F91F84E245BFF39004412D4 /* Resources */,
+				BBD6D34D5954A2EAF649FF56 /* [CP] Embed Pods Frameworks */,
+				7F81CED226CF41E800A1AC86 /* CopyFiles */,
+				7F81CED326CF420700A1AC86 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUTELSdkDemo;
+			productName = AUTELSdkDemo;
+			productReference = 7F91F850245BFF39004412D4 /* AUTELSdkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F91F848245BFF39004412D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = AUTEL.;
+				TargetAttributes = {
+					7F91F84F245BFF39004412D4 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 7F91F84B245BFF39004412D4 /* Build configuration list for PBXProject "AUTELSdkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F91F847245BFF39004412D4;
+			productRefGroup = 7F91F851245BFF39004412D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F91F84F245BFF39004412D4 /* AUTELSdkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F91F84E245BFF39004412D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F91F860245BFF3B004412D4 /* LaunchScreen.storyboard in Resources */,
+				7FE522E3245C126B00A438D5 /* Main.storyboard in Resources */,
+				FE7F8F1B25F35B4C0030B2AA /* shader_fsh_myExpose.strings in Resources */,
+				FE7F8F1C25F35B4C0030B2AA /* shader_vsh_myExpose.strings in Resources */,
+				FEB9F329269C408900A8DB30 /* SelectCollectionViewCell.xib in Resources */,
+				7F91F85D245BFF3B004412D4 /* Assets.xcassets in Resources */,
+				7F23C7E5246B9692000650E8 /* TwitterCell.xib in Resources */,
+				FEB700E02699B1EE004D3037 /* DefaultUserSettings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349B0CDDED44549C1249752E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AUTELSdkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD6D34D5954A2EAF649FF56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AUTELSdkDemo/Pods-AUTELSdkDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AUTELSdkDemo/Pods-AUTELSdkDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AUTELSdkDemo/Pods-AUTELSdkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F91F84C245BFF39004412D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB6B6E6269EC2A200499E09 /* Snap+.swift in Sources */,
+				76F9958D2467FE8A00BD7F19 /* WaypointViewModel.swift in Sources */,
+				FE00ECFB269438AC00B85EB7 /* DateExtension.swift in Sources */,
+				7F76873E245C031600F5C73E /* MainControllerProtocol.swift in Sources */,
+				FEB6B6F2269F0AA600499E09 /* EarthStationViewController+MainControl.swift in Sources */,
+				7F768736245C031600F5C73E /* AUTELNavigationDelegateConnection.swift in Sources */,
+				FEB9F322269C2E5B00A8DB30 /* AutelEdgeInsetsLabel.swift in Sources */,
+				7F23C710246B8B00000650E8 /* CameraActionsViewController.swift in Sources */,
+				7F76873A245C031600F5C73E /* CheckProtocol.swift in Sources */,
+				FE00ED0C26945D1600B85EB7 /* UIViewExtension.swift in Sources */,
+				7F23C7FE246CE0F3000650E8 /* CustomMKCircle.swift in Sources */,
+				7F23C800246CE0F3000650E8 /* AutelHomeAnnotation.swift in Sources */,
+				FEB9F32A269C408900A8DB30 /* SelectCollectionViewCell.swift in Sources */,
+				FEB700DF2699B1EE004D3037 /* UserSettings.swift in Sources */,
+				FEB2B7F526957B8E007EA9D8 /* DragableAnnotionView.swift in Sources */,
+				FE48D84C2694357F00ADBFA0 /* WayPointModel.swift in Sources */,
+				7F48251024653CC70021F001 /* MapCorrect.m in Sources */,
+				76F9958B2467FD8000BD7F19 /* MissionBaseViewController.swift in Sources */,
+				FEB6B6F0269F06D600499E09 /* EarthStationViewModel+Draw.swift in Sources */,
+				7F76873C245C031600F5C73E /* CameraProtocol.swift in Sources */,
+				FE3FFB3226CB9E7000610EBF /* ATVideoDecodeStreamHandler.swift in Sources */,
+				7F768731245C031600F5C73E /* MainControllerConnection.swift in Sources */,
+				FE11487D269844460025696E /* WayPointParameterViewController.swift in Sources */,
+				7F76873F245C031600F5C73E /* GimbalProtocol.swift in Sources */,
+				7FA25FDC2629826B0096A4FC /* OrbitDemoViewController.swift in Sources */,
+				7F48251224655C990021F001 /* UIImageExtension.swift in Sources */,
+				FE00ECFF26944B4200B85EB7 /* AppColorsDefine.swift in Sources */,
+				FEB700E12699B1EE004D3037 /* UserSettingsKey.swift in Sources */,
+				FE8B57C326CCF31C00DC7BC8 /* ATVideoStreamManager.swift in Sources */,
+				7F23C807246CE15F000650E8 /* AutelAircraftAnnotationView.swift in Sources */,
+				7F768730245C031600F5C73E /* FlightAssistantConnection.swift in Sources */,
+				FEB6B6E8269EDC5700499E09 /* WayPointViewModel+ToolBar.swift in Sources */,
+				FEB700CB26999A50004D3037 /* WaypointParameterCell.swift in Sources */,
+				FEB700C426998C65004D3037 /* WaypointParameterViewModel.swift in Sources */,
+				7F768742245C031600F5C73E /* DroneProtocol.swift in Sources */,
+				7FE522ED245C17D900A438D5 /* CameraCommandDeliver.swift in Sources */,
+				FEB9F324269C2FFF00A8DB30 /* SubMenuLongAndLatEditorView.swift in Sources */,
+				FEB700BF26996C7E004D3037 /* WaypointViewModel+Mission.swift in Sources */,
+				7FE522DE245C11D700A438D5 /* ImageTransimissionViewController.swift in Sources */,
+				76F995882467FCD600BD7F19 /* MissionManagerViewController.swift in Sources */,
+				7F23C7E4246B9692000650E8 /* ActionData.swift in Sources */,
+				FEB700CD26999EF6004D3037 /* ExpandHeader.swift in Sources */,
+				7F23C7E8246B9692000650E8 /* Twitter.swift in Sources */,
+				7F23C7EE246B9F46000650E8 /* CameraSupporParameters.swift in Sources */,
+				7F9FC5E6246D5B65001CD6DA /* NSObjectExtension.swift in Sources */,
+				7F23C7F1246C28E3000650E8 /* CameraPhotoSizeViewController.swift in Sources */,
+				76F9959B2468070200BD7F19 /* MissionDef.swift in Sources */,
+				FE00ED01269459E000B85EB7 /* MCMarkAnnotationView.swift in Sources */,
+				7F9FC5E2246D59ED001CD6DA /* AircraftStatusViewController.swift in Sources */,
+				FEB6B6D8269E8DBD00499E09 /* MCMissionInterestingPointAnnotationView.swift in Sources */,
+				7F768741245C031600F5C73E /* AirLinkProtocol.swift in Sources */,
+				7F91F854245BFF39004412D4 /* AppDelegate.swift in Sources */,
+				FE48D845269404D800ADBFA0 /* MCMissionLineRenderer.swift in Sources */,
+				7FE5230E245C1F3800A438D5 /* CameraModelAbout.swift in Sources */,
+				7F23C712246B8B12000650E8 /* CameraWorkModeViewController.swift in Sources */,
+				7F768735245C031600F5C73E /* BatteryConnection.swift in Sources */,
+				7F23C808246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift in Sources */,
+				76F995942467FFCA00BD7F19 /* EarthStationViewController.swift in Sources */,
+				FEB700D42699AE1C004D3037 /* MenuBGView.swift in Sources */,
+				FE3FFB3426CB9EA100610EBF /* ATVideoStreamCommon.swift in Sources */,
+				FEB700DA2699B0D6004D3037 /* MCUnitTypeTool.swift in Sources */,
+				FEB6B6E1269E93A200499E09 /* ToolBar.swift in Sources */,
+				7FA25FDB2629826B0096A4FC /* WaypointDemoViewController.swift in Sources */,
+				7FE522D7245C11CD00A438D5 /* OCViewController.m in Sources */,
+				7F76873D245C031600F5C73E /* FlightAssistantProtocol.swift in Sources */,
+				FE48D84A2694356200ADBFA0 /* WayPointManager.swift in Sources */,
+				FEB700C826999371004D3037 /* WayPointParamterSection.swift in Sources */,
+				FECA5A262697FD3000D16D5F /* MKMapViewExtension.swift in Sources */,
+				76F99598246800F600BD7F19 /* EarthStationViewModel.swift in Sources */,
+				7F9FC5E4246D5A30001CD6DA /* AircraftStatusParameters.swift in Sources */,
+				7FA25FD6262976940096A4FC /* BaseVideoViewController.swift in Sources */,
+				76F995952467FFCA00BD7F19 /* BaseViewController.swift in Sources */,
+				76F995962467FFCA00BD7F19 /* AUTELNavigationController.swift in Sources */,
+				FE3FFB2D26CB9C4000610EBF /* ATVideoStreamHardwareDecoder.swift in Sources */,
+				76F9959D24683A3C00BD7F19 /* MapCorrectUtils.swift in Sources */,
+				7F9FC5E8246D5C7A001CD6DA /* NumberExtension.swift in Sources */,
+				FEB700D82699AE70004D3037 /* MissionLable.swift in Sources */,
+				FE48D8472694066E00ADBFA0 /* MissionConnectionLine.swift in Sources */,
+				FEB9F32D269C40D600A8DB30 /* StringExtension.swift in Sources */,
+				7F4E62CB25F7AC8C006F219F /* GimbalChangeSubmission.swift in Sources */,
+				7FA25FDE2629838C0096A4FC /* ObritViewModel.swift in Sources */,
+				7F768732245C031600F5C73E /* GimbalConnection.swift in Sources */,
+				FEB6B6E4269E94AA00499E09 /* ToorBarAdding.swift in Sources */,
+				7F91F856245BFF39004412D4 /* SceneDelegate.swift in Sources */,
+				7F768738245C031600F5C73E /* AirLinkConnection.swift in Sources */,
+				7F768733245C031600F5C73E /* SDKConnection.swift in Sources */,
+				7F23C809246CE15F000650E8 /* AutelHomeAnnotationView.swift in Sources */,
+				7FA25FD826297C7D0096A4FC /* GimbalDemoViewController.swift in Sources */,
+				7F768752245C07D100F5C73E /* UIColor+AUTELExtension.swift in Sources */,
+				FEB2B7F72695B230007EA9D8 /* GCDTimer.swift in Sources */,
+				FEB6B6EC269F035A00499E09 /* EarthStationViewModel+Mapview.swift in Sources */,
+				FEB6B6DA269E8E7500499E09 /* MCAnnotation.swift in Sources */,
+				7FE522D6245C11CD00A438D5 /* ViewController.swift in Sources */,
+				7F23C7FF246CE0F3000650E8 /* AutelAircraftAnnotation.swift in Sources */,
+				7F76873B245C031600F5C73E /* BatteryProtocol.swift in Sources */,
+				FEB6B6EA269EE8C900499E09 /* PointOfInterestModel.swift in Sources */,
+				FEB9F326269C3D2A00A8DB30 /* SelectCollectionView.swift in Sources */,
+				FE00ECF9269437F700B85EB7 /* AutelUtil.swift in Sources */,
+				FE00ED102694996700B85EB7 /* MCMissionAddIconAnnotationView.swift in Sources */,
+				FEB700E32699B38F004D3037 /* Float+MeasuringUnit.swift in Sources */,
+				FEB700D02699ADB3004D3037 /* MissionSliderView.swift in Sources */,
+				FE3FFB3026CB9DBB00610EBF /* ATVideoDataParser.swift in Sources */,
+				FEB700C626999203004D3037 /* ReuseableCell+Extension.swift in Sources */,
+				7F768734245C031600F5C73E /* DroneConnection.swift in Sources */,
+				FEB700C226996D6A004D3037 /* WaypointViewModel+Parameter.swift in Sources */,
+				7FE52310245C214100A438D5 /* AutelEnumExtension.swift in Sources */,
+				FE11487F269855060025696E /* WaypointViewModel+Mapview.swift in Sources */,
+				7F768737245C031600F5C73E /* CameraConnection.swift in Sources */,
+				7F768739245C031600F5C73E /* RemoteControllerConnection.swift in Sources */,
+				FE00ECF72694374900B85EB7 /* MissionAnotation.swift in Sources */,
+				7F768740245C031600F5C73E /* RemoteControllerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F91F85E245BFF3B004412D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F91F85F245BFF3B004412D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7FE522E1245C126B00A438D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE522E2245C126B00A438D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F91F862245BFF3B004412D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F91F863245BFF3B004412D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F91F865245BFF3B004412D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB3D0CF1002A61330C3D283 /* Pods-AUTELSdkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFZD95439J;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AUTELSdkDemo/AUTELSDK",
+					"$(PROJECT_DIR)/AUTELSdkDemo/AUTELWidget",
+				);
+				INFOPLIST_FILE = AUTELSdkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autelrobotics.AUTELSdkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AUTELSdkDemo/AUTELSdkDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F91F866245BFF3B004412D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2CB27929CC3623FB1762EB /* Pods-AUTELSdkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFZD95439J;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AUTELSdkDemo/AUTELSDK",
+					"$(PROJECT_DIR)/AUTELSdkDemo/AUTELWidget",
+				);
+				INFOPLIST_FILE = AUTELSdkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autelrobotics.AUTELSdkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AUTELSdkDemo/AUTELSdkDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F91F84B245BFF39004412D4 /* Build configuration list for PBXProject "AUTELSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F91F862245BFF3B004412D4 /* Debug */,
+				7F91F863245BFF3B004412D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F91F864245BFF3B004412D4 /* Build configuration list for PBXNativeTarget "AUTELSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F91F865245BFF3B004412D4 /* Debug */,
+				7F91F866245BFF3B004412D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F91F848245BFF39004412D4 /* Project object */;
+}

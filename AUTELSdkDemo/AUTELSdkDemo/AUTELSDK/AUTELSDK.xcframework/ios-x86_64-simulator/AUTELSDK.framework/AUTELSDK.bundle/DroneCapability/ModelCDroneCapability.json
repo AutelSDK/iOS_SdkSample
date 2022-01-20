@@ -1,0 +1,232 @@
+{
+  "StartTakeoff": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StartLanding": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "CancelLanding": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "TurnOnMotor": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StartGoHome": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "CancelGoHome": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "ControlLED": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "SetHomePointAtCurrent": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "SetHomePoint": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "OpenDroneUSB": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "SetGoHomeDefaultAltitude": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetGoHomeDefaultAltitude": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetCutToATTIModeEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetCutToATTIModeEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetInRoomModeEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetInRoomModeEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetFrontRearOAEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetFrontRearOAEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetLeftRightOAEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetLeftRightOAEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetTopOAEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetTopOAEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetBeginnerModeEnable": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetBeginnerModeEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetLowBatteryWarningThreshold": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetLowBatteryWarningThreshold": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetSeriousBatteryWarningThreshold": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetSeriousBatteryWarningThreshold": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetMaxFlightHeight": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetMaxFlightHeight": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetMaxFlightRadius": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetMaxFlightRadius": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetMaxFlightHorizontalSpeed": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetMaxFlightHorizontalSpeed": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetYawStickSensitivity": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetYawStickSensitivity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetAttiStickSensitivity": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetAttiStickSensitivity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetBrakeStickSensitivity": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetBrakeStickSensitivity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetYawSchStickSensitivity": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetYawSchStickSensitivity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "GetBatteryInfo": {
+     "ParameterType": 3,
+     "Supported": true,
+     "FunctionType": 0
+  },
+  "SetBatteryTimeToDischarge": {
+     "ParameterType": 3,
+     "Supported": true,
+     "FunctionType": 0
+  },
+  "DownloadMissionData": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "UploadMissionData": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  }
+}

@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELPlaybackManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/camera">camera</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/downloadDirectory">downloadDirectory</option>
+		
+		<option value="//api/name/numberOfTotalMedia">numberOfTotalMedia</option>
+		
+		<option value="//api/name/storageType">storageType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancelDeletingWithCompletion:">- cancelDeletingWithCompletion:</option>
+		
+		<option value="//api/name/cancelDownloadingWithCompletion:">- cancelDownloadingWithCompletion:</option>
+		
+		<option value="//api/name/deleteMedia:withProgress:deleteListCompletion:overallCompletion:">- deleteMedia:withProgress:deleteListCompletion:overallCompletion:</option>
+		
+		<option value="//api/name/deleteMediaItem:withCompletion:">- deleteMediaItem:withCompletion:</option>
+		
+		<option value="//api/name/downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:">- downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:</option>
+		
+		<option value="//api/name/fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:">- fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:</option>
+		
+		<option value="//api/name/fetchMediaFileListFromOffset:fileCount:withCompletion:">- fetchMediaFileListFromOffset:fileCount:withCompletion:</option>
+		
+		<option value="//api/name/fetchPreviewImageForMedia:withCompletion:">- fetchPreviewImageForMedia:withCompletion:</option>
+		
+		<option value="//api/name/fetchThumbnailForMedia:withCompletion:">- fetchThumbnailForMedia:withCompletion:</option>
+		
+		<option value="//api/name/playerItemForVideo:withCompletion:">- playerItemForVideo:withCompletion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELPlaybackManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELPlaybackManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Playback manager mainly interacts with files taken and stored in the SD card, including obtaining all the files, thumbnail images, previews, deleting files, or downloading files from the SD card to mobile devices.</p>
+
+<p>回放管理者主要与SD卡中设备拍摄的文件进行交互. 包括获取SD卡中所有文件、文件的缩略图\预览图、删除SD卡中文件以及下载SD卡中文件至移动设备.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/storageType" title="storageType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/storageType">&nbsp;&nbsp;storageType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current storage device type of PlaybackManager, EVO 2 supports both SD Card and Flash Card.</p>
+
+<p>当前PlaybackManager的存储设备类型,EVO 2同时支持SD Card和Flash Card.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) AUTELCameraStorageType storageType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraStorageType.html">AUTELCameraStorageType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfTotalMedia" title="numberOfTotalMedia"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfTotalMedia">&nbsp;&nbsp;numberOfTotalMedia</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The number of media files (including photos and videos) in SD card.</p>
+
+<p>SD卡中设备拍摄的所有媒体文件的数量, 包括图片和视频.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger numberOfTotalMedia</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadDirectory" title="downloadDirectory"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadDirectory">&nbsp;&nbsp;downloadDirectory</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The local storage path for downloaded original files and the property cannot be nil.</p>
+
+<p>原始文件下载到本地的存储路径, 使用下载原文件接口时, 该属性不可为空.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *downloadDirectory</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate of AUTELPlaybackManager.</p>
+
+<p>AUTELPlaybackManager的代理.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;AUTELPlaybackDelegate&gt; _Nullable delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/camera" title="camera"></a>
+	<h3 class="method-title"><code><a href="#//api/name/camera">&nbsp;&nbsp;camera</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>current camera.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, weak) AUTELBaseCamera *camera</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchMediaFileListFromOffset:fileCount:withCompletion:" title="fetchMediaFileListFromOffset:fileCount:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchMediaFileListFromOffset:fileCount:withCompletion:">&ndash;&nbsp;fetchMediaFileListFromOffset:fileCount:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get SD card file list in pages.</p>
+
+<p>分页获取SD卡文件列表.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchMediaFileListFromOffset:(NSUInteger)<em>offset</em> fileCount:(NSUInteger)<em>count</em> withCompletion:(void ( ^ _Nonnull ) ( NSArray&lt;AUTELMedia*&gt; *_Nullable mediaList , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>The starting subscript of the requested file list. The first file is subscripted as zero.</p>
+
+<p>请求文件列表的起始下标, 下标为 0 表示第一个文件.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of files requested.</p>
+
+<p>请求文件的个数.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>xecution results callback. Request succeeds and returns SD card file list when error is nil. Objectis in mediaList are kind of class <a href="../Classes/AUTELMedia.html">AUTELMedia</a>.</p>
+
+<p>执行结果回调, error为nil则请求成功并返回文件列表, mediaList中的数据是 <a href="../Classes/AUTELMedia.html">AUTELMedia</a> 类型.E</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> If the subscript of the last file outnumbers the actual number of files in SD card, then the number of files in the returned file list will be equal to the actual number of files.</p>
+
+<p>若count大于500, 相机只会按count为500进行处理, 若请求的最后一个文件的下标值大于SD卡中实际文件总个数, 将会按照实际存在的文件数量返回文件列表.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:" title="fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:">&ndash;&nbsp;fetchMediaFileListFromOffset:fileCount:fileType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get SD card file list in pages.</p>
+
+<p>分页获取SD卡文件列表.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchMediaFileListFromOffset:(NSUInteger)<em>offset</em> fileCount:(NSUInteger)<em>count</em> fileType:(AUTELGetFileListType)<em>fileType</em> withCompletion:(void ( ^ _Nonnull ) ( NSArray&lt;AUTELMedia*&gt; *_Nullable mediaList , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>The starting subscript of the requested file list. The first file is subscripted as zero.</p>
+
+<p>请求文件列表的起始下标, 下标为 0 表示第一个文件.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of files requested.</p>
+
+<p>请求文件的个数.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileType</code></th>
+						<td><p>Get the file list type.</p>
+
+<p>获取文件列表类型.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>xecution results callback. Request succeeds and returns SD card file list when error is nil. Objectis in mediaList are kind of class <a href="../Classes/AUTELMedia.html">AUTELMedia</a>.</p>
+
+<p>执行结果回调, error为nil则请求成功并返回文件列表, mediaList中的数据是 <a href="../Classes/AUTELMedia.html">AUTELMedia</a> 类型.E</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> If the subscript of the last file outnumbers the actual number of files in SD card, then the number of files in the returned file list will be equal to the actual number of files.</p>
+
+<p>若count大于500, 相机只会按count为500进行处理, 若请求的最后一个文件的下标值大于SD卡中实际文件总个数, 将会按照实际存在的文件数量返回文件列表.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchThumbnailForMedia:withCompletion:" title="fetchThumbnailForMedia:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchThumbnailForMedia:withCompletion:">&ndash;&nbsp;fetchThumbnailForMedia:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the corresponding thumbnail images.</p>
+
+<p>获取文件的相应缩略图.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchThumbnailForMedia:(AUTELMedia *_Nonnull)<em>media</em> withCompletion:(AUTELLowerResolutionImageCompletion)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Execution results callback.</p>
+
+<p>执行结果回调.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Media</code></th>
+						<td><p>file.</p>
+
+<p>media 文件.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchPreviewImageForMedia:withCompletion:" title="fetchPreviewImageForMedia:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchPreviewImageForMedia:withCompletion:">&ndash;&nbsp;fetchPreviewImageForMedia:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the corresponding previews.</p>
+
+<p>获取文件的相应预览图.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchPreviewImageForMedia:(AUTELMedia *_Nonnull)<em>media</em> withCompletion:(AUTELLowerResolutionImageCompletion)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>media</code></th>
+						<td><p>The media file.</p>
+
+<p>media 文件.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Execution results callback.</p>
+
+<p>执行结果回调.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> No previews for videos, but thumbnails.</p>
+
+<p>视频文件无预览图, 只有缩略图.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerItemForVideo:withCompletion:" title="playerItemForVideo:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerItemForVideo:withCompletion:">&ndash;&nbsp;playerItemForVideo:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether there is a thumbnail video interface. Generally, there is no thumbnail video for 2.7K \ 4k video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerItemForVideo:(AUTELMedia *_Nonnull)<em>media</em> withCompletion:(void ( ^ _Nullable ) ( AVPlayerItem *_Nullable playerItem , BOOL isOriginalData , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>media</code></th>
+						<td><p>The media file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Execution results callback,Return to AVPlayerItem for playing video online</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check whether there is a thumbnail video interface. Generally, there is no thumbnail video for 2.7K \ 4k video.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteMedia:withProgress:deleteListCompletion:overallCompletion:" title="deleteMedia:withProgress:deleteListCompletion:overallCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteMedia:withProgress:deleteListCompletion:overallCompletion:">&ndash;&nbsp;deleteMedia:withProgress:deleteListCompletion:overallCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the files in SD card.</p>
+
+<p>删除SD卡中的文件.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteMedia:(NSArray&lt;AUTELMedia*&gt; *_Nonnull)<em>medias</em> withProgress:(AUTELFileDeletingProgress)<em>progressBlock</em> deleteListCompletion:(AUTELFileDeleteListCompletion)<em>deleteListBlock</em> overallCompletion:(AUTELFileDeleteCompletion)<em>deleteAllBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medias</code></th>
+						<td><p>All files that need to be deleted.</p>
+
+<p>所有需要删除的文件.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Deletion progress callback. deleteFileNo indicates the number of deleted files. expectedFileNo indicates the total number of files that need to be deleted.</p>
+
+<p>删除进度回调, deleteFileNo 表示当前已删除完成的文件数, expectedFileNo 表示总的需要删除的文件数.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deleteListBlock</code></th>
+						<td><p>Return result after deleting a batch of files. Files failed to be deleted will be placed in deleteFailures. If deleteFailures is nil, it means succeeded to delete all the files in this batch.</p>
+
+<p>删除一个批次返回结果, 删除失败的文件将会放在 deleteFailures 表示的数组中, 若该数组为空则表示该批次中的全部文件删除成功.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deleteAllBlock</code></th>
+						<td><p>Deletion completion callback. If error occurs in the deleting process, error will be returned. If it proceeds well, then error is nil.</p>
+
+<p>删除完成回调, 如果删除任务执行过程中出错将会返回error, 若整个删除过程进展顺利, 则error为nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method deletes all media files in batches. One batch consists of 25 images or a single video file. deleteListBlock returns the files failed to be deleted in every batch.</p>
+
+<p>该方法将收到的所有 media 分批次进行删除,图片文件每50个为一个批次进行删除, 视频文件单个文件为一个批次进行删除, deleteListBlock 中返回了每个批次中删除失败的文件.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteMediaItem:withCompletion:" title="deleteMediaItem:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteMediaItem:withCompletion:">&ndash;&nbsp;deleteMediaItem:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the file</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteMediaItem:(AUTELMedia *_Nonnull)<em>media</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>media</code></th>
+						<td><p>This method delete one media file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Deletion completion callback. If error occurs in the deleting process, error will be returned. If it proceeds well, then error is nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Delete the file</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelDeletingWithCompletion:" title="cancelDeletingWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelDeletingWithCompletion:">&ndash;&nbsp;cancelDeletingWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel the current deleting task.</p>
+
+<p>取消正在进行的删除任务.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelDeletingWithCompletion:(AUTELCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion Block.</p>
+
+<p>操作完成回调.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:" title="downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:">&ndash;&nbsp;downloadMedia:withPreparation:progress:downloadCompletion:overallCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download original files from SD card.</p>
+
+<p>下载SD卡中原始文件.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadMedia:(NSArray&lt;AUTELMedia*&gt; *_Nonnull)<em>medias</em> withPreparation:(AUTELFileDownloadPreparingBlock)<em>prepareBlock</em> progress:(AUTELFileDownloadProgressBlock)<em>progressBlock</em> downloadCompletion:(AUTELFileDownloadCompletionBlock)<em>fileCompletionBlock</em> overallCompletion:(AUTELCompletionBlock)<em>overallCompletionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>medias</code></th>
+						<td><p>Files to be downloaded.</p>
+
+<p>将要下载的文件.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>prepareBlock</code></th>
+						<td><p>Preparations before downloading: tell the name and type of the file to be downloaded. If it is a RAW file or a file whose resolution is above 1080p, then the value of skip will be YES, which means this file will not be downloaded.</p>
+
+<p>下载每一个文件前的准备工作, 告知将要下载的文件的文件名与文件类型, 若该文件类型为 RAW 与 1080P清晰度以上, skip 的值将为 YES, 表示该文件不会被下载.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>During the downloading process of each file, this block will be frequently called to give feedbacks on the real time downloading progress. totalBytesWritte indicates the total number of bytes transferred so far, and totalBytesExpectedToWrite indicates the expected length of the file.</p>
+
+<p>在每个文件下载过程中, 该block将会被频繁调用以反馈下载的实时进度, totalBytesWitten表示文件已经下载的大小, totalBytesExpectedToWritte 表示文件的总大小.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileCompletionBlock</code></th>
+						<td><p>The block which indicates succeeded to download a single file. FileLocation includes the local storage path of downloaded files.</p>
+
+<p>单个文件下载完成的block, fileLocation含下载完成后文件保存在本地中的路径.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overallCompletionBlock</code></th>
+						<td><p>Download completion callback.  If error occurs in the downloading process, error will be returned. If it proceeds well, then error is nil.</p>
+
+<p>下载完成回调, 如果下载任务执行过程中出错将会返回error, 若整个删除过程进展顺利, 则error为nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>when using this method to download original files in SD card, RAW files and videos whose resolution is above 1080p (not including 1080p) will not be downloaded. If error occurs in downloading process, overallCompletionBlock will be called and the error will be returned. If it proceeds well, overallCompletionBlock will be called without returning any errors.</p>
+
+<p>该方法下载SD卡中原始文件, RAW 格式文件与 1080P 清晰度以上的视频文件(不包括 1080P 清晰度的视频)将不会被下载。若文件下载过程中产生错误, overallCompletionBlock 将会被调用并返回该错误, 若整个下载过程进行顺利, overallCompletionBlock 调用时无错误信息.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelDownloadingWithCompletion:" title="cancelDownloadingWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelDownloadingWithCompletion:">&ndash;&nbsp;cancelDownloadingWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel the current downloading task.</p>
+
+<p>取消正在进行的下载任务.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelDownloadingWithCompletion:(AUTELCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion Block.</p>
+
+<p>操作完成回调.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELPlaybackManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

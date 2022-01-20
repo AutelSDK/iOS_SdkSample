@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELMainControllerFlightMode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELMainControllerFlightMode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AUTELMCSystemState.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">AUTELMainControllerFlightMode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Define main cotroller flight mode.</p>
+
+<p>定义主控的飞行模式</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(uint8_t, AUTELMainControllerFlightMode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeDisarm</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeLanded</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeLanding</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeTakeoff</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeAttitude</a> = 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeGPS</a> = 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeIOC</a> = 6,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeManualGoHome</a> = 7,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeLowBattreyGoHome</a> = 8,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeSmartLowBatteryGoHome</a> = 9,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeFailSaveGoHome</a> = 10,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeFailSaveHover</a> = 11,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeWaypoint</a> = 12,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeWaypointPause</a> = 13,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeWaypointGoHome</a> = 14,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeFollowMe</a> = 15,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeHotpoint</a> = 16,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeFollowMePause</a> = 17,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeHotpointPause</a> = 18,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeEnd</a> = AutelMCFlightModeHotpointPause,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightMode360Shoot</a> = 19,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeEpic</a> = 20,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeRise</a> = 21,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeFadeAway</a> = 22,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeIntosky</a> = 23,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeBoomerang</a> = 24,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeScrew</a> = 25,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeParabola</a> = 26,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeAsteroid</a> = 27,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeCircleRound</a> = 28,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeDollyZoom</a> = 29,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeTripod</a> = 30,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePhotographer</a> = 31,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeRectangle</a> = 32,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeRectanglePause</a> = 33,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePolygon</a> = 34,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePolygonPause</a> = 35,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeDelayShot</a> = 36,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeDelayShotPause</a> = 37,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeObliquePhoto</a> = 38,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeObliquePhotoPause</a> = 39,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePanoramicPhoto</a> = 40,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePanoramicPhotoPause</a> = 41,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeTrackCommonMode</a> = 19 + 181,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeTrackParallelMode</a> = 20 + 181,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeTrackLockedMode</a> = 21 + 181,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePointFlyInside</a> = 22 + 181,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModePointFlyOutside</a> = 23 + 181,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AutelMCFlightModeUnknow</a> = 0 xFF,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="AutelMCFlightModeDisarm"></a><code>AutelMCFlightModeDisarm</code></dt>
+<dd>
+
+
+<p>Motors stopped.</p>
+
+<p>电机停止</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeLanded"></a><code>AutelMCFlightModeLanded</code></dt>
+<dd>
+
+
+<p>Motors rotating with aircraft on the ground.</p>
+
+<p>飞行器电机在转动，但飞行器还在地面上。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeLanding"></a><code>AutelMCFlightModeLanding</code></dt>
+<dd>
+
+
+<p>The aircraft is landing.</p>
+
+<p>飞行器正在降落</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeTakeoff"></a><code>AutelMCFlightModeTakeoff</code></dt>
+<dd>
+
+
+<p>The airrcraft is taking off (with the use of the Takeoff/landing button or left command stick).</p>
+
+<p>飞行器正在起飞,包括自动起飞和通过遥控器控制起飞</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeAttitude"></a><code>AutelMCFlightModeAttitude</code></dt>
+<dd>
+
+
+<p>The aircraft is flying in ATTI mode.</p>
+
+<p>飞行器正在飞行，处于姿态模式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeGPS"></a><code>AutelMCFlightModeGPS</code></dt>
+<dd>
+
+
+<p>The aircraft is flying in GPS mode or Starpoint mode.</p>
+
+<p>飞行器正在飞行，处于 GPS 模式或 Starpoint 模式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeIOC"></a><code>AutelMCFlightModeIOC</code></dt>
+<dd>
+
+
+<p>The aircraft is flying in IOC mode.</p>
+
+<p>飞行器正在飞行，IOC模式</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeManualGoHome"></a><code>AutelMCFlightModeManualGoHome</code></dt>
+<dd>
+
+
+<p>The aircraft is returing to the home point according to Go Home orders sent through remote controller or app.</p>
+
+<p>飞行器正在自动返航，返航原因：通过遥控器或 App 向飞行器发送自动返航命令</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeLowBattreyGoHome"></a><code>AutelMCFlightModeLowBattreyGoHome</code></dt>
+<dd>
+
+
+<p>The aircraft is returning to the home point because low battery warning (25%) is activated.</p>
+
+<p>飞行器正在自动返航，返航原因：飞行器低电警报</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeSmartLowBatteryGoHome"></a><code>AutelMCFlightModeSmartLowBatteryGoHome</code></dt>
+<dd>
+
+
+<p>The aircraft is returning to the home point because minimum battery level needed for Go Home is reached.</p>
+
+<p>飞行器正在自动返航，返航原因：智能低电返航</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeFailSaveGoHome"></a><code>AutelMCFlightModeFailSaveGoHome</code></dt>
+<dd>
+
+
+<p>The aircraft is returning to the home point because Failsafe is treggered by signal loss between the remote controller and the aircraft.</p>
+
+<p>飞行器正在自动返航，返航原因：飞行器丢失遥控器信号，失联保护启动</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeFailSaveHover"></a><code>AutelMCFlightModeFailSaveHover</code></dt>
+<dd>
+
+
+<p>Auto hovering due to signal loss with the remote controller.</p>
+
+<p>遥控器失联自动悬停</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeWaypoint"></a><code>AutelMCFlightModeWaypoint</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Waypoint task.</p>
+
+<p>飞行器正在执行航点任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeWaypointPause"></a><code>AutelMCFlightModeWaypointPause</code></dt>
+<dd>
+
+
+<p>Waypoint task paused. Aircraft hovering.</p>
+
+<p>航点任务已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeWaypointGoHome"></a><code>AutelMCFlightModeWaypointGoHome</code></dt>
+<dd>
+
+
+<p>The aircraft exited from the Aotopilot mode and is returning to the home point automatically.</p>
+
+<p>飞行器已自动退出智能飞行模式，正在返航。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeFollowMe"></a><code>AutelMCFlightModeFollowMe</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Follow task.</p>
+
+<p>飞行器正在执行追踪任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeHotpoint"></a><code>AutelMCFlightModeHotpoint</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Orbit task.</p>
+
+<p>飞行器正在执行兴趣点环绕任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeFollowMePause"></a><code>AutelMCFlightModeFollowMePause</code></dt>
+<dd>
+
+
+<p>Follow task paused. Aircraft hovering.</p>
+
+<p>追踪任务已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeHotpointPause"></a><code>AutelMCFlightModeHotpointPause</code></dt>
+<dd>
+
+
+<p>Orbit task paused. Aircraft hovering.</p>
+
+<p>环绕任务已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeEnd"></a><code>AutelMCFlightModeEnd</code></dt>
+<dd>
+
+
+<p>AutelMCFlightModeHotpointPause</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightMode360Shoot"></a><code>AutelMCFlightMode360Shoot</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the 360° Shoot task.</p>
+
+<p>飞行器正在执行360°拍摄任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeEpic"></a><code>AutelMCFlightModeEpic</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Epic task.</p>
+
+<p>飞行器正在执行远景镜头任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeRise"></a><code>AutelMCFlightModeRise</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Rise task.</p>
+
+<p>飞行器正在执行上升镜头任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeFadeAway"></a><code>AutelMCFlightModeFadeAway</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the FadeAway task.</p>
+
+<p>飞行器正在执行渐远拍摄任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeIntosky"></a><code>AutelMCFlightModeIntosky</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Intosky task.</p>
+
+<p>飞行器正在执行冲天追踪任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeBoomerang"></a><code>AutelMCFlightModeBoomerang</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Boomerang task.</p>
+
+<p>飞行器正在执行回旋镖任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeScrew"></a><code>AutelMCFlightModeScrew</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Screw task.</p>
+
+<p>飞行器正在执行螺旋拍摄任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeParabola"></a><code>AutelMCFlightModeParabola</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Parabola task.</p>
+
+<p>飞行器正在执行抛物线任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeAsteroid"></a><code>AutelMCFlightModeAsteroid</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Asteroid task.</p>
+
+<p>飞行器正在执行小行星任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeCircleRound"></a><code>AutelMCFlightModeCircleRound</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Circle Round task.</p>
+
+<p>飞行器正在执行环绕追踪任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeDollyZoom"></a><code>AutelMCFlightModeDollyZoom</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the DollyZoom task.</p>
+
+<p>飞行器正在执行移动变焦任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeTripod"></a><code>AutelMCFlightModeTripod</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Tripod task.</p>
+
+<p>飞行器正在执行三脚架任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePhotographer"></a><code>AutelMCFlightModePhotographer</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Photographer task.</p>
+
+<p>飞行器正在执行影像增稳任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeRectangle"></a><code>AutelMCFlightModeRectangle</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Rectangle task.</p>
+
+<p>飞行器正在执行矩形任务飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeRectanglePause"></a><code>AutelMCFlightModeRectanglePause</code></dt>
+<dd>
+
+
+<p>Rectangle task paused. Aircraft hovering.</p>
+
+<p>矩形任务已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePolygon"></a><code>AutelMCFlightModePolygon</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Polygon task.</p>
+
+<p>飞行器正在执行多边形任务飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePolygonPause"></a><code>AutelMCFlightModePolygonPause</code></dt>
+<dd>
+
+
+<p>Polygon task paused. Aircraft hovering.</p>
+
+<p>多边形任务已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeDelayShot"></a><code>AutelMCFlightModeDelayShot</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the DelayShot task.</p>
+
+<p>飞行器正在进行自由延时摄影任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeDelayShotPause"></a><code>AutelMCFlightModeDelayShotPause</code></dt>
+<dd>
+
+
+<p>DelayShot task paused. Aircraft hovering.</p>
+
+<p>飞行器自由延时摄影任务暂停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeObliquePhoto"></a><code>AutelMCFlightModeObliquePhoto</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Oblique photography  task.</p>
+
+<p>飞行器正在执行倾斜摄影任务飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeObliquePhotoPause"></a><code>AutelMCFlightModeObliquePhotoPause</code></dt>
+<dd>
+
+
+<p>Oblique photography  task paused. Aircraft hovering.</p>
+
+<p>倾斜摄影已暂停，飞行器正在悬停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePanoramicPhoto"></a><code>AutelMCFlightModePanoramicPhoto</code></dt>
+<dd>
+
+
+<p>The aircraft is performing the Panoramic photo task.</p>
+
+<p>飞行器正在进行全景摄影任务</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePanoramicPhotoPause"></a><code>AutelMCFlightModePanoramicPhotoPause</code></dt>
+<dd>
+
+
+<p>Panoramic photo task paused. Aircraft hovering.</p>
+
+<p>飞行器全景摄影任务暂停。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeTrackCommonMode"></a><code>AutelMCFlightModeTrackCommonMode</code></dt>
+<dd>
+
+
+<p>The Dynamic Track mode is common.__deprecated</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeTrackParallelMode"></a><code>AutelMCFlightModeTrackParallelMode</code></dt>
+<dd>
+
+
+<p>The Dynamic Track mode is parallel.__deprecated</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeTrackLockedMode"></a><code>AutelMCFlightModeTrackLockedMode</code></dt>
+<dd>
+
+
+<p>The Dynamic Track mode is tripod.__deprecated</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePointFlyInside"></a><code>AutelMCFlightModePointFlyInside</code></dt>
+<dd>
+
+
+<p>Indoor view point.__deprecated</p>
+
+<p>室内指点飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModePointFlyOutside"></a><code>AutelMCFlightModePointFlyOutside</code></dt>
+<dd>
+
+
+<p>Outdoor view point.__deprecated</p>
+
+<p>室外指点飞行</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AutelMCFlightModeUnknow"></a><code>AutelMCFlightModeUnknow</code></dt>
+<dd>
+
+
+<p>Unknown flight mode</p>
+
+<p>飞行模式未知</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">AUTELMCSystemState.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

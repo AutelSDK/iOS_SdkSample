@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELControlMotorError Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELControlMotorError Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AUTELMCSystemState.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">AUTELControlMotorError</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Define the causes for failure of starting motors.</p>
+
+<p>定义电机无法转动原因</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(uint8_t, AUTELControlMotorError ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorNormal</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIMUError</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorCriticalLowPower</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorBarometerError</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorInNoFlyZone</a> = 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIOCError</a> = 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorNoviceModeEnableAndNoGPSSignal</a> = 6,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorDisamrAircraftTilt</a> = 7,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorDisamrIMUError</a> = 8,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIMUPreheating</a> = 9,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIsCalibratingCompress</a> = 10,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorMultipleSensorsError</a> = 11,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorGimbalNotReady</a> = 12,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIsUpgradingFirmware</a> = 13,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIsInitializingAttitude</a> = 15,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIsRTKNotReady</a> = 16,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELControlMotorErrorIsAircraftNotActivated</a> = 17,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorNormal"></a><code>AUTELControlMotorErrorNormal</code></dt>
+<dd>
+
+
+<p>Motor work normal</p>
+
+<p>电机没有警告</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIMUError"></a><code>AUTELControlMotorErrorIMUError</code></dt>
+<dd>
+
+
+<p>IMU abnormal</p>
+
+<p>IMU 异常</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorCriticalLowPower"></a><code>AUTELControlMotorErrorCriticalLowPower</code></dt>
+<dd>
+
+
+<p>critical low power</p>
+
+<p>严重低电量</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorBarometerError"></a><code>AUTELControlMotorErrorBarometerError</code></dt>
+<dd>
+
+
+<p>Barometer abnormal</p>
+
+<p>气压计异常</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorInNoFlyZone"></a><code>AUTELControlMotorErrorInNoFlyZone</code></dt>
+<dd>
+
+
+<p>In NoFly zone</p>
+
+<p>在禁飞区内</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIOCError"></a><code>AUTELControlMotorErrorIOCError</code></dt>
+<dd>
+
+
+<p>IOC abnormal</p>
+
+<p>IOC 异常</p>
+
+<p>正在校准指南针</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorNoviceModeEnableAndNoGPSSignal"></a><code>AUTELControlMotorErrorNoviceModeEnableAndNoGPSSignal</code></dt>
+<dd>
+
+
+<p>GPS signal not found in Beginner mode.</p>
+
+<p>新手模式,无GPS</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorDisamrAircraftTilt"></a><code>AUTELControlMotorErrorDisamrAircraftTilt</code></dt>
+<dd>
+
+
+<p>Aircraft tilting, turning off the motor</p>
+
+<p>飞行器倾斜, 关闭电机</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorDisamrIMUError"></a><code>AUTELControlMotorErrorDisamrIMUError</code></dt>
+<dd>
+
+
+<p>IMU abnormal, turn off the motor</p>
+
+<p>IMU 异常, 关闭电机</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIMUPreheating"></a><code>AUTELControlMotorErrorIMUPreheating</code></dt>
+<dd>
+
+
+<p>IMU 预热</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIsCalibratingCompress"></a><code>AUTELControlMotorErrorIsCalibratingCompress</code></dt>
+<dd>
+
+
+<p>Compass is calibrating</p>
+
+<p>指南针正在校准</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorMultipleSensorsError"></a><code>AUTELControlMotorErrorMultipleSensorsError</code></dt>
+<dd>
+
+
+<p>Multiple sensor anomalies</p>
+
+<p>多个传感器异常</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorGimbalNotReady"></a><code>AUTELControlMotorErrorGimbalNotReady</code></dt>
+<dd>
+
+
+<p>Gimbal is not ready</p>
+
+<p>云台未就绪</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIsUpgradingFirmware"></a><code>AUTELControlMotorErrorIsUpgradingFirmware</code></dt>
+<dd>
+
+
+<p>Firmware upgrade is in progress</p>
+
+<p>正在执行固件升级</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIsInitializingAttitude"></a><code>AUTELControlMotorErrorIsInitializingAttitude</code></dt>
+<dd>
+
+
+<p>Initializing attitude</p>
+
+<p>姿态初始化中</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIsRTKNotReady"></a><code>AUTELControlMotorErrorIsRTKNotReady</code></dt>
+<dd>
+
+
+<p>RTK is not ready</p>
+
+<p>RTK未就绪</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELControlMotorErrorIsAircraftNotActivated"></a><code>AUTELControlMotorErrorIsAircraftNotActivated</code></dt>
+<dd>
+
+
+<p>Aircraft is not activated</p>
+
+<p>飞机未激活</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELMCSystemState.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">AUTELMCSystemState.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

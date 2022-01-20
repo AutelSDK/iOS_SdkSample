@@ -1,0 +1,2917 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELVisionControlState Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/attiModeExit">attiModeExit</option>
+		
+		<option value="//api/name/canNotKeepFly">canNotKeepFly</option>
+		
+		<option value="//api/name/canNotPassOutOfSafeSpace">canNotPassOutOfSafeSpace</option>
+		
+		<option value="//api/name/collisionAvoidanceEnable">collisionAvoidanceEnable</option>
+		
+		<option value="//api/name/courseDeviation">courseDeviation</option>
+		
+		<option value="//api/name/courseDeviationViewPoint">courseDeviationViewPoint</option>
+		
+		<option value="//api/name/donwaredlightState">donwaredlightState</option>
+		
+		<option value="//api/name/flyToOpenSpace">flyToOpenSpace</option>
+		
+		<option value="//api/name/forwardLightState">forwardLightState</option>
+		
+		<option value="//api/name/isBackLeftVisualSensorAbnormal">isBackLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isBackRightVisualSensorAbnormal">isBackRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isBackVisionModuleAbnormal">isBackVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isDownLeftVisualSensorAbnormal">isDownLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isDownRightVisualSensorAbnormal">isDownRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isDownVisionModuleAbnormal">isDownVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isDownwardVisionModuleAbnormal">isDownwardVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isDownwardVisualSensorCalibrationParameterException">isDownwardVisualSensorCalibrationParameterException</option>
+		
+		<option value="//api/name/isForwardVisionModuleAbnormal">isForwardVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isFrontLeftVisualSensorAbnormal">isFrontLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isFrontObstaclesAndLimitSpeed">isFrontObstaclesAndLimitSpeed</option>
+		
+		<option value="//api/name/isFrontRightVisualSensorAbnormal">isFrontRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isFrontVisionModuleAbnormal">isFrontVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isFrontVisualSensorCalibrationParameterException">isFrontVisualSensorCalibrationParameterException</option>
+		
+		<option value="//api/name/isLeftLeftVisualSensorAbnormal">isLeftLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isLeftRightVisualSensorAbnormal">isLeftRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isLeftVisionModuleAbnormal">isLeftVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isMoreThanOneVisionModuleAbnormal">isMoreThanOneVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isNoBackWayAndHover">isNoBackWayAndHover</option>
+		
+		<option value="//api/name/isNoFrontWayTurnAround">isNoFrontWayTurnAround</option>
+		
+		<option value="//api/name/isReachMaxFlightHeightLimit">isReachMaxFlightHeightLimit</option>
+		
+		<option value="//api/name/isReachMaxHeight">isReachMaxHeight</option>
+		
+		<option value="//api/name/isReachMaxZoom">isReachMaxZoom</option>
+		
+		<option value="//api/name/isReachMinHeight">isReachMinHeight</option>
+		
+		<option value="//api/name/isReachMinZoom">isReachMinZoom</option>
+		
+		<option value="//api/name/isReachtMaxFlighRadiusLimit">isReachtMaxFlighRadiusLimit</option>
+		
+		<option value="//api/name/isRightLeftVisualSensorAbnormal">isRightLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isRightRightVisualSensorAbnormal">isRightRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isRightVisionModuleAbnormal">isRightVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isUpLeftVisualSensorAbnormal">isUpLeftVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isUpRightVisualSensorAbnormal">isUpRightVisualSensorAbnormal</option>
+		
+		<option value="//api/name/isUpVisionModuleAbnormal">isUpVisionModuleAbnormal</option>
+		
+		<option value="//api/name/isVisionCalibrationInvalid">isVisionCalibrationInvalid</option>
+		
+		<option value="//api/name/landingProtectionEvent">landingProtectionEvent</option>
+		
+		<option value="//api/name/landingProtectionState">landingProtectionState</option>
+		
+		<option value="//api/name/longPressExit">longPressExit</option>
+		
+		<option value="//api/name/showObstaclesDetectionChar">showObstaclesDetectionChar</option>
+		
+		<option value="//api/name/visionLimitWhenDark">visionLimitWhenDark</option>
+		
+		<option value="//api/name/visual_warning_81">visual_warning_81</option>
+		
+		<option value="//api/name/visual_warning_82">visual_warning_82</option>
+		
+		<option value="//api/name/visual_warning_83">visual_warning_83</option>
+		
+		<option value="//api/name/visual_warning_84">visual_warning_84</option>
+		
+		<option value="//api/name/visual_warning_85">visual_warning_85</option>
+		
+		<option value="//api/name/visual_warning_86">visual_warning_86</option>
+		
+		<option value="//api/name/visual_warning_87">visual_warning_87</option>
+		
+		<option value="//api/name/visual_warning_88">visual_warning_88</option>
+		
+		<option value="//api/name/visual_warning_89">visual_warning_89</option>
+		
+		<option value="//api/name/visual_warning_90">visual_warning_90</option>
+		
+		<option value="//api/name/visual_warning_91">visual_warning_91</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELVisionControlState Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELFlightAssistant.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/collisionAvoidanceEnable" title="collisionAvoidanceEnable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collisionAvoidanceEnable">&nbsp;&nbsp;collisionAvoidanceEnable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>避障使能</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL collisionAvoidanceEnable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>避障使能</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showObstaclesDetectionChar" title="showObstaclesDetectionChar"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showObstaclesDetectionChar">&nbsp;&nbsp;showObstaclesDetectionChar</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否显示雷达图</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showObstaclesDetectionChar</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否显示雷达图</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/forwardLightState" title="forwardLightState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/forwardLightState">&nbsp;&nbsp;forwardLightState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>forward Tracking Ambient Light State</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELTrackingAmbientLightState forwardLightState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>forward Tracking Ambient Light State</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/donwaredlightState" title="donwaredlightState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/donwaredlightState">&nbsp;&nbsp;donwaredlightState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>donwared Tracking Ambient Light State</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELTrackingAmbientLightState donwaredlightState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>donwared Tracking Ambient Light State</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isFrontObstaclesAndLimitSpeed" title="isFrontObstaclesAndLimitSpeed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isFrontObstaclesAndLimitSpeed">&nbsp;&nbsp;isFrontObstaclesAndLimitSpeed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>There are obstacles ahead, speed limit   前方有障碍物，进行速度限制</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isFrontObstaclesAndLimitSpeed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>There are obstacles ahead, speed limit   前方有障碍物，进行速度限制</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isNoFrontWayTurnAround" title="isNoFrontWayTurnAround"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isNoFrontWayTurnAround">&nbsp;&nbsp;isNoFrontWayTurnAround</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Can&rsquo;t pass in front, please bypass   前方无法通行，请绕行</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isNoFrontWayTurnAround</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Can&rsquo;t pass in front, please bypass   前方无法通行，请绕行</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isNoBackWayAndHover" title="isNoBackWayAndHover"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isNoBackWayAndHover">&nbsp;&nbsp;isNoBackWayAndHover</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>There are obstacles at the rear, the plane has hovered   后方有障碍物，飞机已悬停</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isNoBackWayAndHover</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>There are obstacles at the rear, the plane has hovered   后方有障碍物，飞机已悬停</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownwardVisualSensorCalibrationParameterException" title="isDownwardVisualSensorCalibrationParameterException"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownwardVisualSensorCalibrationParameterException">&nbsp;&nbsp;isDownwardVisualSensorCalibrationParameterException</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The under-view sensor calibration parameters are abnormal, and the precise hovering and obstacle avoidance functions are affected.   下视传感器标定参数异常，精准悬停和避障功能受到影响</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isDownwardVisualSensorCalibrationParameterException</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The under-view sensor calibration parameters are abnormal, and the precise hovering and obstacle avoidance functions are affected.   下视传感器标定参数异常，精准悬停和避障功能受到影响</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isFrontVisualSensorCalibrationParameterException" title="isFrontVisualSensorCalibrationParameterException"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isFrontVisualSensorCalibrationParameterException">&nbsp;&nbsp;isFrontVisualSensorCalibrationParameterException</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The front view sensor calibration parameters are abnormal, and the precise hovering and obstacle avoidance functions are affected.   前视传感器标定参数异常，精准悬停和避障功能受到影响</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isFrontVisualSensorCalibrationParameterException</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The front view sensor calibration parameters are abnormal, and the precise hovering and obstacle avoidance functions are affected.   前视传感器标定参数异常，精准悬停和避障功能受到影响</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachtMaxFlighRadiusLimit" title="isReachtMaxFlighRadiusLimit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachtMaxFlighRadiusLimit">&nbsp;&nbsp;isReachtMaxFlighRadiusLimit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机已达到最远距离限制 44</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachtMaxFlighRadiusLimit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机已达到最远距离限制 44</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachMaxFlightHeightLimit" title="isReachMaxFlightHeightLimit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachMaxFlightHeightLimit">&nbsp;&nbsp;isReachMaxFlightHeightLimit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机已达到最大高度限制 45</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachMaxFlightHeightLimit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机已达到最大高度限制 45</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isForwardVisionModuleAbnormal" title="isForwardVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isForwardVisionModuleAbnormal">&nbsp;&nbsp;isForwardVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Front view vision module status is abnormal  前视视觉模组状态异常 62</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isForwardVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Front view vision module status is abnormal  前视视觉模组状态异常 62</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownwardVisionModuleAbnormal" title="isDownwardVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownwardVisionModuleAbnormal">&nbsp;&nbsp;isDownwardVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lower vision module status is abnormal   下视视觉模组状态异常 63</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isDownwardVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Lower vision module status is abnormal   下视视觉模组状态异常 63</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isFrontVisionModuleAbnormal" title="isFrontVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isFrontVisionModuleAbnormal">&nbsp;&nbsp;isFrontVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>前视视觉模组标定状态异常 65</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isFrontVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>前视视觉模组标定状态异常 65</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBackVisionModuleAbnormal" title="isBackVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBackVisionModuleAbnormal">&nbsp;&nbsp;isBackVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>后视视觉模组标定状态异常 66</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isBackVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>后视视觉模组标定状态异常 66</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownVisionModuleAbnormal" title="isDownVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownVisionModuleAbnormal">&nbsp;&nbsp;isDownVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下视视觉模组标定状态异常 67</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isDownVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>下视视觉模组标定状态异常 67</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRightVisionModuleAbnormal" title="isRightVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRightVisionModuleAbnormal">&nbsp;&nbsp;isRightVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>右视视觉模组标定状态异常 68</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isRightVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>右视视觉模组标定状态异常 68</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLeftVisionModuleAbnormal" title="isLeftVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLeftVisionModuleAbnormal">&nbsp;&nbsp;isLeftVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>左视视觉模组标定状态异常 69</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isLeftVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>左视视觉模组标定状态异常 69</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isUpVisionModuleAbnormal" title="isUpVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isUpVisionModuleAbnormal">&nbsp;&nbsp;isUpVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上视视觉模组标定状态异常 70</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isUpVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上视视觉模组标定状态异常 70</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMoreThanOneVisionModuleAbnormal" title="isMoreThanOneVisionModuleAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMoreThanOneVisionModuleAbnormal">&nbsp;&nbsp;isMoreThanOneVisionModuleAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>多个视觉模组标定状态异常 71</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isMoreThanOneVisionModuleAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>多个视觉模组标定状态异常 71</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachMaxHeight" title="isReachMaxHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachMaxHeight">&nbsp;&nbsp;isReachMaxHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机高度已调整到最大值 72</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachMaxHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机高度已调整到最大值 72</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachMinHeight" title="isReachMinHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachMinHeight">&nbsp;&nbsp;isReachMinHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机高度已调整到最小值 73</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachMinHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机高度已调整到最小值 73</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachMinZoom" title="isReachMinZoom"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachMinZoom">&nbsp;&nbsp;isReachMinZoom</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机近距变焦已调整到最小值 74</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachMinZoom</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机近距变焦已调整到最小值 74</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isReachMaxZoom" title="isReachMaxZoom"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isReachMaxZoom">&nbsp;&nbsp;isReachMaxZoom</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞机近距变焦已调整到最大值 75</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isReachMaxZoom</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞机近距变焦已调整到最大值 75</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canNotKeepFly" title="canNotKeepFly"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canNotKeepFly">&nbsp;&nbsp;canNotKeepFly</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>无法继续通行，退出指向飞行 76</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL canNotKeepFly</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>无法继续通行，退出指向飞行 76</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attiModeExit" title="attiModeExit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attiModeExit">&nbsp;&nbsp;attiModeExit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ATTI模式，任务退出 77</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL attiModeExit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>ATTI模式，任务退出 77</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/longPressExit" title="longPressExit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/longPressExit">&nbsp;&nbsp;longPressExit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>长按遥控器任务退出 78</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL longPressExit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>长按遥控器任务退出 78</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/courseDeviation" title="courseDeviation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/courseDeviation">&nbsp;&nbsp;courseDeviation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>磁航向偏差过大，跟踪异常退出 79</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL courseDeviation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>磁航向偏差过大，跟踪异常退出 79</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/courseDeviationViewPoint" title="courseDeviationViewPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/courseDeviationViewPoint">&nbsp;&nbsp;courseDeviationViewPoint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>磁航向偏差过大，指向飞行异常退出 80</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL courseDeviationViewPoint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>磁航向偏差过大，指向飞行异常退出 80</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_81" title="visual_warning_81"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_81">&nbsp;&nbsp;visual_warning_81</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>磁航向偏差过大，环绕异常退出．（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_81</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>磁航向偏差过大，环绕异常退出．（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_82" title="visual_warning_82"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_82">&nbsp;&nbsp;visual_warning_82</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>距离过近，请调整目标距离重试．（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_82</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>距离过近，请调整目标距离重试．（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_83" title="visual_warning_83"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_83">&nbsp;&nbsp;visual_warning_83</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化失败， 请保持目标静止．　（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_83</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化失败， 请保持目标静止．　（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_84" title="visual_warning_84"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_84">&nbsp;&nbsp;visual_warning_84</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>正在测算距离， 请保持目标静止．（仅提示）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_84</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>正在测算距离， 请保持目标静止．（仅提示）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_85" title="visual_warning_85"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_85">&nbsp;&nbsp;visual_warning_85</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化成功，开始执行任务．　　（仅提示）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_85</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化成功，开始执行任务．　　（仅提示）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_86" title="visual_warning_86"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_86">&nbsp;&nbsp;visual_warning_86</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>目标丢失，请重新框选目标　（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_86</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>目标丢失，请重新框选目标　（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_87" title="visual_warning_87"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_87">&nbsp;&nbsp;visual_warning_87</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>目标纹理过弱，请重新框选目标　（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_87</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>目标纹理过弱，请重新框选目标　（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_88" title="visual_warning_88"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_88">&nbsp;&nbsp;visual_warning_88</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GPS信号弱，无法执行任务　（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_88</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>GPS信号弱，无法执行任务　（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_89" title="visual_warning_89"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_89">&nbsp;&nbsp;visual_warning_89</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>目标过小，请重新框选目标（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_89</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>目标过小，请重新框选目标（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_90" title="visual_warning_90"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_90">&nbsp;&nbsp;visual_warning_90</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>飞行器运动方向有障碍物，请移至空旷区域后重试（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_90</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>飞行器运动方向有障碍物，请移至空旷区域后重试（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visual_warning_91" title="visual_warning_91"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visual_warning_91">&nbsp;&nbsp;visual_warning_91</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化失败，请重试（App需退出至目标框选界面）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL visual_warning_91</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化失败，请重试（App需退出至目标框选界面）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isVisionCalibrationInvalid" title="isVisionCalibrationInvalid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isVisionCalibrationInvalid">&nbsp;&nbsp;isVisionCalibrationInvalid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>0 - 标定参数有效 1 - 标定参数过期 status2 5</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isVisionCalibrationInvalid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>0 - 标定参数有效 1 - 标定参数过期 status2 5</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isFrontLeftVisualSensorAbnormal" title="isFrontLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isFrontLeftVisualSensorAbnormal">&nbsp;&nbsp;isFrontLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>前视左目传感器状态异常 status2 20</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isFrontLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>前视左目传感器状态异常 status2 20</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isFrontRightVisualSensorAbnormal" title="isFrontRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isFrontRightVisualSensorAbnormal">&nbsp;&nbsp;isFrontRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>前视右目传感器状态异常 status2 21</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isFrontRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>前视右目传感器状态异常 status2 21</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBackLeftVisualSensorAbnormal" title="isBackLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBackLeftVisualSensorAbnormal">&nbsp;&nbsp;isBackLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>后视左目传感器状态异常 status2 22</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isBackLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>后视左目传感器状态异常 status2 22</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBackRightVisualSensorAbnormal" title="isBackRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBackRightVisualSensorAbnormal">&nbsp;&nbsp;isBackRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>后视右目传感器状态异常 status2 23</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isBackRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>后视右目传感器状态异常 status2 23</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownLeftVisualSensorAbnormal" title="isDownLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownLeftVisualSensorAbnormal">&nbsp;&nbsp;isDownLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下视左目传感器状态异常 status2 24</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isDownLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>下视左目传感器状态异常 status2 24</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDownRightVisualSensorAbnormal" title="isDownRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDownRightVisualSensorAbnormal">&nbsp;&nbsp;isDownRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下视右目传感器状态异常 status2 25</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isDownRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>下视右目传感器状态异常 status2 25</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRightLeftVisualSensorAbnormal" title="isRightLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRightLeftVisualSensorAbnormal">&nbsp;&nbsp;isRightLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>右视左目传感器状态异常 status2 26</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isRightLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>右视左目传感器状态异常 status2 26</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRightRightVisualSensorAbnormal" title="isRightRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRightRightVisualSensorAbnormal">&nbsp;&nbsp;isRightRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>右视右目传感器状态异常 status2 27</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isRightRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>右视右目传感器状态异常 status2 27</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLeftLeftVisualSensorAbnormal" title="isLeftLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLeftLeftVisualSensorAbnormal">&nbsp;&nbsp;isLeftLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>左视左目传感器状态异常 status2 28</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isLeftLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>左视左目传感器状态异常 status2 28</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLeftRightVisualSensorAbnormal" title="isLeftRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLeftRightVisualSensorAbnormal">&nbsp;&nbsp;isLeftRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>左视右目传感器状态异常 status2 29</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isLeftRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>左视右目传感器状态异常 status2 29</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isUpLeftVisualSensorAbnormal" title="isUpLeftVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isUpLeftVisualSensorAbnormal">&nbsp;&nbsp;isUpLeftVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上视左目传感器状态异常 status2 30</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isUpLeftVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上视左目传感器状态异常 status2 30</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isUpRightVisualSensorAbnormal" title="isUpRightVisualSensorAbnormal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isUpRightVisualSensorAbnormal">&nbsp;&nbsp;isUpRightVisualSensorAbnormal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上视右目传感器状态异常 status2 31</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isUpRightVisualSensorAbnormal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上视右目传感器状态异常 status2 31</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/landingProtectionState" title="landingProtectionState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/landingProtectionState">&nbsp;&nbsp;landingProtectionState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Landing Protection State</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELLandingProtectionState landingProtectionState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Landing Protection State</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/landingProtectionEvent" title="landingProtectionEvent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/landingProtectionEvent">&nbsp;&nbsp;landingProtectionEvent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Landing Protection Event</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) AUTELLandingProtectionEvent landingProtectionEvent</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Landing Protection Event</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/visionLimitWhenDark" title="visionLimitWhenDark"></a>
+	<h3 class="method-title"><code><a href="#//api/name/visionLimitWhenDark">&nbsp;&nbsp;visionLimitWhenDark</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视觉功能是否受限，环境较差</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL visionLimitWhenDark</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视觉功能是否受限，环境较差</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canNotPassOutOfSafeSpace" title="canNotPassOutOfSafeSpace"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canNotPassOutOfSafeSpace">&nbsp;&nbsp;canNotPassOutOfSafeSpace</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>安全空间不足，无法通过 错误码序列编号  54</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL canNotPassOutOfSafeSpace</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>安全空间不足，无法通过 错误码序列编号  54</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flyToOpenSpace" title="flyToOpenSpace"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flyToOpenSpace">&nbsp;&nbsp;flyToOpenSpace</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将飞行器移到空旷区域后重试 55</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL flyToOpenSpace</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>将飞行器移到空旷区域后重试 55</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELFlightAssistant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELDroneMainController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/compass">compass</option>
+		
+		<option value="//api/name/drone">drone</option>
+		
+		<option value="//api/name/firmwareVersion">firmwareVersion</option>
+		
+		<option value="//api/name/flightAssistant">flightAssistant</option>
+		
+		<option value="//api/name/flightLimitation">flightLimitation</option>
+		
+		<option value="//api/name/mcDelegate">mcDelegate</option>
+		
+		<option value="//api/name/navigationManager">navigationManager</option>
+		
+		<option value="//api/name/rollPitchControlMode">rollPitchControlMode</option>
+		
+		<option value="//api/name/takeOffHeight">takeOffHeight</option>
+		
+		<option value="//api/name/verticalControlMode">verticalControlMode</option>
+		
+		<option value="//api/name/yawControlMode">yawControlMode</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/bindDroneWithCompletion:">- bindDroneWithCompletion:</option>
+		
+		<option value="//api/name/cancelGoHomeWithCompletion:">- cancelGoHomeWithCompletion:</option>
+		
+		<option value="//api/name/cancelLandingWithComletion:">- cancelLandingWithComletion:</option>
+		
+		<option value="//api/name/cancelUploadInterMp3FileData">- cancelUploadInterMp3FileData</option>
+		
+		<option value="//api/name/checkNfzNeedUpload:andDigest:withCompletion:">- checkNfzNeedUpload:andDigest:withCompletion:</option>
+		
+		<option value="//api/name/checkNfzNeedUpload:filePath:withCompletion:">- checkNfzNeedUpload:filePath:withCompletion:</option>
+		
+		<option value="//api/name/controlLEDWithCompletion:withCompletion:">- controlLEDWithCompletion:withCompletion:</option>
+		
+		<option value="//api/name/disableVirtualStickControlModeWithCompletion:">- disableVirtualStickControlModeWithCompletion:</option>
+		
+		<option value="//api/name/enableVirtualJoyStickControlModeWithCompletion:">- enableVirtualJoyStickControlModeWithCompletion:</option>
+		
+		<option value="//api/name/enableVirtualJoyStickYawControlModeWithCompletion:">- enableVirtualJoyStickYawControlModeWithCompletion:</option>
+		
+		<option value="//api/name/getAttitudeStickSensitivityWithCompletion:">- getAttitudeStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getBrakeStickSensitivityWithCompletion:">- getBrakeStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getControlLEDStateWithCompletion:">- getControlLEDStateWithCompletion:</option>
+		
+		<option value="//api/name/getCutToATTIModeEnableWithCompletion:">- getCutToATTIModeEnableWithCompletion:</option>
+		
+		<option value="//api/name/getDronBindInfoWithCompletion:">- getDronBindInfoWithCompletion:</option>
+		
+		<option value="//api/name/getForcedFlightEnableWithCompletion:">- getForcedFlightEnableWithCompletion:</option>
+		
+		<option value="//api/name/getFrontLEDStateWithCompletion:">- getFrontLEDStateWithCompletion:</option>
+		
+		<option value="//api/name/getFrontRearOAEnableWithCompletion:">- getFrontRearOAEnableWithCompletion:</option>
+		
+		<option value="//api/name/getGoHomeDefaultAltitudeWithCompletion:">- getGoHomeDefaultAltitudeWithCompletion:</option>
+		
+		<option value="//api/name/getInRoomModeEnableWithCompletion:">- getInRoomModeEnableWithCompletion:</option>
+		
+		<option value="//api/name/getLeftRightOAEnableWithCompletion:">- getLeftRightOAEnableWithCompletion:</option>
+		
+		<option value="//api/name/getLowBatteryWarningWithCompletion:">- getLowBatteryWarningWithCompletion:</option>
+		
+		<option value="//api/name/getParamList">- getParamList</option>
+		
+		<option value="//api/name/getPitchAndRollStickSensitivityWithCompletion:">- getPitchAndRollStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getPitchStickSensitivityWithCompletion:">- getPitchStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getRTKAuthInfoWithCompletion:">- getRTKAuthInfoWithCompletion:</option>
+		
+		<option value="//api/name/getRollStickSensitivityWithCompletion:">- getRollStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getSDLogSenWithCompletion:">- getSDLogSenWithCompletion:</option>
+		
+		<option value="//api/name/getSeriousLowBatteryWarningwithCompletion:">- getSeriousLowBatteryWarningwithCompletion:</option>
+		
+		<option value="//api/name/getThrustStickSensitivityWithCompletion:">- getThrustStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getTopOAEnableWithCompletion:">- getTopOAEnableWithCompletion:</option>
+		
+		<option value="//api/name/getYawSchStickSensitivityWithCompletion:">- getYawSchStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/getYawStickSensitivityWithCompletion:">- getYawStickSensitivityWithCompletion:</option>
+		
+		<option value="//api/name/isVirtualStickControlModeAvailable">- isVirtualStickControlModeAvailable</option>
+		
+		<option value="//api/name/openDroneUSB">- openDroneUSB</option>
+		
+		<option value="//api/name/photographFlashingLEDWithCompletion:">- photographFlashingLEDWithCompletion:</option>
+		
+		<option value="//api/name/recordFlashingLEDWithCompletion:">- recordFlashingLEDWithCompletion:</option>
+		
+		<option value="//api/name/sendVirtualStickFlightControlData:withCompletion:">- sendVirtualStickFlightControlData:withCompletion:</option>
+		
+		<option value="//api/name/setAttitudeStickSensitivity:withCompletion:">- setAttitudeStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setBrakeStickSensitivity:withCompletion:">- setBrakeStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setCutToATTIModeEnable:withCompletion:">- setCutToATTIModeEnable:withCompletion:</option>
+		
+		<option value="//api/name/setForcedFlightEnable:withCompletion:">- setForcedFlightEnable:withCompletion:</option>
+		
+		<option value="//api/name/setFrontRearOAEnable:withCompletion:">- setFrontRearOAEnable:withCompletion:</option>
+		
+		<option value="//api/name/setGoHomeDefaultAltitude:withCompletion:">- setGoHomeDefaultAltitude:withCompletion:</option>
+		
+		<option value="//api/name/setHomePoint:withCompletion:">- setHomePoint:withCompletion:</option>
+		
+		<option value="//api/name/setHomePointAtCurrentGPSPositionWithComletion:">- setHomePointAtCurrentGPSPositionWithComletion:</option>
+		
+		<option value="//api/name/setInRoomModeEnable:withCompletion:">- setInRoomModeEnable:withCompletion:</option>
+		
+		<option value="//api/name/setLeftRightOAEnable:withCompletion:">- setLeftRightOAEnable:withCompletion:</option>
+		
+		<option value="//api/name/setParameterWithData:withName:withParameterData:">- setParameterWithData:withName:withParameterData:</option>
+		
+		<option value="//api/name/setPitchAndRollStickSensitivity:withCompletion:">- setPitchAndRollStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setPitchStickSensitivity:withCompletion:">- setPitchStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:">- setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:</option>
+		
+		<option value="//api/name/setRollStickSensitivity:withCompletion:">- setRollStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setSDLogSen:withCompletion:">- setSDLogSen:withCompletion:</option>
+		
+		<option value="//api/name/setSeriousLowBattery:withCompletion:">- setSeriousLowBattery:withCompletion:</option>
+		
+		<option value="//api/name/setThrustStickSensitivity:withCompletion:">- setThrustStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setTopOAEnable:withCompletion:">- setTopOAEnable:withCompletion:</option>
+		
+		<option value="//api/name/setYawSchStickSensitivity:withCompletion:">- setYawSchStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/setYawStickSensitivity:withCompletion:">- setYawStickSensitivity:withCompletion:</option>
+		
+		<option value="//api/name/startCalibrationIMUWithCompletion:">- startCalibrationIMUWithCompletion:</option>
+		
+		<option value="//api/name/startGoHomeWithCompletion:">- startGoHomeWithCompletion:</option>
+		
+		<option value="//api/name/startLandingWithCompletion:">- startLandingWithCompletion:</option>
+		
+		<option value="//api/name/startTakeoffWithCompletion:">- startTakeoffWithCompletion:</option>
+		
+		<option value="//api/name/startUpdateMCSystemState">- startUpdateMCSystemState</option>
+		
+		<option value="//api/name/stopUpdateMCSystemState">- stopUpdateMCSystemState</option>
+		
+		<option value="//api/name/turnOffAllLEDWithCompletion:">- turnOffAllLEDWithCompletion:</option>
+		
+		<option value="//api/name/turnOffFrontLEDWithCompletion:">- turnOffFrontLEDWithCompletion:</option>
+		
+		<option value="//api/name/turnOnFrontLEDWithCompletion:">- turnOnFrontLEDWithCompletion:</option>
+		
+		<option value="//api/name/turnOnMotorWithCompletion:">- turnOnMotorWithCompletion:</option>
+		
+		<option value="//api/name/updateNlightLuminance:completion:">- updateNlightLuminance:completion:</option>
+		
+		<option value="//api/name/updateSlightLuminance:completion:">- updateSlightLuminance:completion:</option>
+		
+		<option value="//api/name/updateSpeakerVolume:completion:">- updateSpeakerVolume:completion:</option>
+		
+		<option value="//api/name/uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:">- uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:</option>
+		
+		<option value="//api/name/uploadIntercomMp3FileData:completion:">- uploadIntercomMp3FileData:completion:</option>
+		
+		<option value="//api/name/uploadRealTimeMp3FileData:completion:">- uploadRealTimeMp3FileData:completion:</option>
+		
+		<option value="//api/name/uploadeRTKDiffData:withCompletion:">- uploadeRTKDiffData:withCompletion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELDroneMainController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELDroneMainController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Through AUTELDroneMainController, you can know the current state of the aircraft&rsquo;s mian controller, Get and set the main controller&rsquo;s parameters, and send orders to the main controller.</p>
+
+<p>通过 AUTELDroneMainController 类，你可以获得飞行器主控的当前状态，可以读写主控参数，也向主控发送命令。</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/drone" title="drone"></a>
+	<h3 class="method-title"><code><a href="#//api/name/drone">&nbsp;&nbsp;drone</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an instance of <a href="../Classes/AUTELDrone.html">AUTELDrone</a>. drone.mainController is the same as self.</p>
+
+<p>返回拥有当前实例的 <a href="../Classes/AUTELDrone.html">AUTELDrone</a> 实例，drone.mainController 与 self 是同一个实例。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, readonly) AUTELDrone *drone</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mcDelegate" title="mcDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mcDelegate">&nbsp;&nbsp;mcDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an instance of delegate.</p>
+
+<p>返回代理实例。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;AUTELDroneMainControllerDelegate&gt; _Nullable mcDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Implement mainController:didUpdateSystemState:state function to get main controller current status.
+To get current status,invoke <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> function first When <a href="#//api/name/stopUpdateMCSystemState">stopUpdateMCSystemState</a> is called, mainController:didUpdateSystemState:state will not be invoked any more until <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> is called again.</p>
+
+<p>通过该代理实例的 -mainController:didUpdateSystemState:state 方法，你可以实时获取主控当前状态。
+在获取实时状态前你需要调用 <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> 方法，否则 -mainController:didUpdateSystemState:state 方法不会被调用。当你调用 <a href="#//api/name/stopUpdateMCSystemState">stopUpdateMCSystemState</a> 方法后，-mainController:didUpdateSystemState:state 也将不会被调用，直到你再次调用 <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> 方法。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELDroneMainControllerDelegate.html">AUTELDroneMainControllerDelegate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flightLimitation" title="flightLimitation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flightLimitation">&nbsp;&nbsp;flightLimitation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read and write flight limitation parameters, such as maximum altitude and maximum horizontal speed.</p>
+
+<p>通过 flightLimitation 你可以读写主控参数，例如：飞行器的最大飞行高度和距离，最大飞行水平速度等等。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, readonly) NSObject&lt;AUTELFlightLimitation&gt; *flightLimitation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELFlightLimitation.html">AUTELFlightLimitation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/compass" title="compass"></a>
+	<h3 class="method-title"><code><a href="#//api/name/compass">&nbsp;&nbsp;compass</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get and set compass status. <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a> also includes compass status.</p>
+
+<p>通过 compass 你可以获取飞行器磁力计的状态，也可以校准磁力计。在主控状态 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a> 中也包含有磁力计状态。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, readonly) NSObject&lt;AUTELCompass&gt; *compass</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELCompass.html">AUTELCompass</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/navigationManager" title="navigationManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/navigationManager">&nbsp;&nbsp;navigationManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Manage auto navigation function, such as waypoints, orbit and follow me mission.</p>
+
+<p>通过 navigationManager 你可以让飞行器执行自动飞行任务，例如航点任务，追踪任务，和环绕兴趣点任务。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) AUTELNavigation *navigationManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELNavigation.html">AUTELNavigation</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELMission.html">AUTELMission</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELWaypointMission.html">AUTELWaypointMission</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELHotPointMission.html">AUTELHotPointMission</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELFollowMeMission.html">AUTELFollowMeMission</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flightAssistant" title="flightAssistant"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flightAssistant">&nbsp;&nbsp;flightAssistant</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>flight Assistant, you can get all setting in flight</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) AUTELFlightAssistant *flightAssistant</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>flight Assistant, you can get all setting in flight</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/verticalControlMode" title="verticalControlMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/verticalControlMode">&nbsp;&nbsp;verticalControlMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Vertical control mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AUTELVirtualStickVerticalControlMode verticalControlMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Vertical control mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rollPitchControlMode" title="rollPitchControlMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rollPitchControlMode">&nbsp;&nbsp;rollPitchControlMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Roll/Pitch control mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AUTELVirtualStickRollPitchControlMode rollPitchControlMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Roll/Pitch control mode.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/yawControlMode" title="yawControlMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/yawControlMode">&nbsp;&nbsp;yawControlMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Yaw control mode.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AUTELVirtualStickYawControlMode yawControlMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Yaw control mode.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/firmwareVersion" title="firmwareVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firmwareVersion">&nbsp;&nbsp;firmwareVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>firmware version</p>
+
+<p>飞控固件版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *firmwareVersion</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/takeOffHeight" title="takeOffHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/takeOffHeight">&nbsp;&nbsp;takeOffHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>take off height</p>
+
+<p>以前起飞默认高度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) float takeOffHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startUpdateMCSystemState" title="startUpdateMCSystemState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startUpdateMCSystemState">&ndash;&nbsp;startUpdateMCSystemState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start to update main controller system state. After invoke this function, if app has a connected <a href="#//api/name/drone">drone</a> object, -mainController:didUpdateSystemState: will be invoked. To stop updating main controller state, just call <a href="#//api/name/stopUpdateMCSystemState">stopUpdateMCSystemState</a> function.</p>
+
+<p>开始更新主控的系统状态，在调用该方法后，如果 App 与飞行器建立了连接，则 <a href="#//api/name/mcDelegate">mcDelegate</a> 的 -mainController:didUpdateSystemState: 方法会被调用。
+可以调用 <a href="#//api/name/stopUpdateMCSystemState">stopUpdateMCSystemState</a> 方法来停止主控实时状态的更新。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startUpdateMCSystemState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELDroneMainControllerDelegate.html">AUTELDroneMainControllerDelegate</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/stopUpdateMCSystemState">- stopUpdateMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopUpdateMCSystemState" title="stopUpdateMCSystemState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopUpdateMCSystemState">&ndash;&nbsp;stopUpdateMCSystemState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop updating main controller system state. By calling this function, -mainController:didUpdateSystemState: will not be able to invoked any more until <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> is called again.</p>
+
+<p>停止更新主控系统状态，调用该方法后，<a href="#//api/name/mcDelegate">mcDelegate</a> 的 -mainController:didUpdateSystemState: 方法不会被调用，直到 <a href="#//api/name/startUpdateMCSystemState">startUpdateMCSystemState</a> 方法被再次调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopUpdateMCSystemState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AUTELDroneMainControllerDelegate.html">AUTELDroneMainControllerDelegate</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/startUpdateMCSystemState">- startUpdateMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGoHomeDefaultAltitude:withCompletion:" title="setGoHomeDefaultAltitude:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGoHomeDefaultAltitude:withCompletion:">&ndash;&nbsp;setGoHomeDefaultAltitude:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set default go home altitude.</p>
+
+<p>设置飞机返航默认高度。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGoHomeDefaultAltitude:(float)<em>altitude</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>altitude</code></th>
+						<td><p>Go home altitude in meter.</p>
+
+<p>返航高度（m）。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the default altitude relative to take off point, default altitude must be set before go home is triggered. This can be useful if user can foresees the obstacles on return path and set the default altitude higher than the obstacles. If current altitude is higher than (or equals to) default go home altitude, the aircraft will remian current altitude and fly back to the home point, If current altitude is lower than default go home altitude, the aircraft will ascend to default go home altitdue and then fly back to the home point. The valid range for the altitude is from 30m to 800m.</p>
+
+<p>Default altitude value must be smaller than maximum flight altitude. We can invoke [flightLimitation getMaxFlightHeightWithCompletion:] and [flightLimitation setMaxFlightHeight:withCompletion:] to read and write flight altitude limitation.</p>
+
+<p>该默认高度是相对于起飞点的相对高度，该高度在飞行器返航前设置才生效。当你能预计在飞行器返航路线上的障碍的高度，可以将该高度设置为高于障碍高度，保证飞行器自动返航的安全。当飞行器自动返航时，如果飞行高度高于默认返航高度，飞行器将自动返航，否则飞行器会自动上升到默认高度，然后开始返航。该参数的范围为30米至800米。</p>
+
+<p>默认返航高度不能大于飞行器的飞行高度限制，否则将设置失败，可以通过调用 <a href="#//api/name/flightLimitation">flightLimitation</a> 的 -getMaxFlightHeightWithCompletion: 和 -setMaxFlightHeight:withCompletion: 方法来读写飞行器的飞行高度限制。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getGoHomeDefaultAltitudeWithCompletion:">- getGoHomeDefaultAltitudeWithCompletion:</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/AUTELFlightLimitation.html">AUTELFlightLimitation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGoHomeDefaultAltitudeWithCompletion:" title="getGoHomeDefaultAltitudeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGoHomeDefaultAltitudeWithCompletion:">&ndash;&nbsp;getGoHomeDefaultAltitudeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get default go home altitude.</p>
+
+<p>查询飞行器返航默认高度。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getGoHomeDefaultAltitudeWithCompletion:(void ( ^ _Nullable ) ( float altitude , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. This block includes 2 parameters. One is altitude which indicates the default go home altitude, another one is error which indicates error message. Error retuns nil if this function applies successfully.</p>
+
+<p>完成block，该block包含两个参数：altitude 为飞行器的返航默认高度，error 为错误信息，如果查询成功，则为nil。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setForcedFlightEnable:withCompletion:" title="setForcedFlightEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setForcedFlightEnable:withCompletion:">&ndash;&nbsp;setForcedFlightEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Forced flight mode.</p>
+
+<p>设置强制飞行态模式。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setForcedFlightEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES if <a href="#//api/name/drone">drone</a> can enable Forced flight mode, else NO.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p>
+
+<p>调用该方法时请慎重，Forced flight模式下，飞行器无法安全起飞，为了您的飞行安全，请在平整地面上起飞。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getForcedFlightEnableWithCompletion:" title="getForcedFlightEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getForcedFlightEnableWithCompletion:">&ndash;&nbsp;getForcedFlightEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Forced flight setting.</p>
+
+<p>查询强制飞行模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getForcedFlightEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setForcedFlightEnable:withCompletion:">- setForcedFlightEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCutToATTIModeEnable:withCompletion:" title="setCutToATTIModeEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCutToATTIModeEnable:withCompletion:">&ndash;&nbsp;setCutToATTIModeEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set whether RC can enable ATTI mode.</p>
+
+<p>设置是否可以通过遥控器模式切换开关将飞行器的主模式切换为姿态模式。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCutToATTIModeEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES if RC can enable ATTI mode, else NO.</p>
+
+<p>YES:你可以通过遥控器的飞行模式切换开关将主模式切换为姿态模式，NO:不能手动切换姿态模式。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.main presents current maincontroller mode.</p>
+
+<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.mainMode 表示当前飞行器的主模式。</p><div class="note"><p><strong>Note:</strong> Under ATTI mode, main controller does not have GPS services, the aircraft can not hover in the air. Please use GPS mode for safety.</p>
+
+<p>调用该方法时请慎重，ATTI模式下，飞行器无法定位返航点及稳定悬停，为了您的飞行安全，请在GPS模式下飞行。</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELMainControllerMainMode.html">AUTELMainControllerMainMode</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/getCutToATTIModeEnableWithCompletion:">- getCutToATTIModeEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCutToATTIModeEnableWithCompletion:" title="getCutToATTIModeEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCutToATTIModeEnableWithCompletion:">&ndash;&nbsp;getCutToATTIModeEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get ATTI enable setting to check whether RC can enable ATTI mode.</p>
+
+<p>查询是否可以通过遥控器将飞行器的飞行模式切换为姿态模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCutToATTIModeEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. This block includes 2 parameters. One is enable which set to YES if RC can enable ATTI mode, else NO. Another one is error ndicates error message. Error retuns nil if this function applies successfully.</p>
+
+<p>完成 block，包含两个参数：enable 如果为YES表示可以通过遥控器将飞行器的飞行模式切换为姿态模式，否则表示不能通过遥控器将飞行器的飞行模式切换为姿态模式，error 表示错误信息，如果查询成功值为nil。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setCutToATTIModeEnable:withCompletion:">- setCutToATTIModeEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInRoomModeEnableWithCompletion:" title="getInRoomModeEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInRoomModeEnableWithCompletion:">&ndash;&nbsp;getInRoomModeEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the aircraft indoor mode enable switch.</p>
+
+<p>查询飞机室内模式使能开关</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getInRoomModeEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. .</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setInRoomModeEnable:withCompletion:">- setInRoomModeEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setInRoomModeEnable:withCompletion:" title="setInRoomModeEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setInRoomModeEnable:withCompletion:">&ndash;&nbsp;setInRoomModeEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the aircraft indoor mode enable switch.</p>
+
+<p>设置飞机室内模式使能开关。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setInRoomModeEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES if RC can enable indoor mode, else NO.</p>
+
+<p>YES:打开室内模式使能开关;NO:关闭室内模式使能开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getInRoomModeEnableWithCompletion:">- getInRoomModeEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFrontRearOAEnableWithCompletion:" title="getFrontRearOAEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFrontRearOAEnableWithCompletion:">&ndash;&nbsp;getFrontRearOAEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get front and rear obstacle avoidance switches.</p>
+
+<p>查询前后避障开关</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFrontRearOAEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. .</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setFrontRearOAEnable:withCompletion:">- setFrontRearOAEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setFrontRearOAEnable:withCompletion:" title="setFrontRearOAEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setFrontRearOAEnable:withCompletion:">&ndash;&nbsp;setFrontRearOAEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set front and rear obstacle avoidance switches.</p>
+
+<p>设置前后避障开关。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setFrontRearOAEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES Turn on the front and rear obstacle avoidance switch, else NO Turn off the front and rear obstacle avoidance switches.</p>
+
+<p>YES:打开前后避障开关;NO:关闭前后避障开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getFrontRearOAEnableWithCompletion:">- getFrontRearOAEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLeftRightOAEnableWithCompletion:" title="getLeftRightOAEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLeftRightOAEnableWithCompletion:">&ndash;&nbsp;getLeftRightOAEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get left and right obstacle avoidance switches.</p>
+
+<p>查询左右避障开关</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLeftRightOAEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. .</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setLeftRightOAEnable:withCompletion:">- setLeftRightOAEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLeftRightOAEnable:withCompletion:" title="setLeftRightOAEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLeftRightOAEnable:withCompletion:">&ndash;&nbsp;setLeftRightOAEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set left and right obstacle avoidance switches.</p>
+
+<p>设置左右避障开关。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLeftRightOAEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES Turn on the left and right obstacle avoidance switch, else NO Turn off the left and right obstacle avoidance switches.</p>
+
+<p>YES:打开左右避障开关;NO:关闭左右避障开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getLeftRightOAEnableWithCompletion:">- getLeftRightOAEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTopOAEnableWithCompletion:" title="getTopOAEnableWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTopOAEnableWithCompletion:">&ndash;&nbsp;getTopOAEnableWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get top obstacle avoidance switches.</p>
+
+<p>查询上方避障开关</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getTopOAEnableWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block. .</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setFrontRearOAEnable:withCompletion:">- setFrontRearOAEnable:withCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTopOAEnable:withCompletion:" title="setTopOAEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTopOAEnable:withCompletion:">&ndash;&nbsp;setTopOAEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set top obstacle avoidance switches..</p>
+
+<p>设置上方避障开关。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTopOAEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>YES Turn on the top obstacle avoidance switch, else NO Turn off the top obstacle avoidance switches.</p>
+
+<p>YES:打开上方避障开关;NO:关闭上方避障开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/getTopOAEnableWithCompletion:">- getTopOAEnableWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startTakeoffWithCompletion:" title="startTakeoffWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startTakeoffWithCompletion:">&ndash;&nbsp;startTakeoffWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Aircraft starts to take off, and then hover at 4m height.</p>
+
+<p>让飞机自动起飞，并在4m的高度悬停。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startTakeoffWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block. 完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Motors must be on before invoke this function, or block returns AUTELSDKFlightControllerErrorMotorNotWork error. <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isMotorWorking indicates the status of motors. <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode indicates the status of aircraft, if <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode equals to AutelMCFlightModeTakeoff, then aircraft will take off. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>在调用该方法起飞飞行器前，飞行器的电机必须已经启动，否则该方法将执行失败 block 返回 AUTELSDKFlightControllerErrorMotorNotWork 错误。<a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isMotorWorking 表示电机的转动状态。
+block 返回执行成功只能说明飞行器接收到了起飞命令，飞行器是否真的起飞要通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode 是否等于 AutelMCFlightModeTakeoff 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELMainControllerFlightMode.html">AUTELMainControllerFlightMode</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startLandingWithCompletion:" title="startLandingWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startLandingWithCompletion:">&ndash;&nbsp;startLandingWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to start landing.</p>
+
+<p>让飞行器开始自动降落。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startLandingWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block. 完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode indicates the status of aircraft, if <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode equals to AutelMCFlightModeLanding, then aircraft will start to land. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>block 返回执行成功只能说明飞行器接收到了降落命令，飞行器是否真的开始自动降落要通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode 是否等于 AutelMCFlightModeLanding 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELMainControllerFlightMode.html">AUTELMainControllerFlightMode</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelLandingWithComletion:" title="cancelLandingWithComletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelLandingWithComletion:">&ndash;&nbsp;cancelLandingWithComletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancel auto landing.</p>
+
+<p>取消飞行器自动降落</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelLandingWithComletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function cancels auto land and let the aircraft hover in the air. It can be applied successfully only if it is invoked while aircraft is landing, else it returns AUTELSDKFlightControllerErrorModeError error.</p>
+
+<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode indicates the status of aircraft, if <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode dosn&rsquo;t equals to AutelMCFlightModeLanding, then aircraft will cancel auto landing. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>如果调用该方法时飞行器正在自动降落，飞机将会停止降落，并在当前位置悬停，如果飞行器没有在降落，该方法将执行失败，返回 AUTELSDKFlightControllerErrorModeError 错误。</p>
+
+<p>block 返回执行成功只能说明飞行器接收到了取消降落命令，飞行器是否真的开始取消自动降落需要根据 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode 是否不等于 AutelMCFlightModeLanding 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELMainControllerFlightMode.html">AUTELMainControllerFlightMode</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/turnOnMotorWithCompletion:" title="turnOnMotorWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/turnOnMotorWithCompletion:">&ndash;&nbsp;turnOnMotorWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turn on the motors</p>
+
+<p>启动飞行器电机。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)turnOnMotorWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isMotorWorking indicates the status of motors, if <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isMotorWorking is YES, then motors are running. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>block 返回执行成功只能说明飞行器收到了启动电机命令，电机是否开启要通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isMotorWorking 是否为 YES 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startGoHomeWithCompletion:" title="startGoHomeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startGoHomeWithCompletion:">&ndash;&nbsp;startGoHomeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to trigger aircraft go home. Aircraft will fly back to the home point and then auto land on the ground.</p>
+
+<p>调用该方法，飞行器将开始返航，并在回到Home点后自动降落。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startGoHomeWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If <a href="#//api/name/compass">compass</a> is abnormal (The value of <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isCompassError is YES) or GPS singal is weak (The value of <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isCompassError is YES) or home point is invalid (The value of <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isHomeInvalid is YES), then block returns AUTELSDKFlightControllerErrorCompassError,  AUTELSDKFlightControllerErrorBadGPS, AUTELSDKFlightControllerErrorHomePointNotRecord error message accordingly</p>
+
+<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode indicates the status of aircraft, if <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode equals to AutelMCFlightModeManualGoHome, then aircraft will start to go home. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>如果飞行器的磁力计异常（ <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isCompassError 为 YES ），GPS信号弱（ <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isGPSWeakWarning 为 YES ）或 Home 点无效（ <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isHomeInvalid 为 YES ），该方法将执行失败，block 将分别返回 AUTELSDKFlightControllerErrorCompassError，AUTELSDKFlightControllerErrorBadGPS，或 AUTELSDKFlightControllerErrorHomePointNotRecord 错误信息。</p>
+
+<p>block 返回执行成功只能说明飞行器收到了返航命令，飞行器是否真的返航，需要根据 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.flightMode 是否等于 AutelMCFlightModeManualGoHome 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelGoHomeWithCompletion:" title="cancelGoHomeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelGoHomeWithCompletion:">&ndash;&nbsp;cancelGoHomeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to cancel go home.</p>
+
+<p>取消返航</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelGoHomeWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function can be applied successfully only if it is invoked while aircraft is going home, else it returns AUTELSDKFlightControllerErrorModeError error. If <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isAutoFlyingToHomePoint is NO, then aircraft will cancel go home. The return value of block does not indicate the real status of aircraft, it only tells whether the main controller received the command or not.</p>
+
+<p>如果飞行器没有处于返航状态，该方法将执行失败，block 将返回 AUTELSDKFlightControllerErrorModeError 错误。
+block 返回执行成功只能说明飞行器收到了取消返航的命令，飞行器是否真的取消返航需要根据 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isAutoFlyingToHomePoint 是否为 NO 来判断。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/turnOnFrontLEDWithCompletion:" title="turnOnFrontLEDWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/turnOnFrontLEDWithCompletion:">&ndash;&nbsp;turnOnFrontLEDWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turn on front LED indicator light.</p>
+
+<p>打开飞行器方向指示灯。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)turnOnFrontLEDWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isFrontLEDTurnOn indicates the status of front LED. Call -turnOffFrontLEDWithCompletion function to turn off the front LED.</p>
+
+<p>通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isFrontLEDTurnOn 可以知道当前方向指示灯的开关状态。调用 <a href="#//api/name/turnOffFrontLEDWithCompletion:">turnOffFrontLEDWithCompletion:</a> 方法可以关闭方向指示灯。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/turnOffFrontLEDWithCompletion:">- turnOffFrontLEDWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/turnOffFrontLEDWithCompletion:" title="turnOffFrontLEDWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/turnOffFrontLEDWithCompletion:">&ndash;&nbsp;turnOffFrontLEDWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turn off front LED indicator light.</p>
+
+<p>关闭飞行器方向指示灯。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)turnOffFrontLEDWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the front LED has an effect on recording or taking pictures, this function can be invoked to turn off the front LED. <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isFrontLEDTurnOn indicates the status of front LED. Call turnOnFrontLEDWithCompletion function to turn on the front LED.</p>
+
+<p>如果你觉得方向指示灯对你的拍照或录像有影响，可以调用该方法关闭方向指示灯，飞行器尾灯不受影响。
+通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.isFrontLEDTurnOn 可以知道当前方向指示灯的开关状态。调用 <a href="#//api/name/turnOnFrontLEDWithCompletion:">turnOnFrontLEDWithCompletion:</a> 方法可以打开方向指示灯。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/turnOnFrontLEDWithCompletion:">- turnOnFrontLEDWithCompletion:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/turnOffAllLEDWithCompletion:" title="turnOffAllLEDWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/turnOffAllLEDWithCompletion:">&ndash;&nbsp;turnOffAllLEDWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turn off the aircraft and turn off the forearm lights and rear arm lights.</p>
+
+<p>关闭飞行器关闭前臂灯和后臂灯。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)turnOffAllLEDWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/photographFlashingLEDWithCompletion:" title="photographFlashingLEDWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/photographFlashingLEDWithCompletion:">&ndash;&nbsp;photographFlashingLEDWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>flashing LED indicator taking pictures.</p>
+
+<p>拍照闪灯指示。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)photographFlashingLEDWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recordFlashingLEDWithCompletion:" title="recordFlashingLEDWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recordFlashingLEDWithCompletion:">&ndash;&nbsp;recordFlashingLEDWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>flashing LED indicator recording.</p>
+
+<p>录像闪灯指示。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)recordFlashingLEDWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFrontLEDStateWithCompletion:" title="getFrontLEDStateWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFrontLEDStateWithCompletion:">&ndash;&nbsp;getFrontLEDStateWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get front wall light switch status</p>
+
+<p>查询前壁灯开关状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFrontLEDStateWithCompletion:(void ( ^ _Nullable ) ( BOOL isTurnOn , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getControlLEDStateWithCompletion:" title="getControlLEDStateWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getControlLEDStateWithCompletion:">&ndash;&nbsp;getControlLEDStateWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the status of the front and rear LED lights.</p>
+
+<p>查询前后LED灯开关状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getControlLEDStateWithCompletion:(void ( ^ _Nullable ) ( AUTELAircraftLedState state , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlLEDWithCompletion:withCompletion:" title="controlLEDWithCompletion:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlLEDWithCompletion:withCompletion:">&ndash;&nbsp;controlLEDWithCompletion:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>控制臂灯</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)controlLEDWithCompletion:(AUTELAircraftLedState)<em>state</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>见AUTELAircraftLedState定义</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>控制臂灯</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLowBatteryWarningWithCompletion:" title="getLowBatteryWarningWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLowBatteryWarningWithCompletion:">&ndash;&nbsp;getLowBatteryWarningWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get low battery warning data.</p>
+
+<p>查询飞行器低电警报剩余电量百分比下限。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLowBatteryWarningWithCompletion:(void ( ^ _Nullable ) ( uint8_t percent , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When battery current electricity volum is lower than the low battery warning threashold, <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning returns a low battery warning message, and force the aircraft to go home.</p>
+
+<p>飞行器剩余电量低于该下限值时，将发出低电警报（<a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning 表示低电报警信息），并开始自动返航。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELDroneLowPowerWarning.html">AUTELDroneLowPowerWarning</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSeriousLowBattery:withCompletion:" title="setSeriousLowBattery:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSeriousLowBattery:withCompletion:">&ndash;&nbsp;setSeriousLowBattery:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set serious low battery waning data, percentage of voltage in range [10, 25].</p>
+
+<p>设置严重低电警报剩余电量百分比下限，范围[10, 25]。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSeriousLowBattery:(uint8_t)<em>percent</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>percent</code></th>
+						<td><p>Percentage of serious low battery.</p>
+
+<p>剩余电量百分比。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When battery current electricity volum is lower than the critical low battery warning threashold, <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning returns a critical low battery warning message, and force the aircraft to land.</p>
+
+<p>飞行器剩余电量低于该下限值时，将发出严重低电警报（<a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning 表示低电报警信息），并开始原地降落。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELDroneLowPowerWarning.html">AUTELDroneLowPowerWarning</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSeriousLowBatteryWarningwithCompletion:" title="getSeriousLowBatteryWarningwithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSeriousLowBatteryWarningwithCompletion:">&ndash;&nbsp;getSeriousLowBatteryWarningwithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get serious low battery warning threashold in percentage.</p>
+
+<p>查询严重低电警报剩余电量百分比下限。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSeriousLowBatteryWarningwithCompletion:(void ( ^ _Nullable ) ( uint8_t percent , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When battery current electricity volum is lower than the critical low battery warning threashold, <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning returns a critical low battery warning message, and force the aircraft to land.</p>
+
+<p>飞行器剩余电量低于该下限值时，将发出严重低电警报（<a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.powerWarning 表示低电报警信息），并开始原地降落。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELDroneLowPowerWarning.html">AUTELDroneLowPowerWarning</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHomePointAtCurrentGPSPositionWithComletion:" title="setHomePointAtCurrentGPSPositionWithComletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHomePointAtCurrentGPSPositionWithComletion:">&ndash;&nbsp;setHomePointAtCurrentGPSPositionWithComletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this function to set aircraft current location as home point.</p>
+
+<p>将飞机当前位置设置为Home点。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setHomePointAtCurrentGPSPositionWithComletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get current aircraft location by read the value of <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.homeLocation.</p>
+
+<p>你可以通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.homeLocation 知道飞行器的当前返航点。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHomePoint:withCompletion:" title="setHomePoint:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHomePoint:withCompletion:">&ndash;&nbsp;setHomePoint:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set a specific GPS coordinate as home point.</p>
+
+<p>更改返航点的坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setHomePoint:(CLLocationCoordinate2D)<em>homePoint</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homePoint</code></th>
+						<td><p>GPS coordinate of home point.</p>
+
+<p>返航点的GPS坐标。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function fails to apply if new home point is over 5km away from the aircraft, and block returns AUTELSDKFCErrorDesNewHomeTooFarAway error message. If this function applies successfully, the aircraft will return to new home point. Get current aircraft location by read the value of <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.homeLocation.</p>
+
+<p>如果新的返航点距离当前飞机位置超过5km，该方法将执行失败，block 返回 AUTELSDKFCErrorDesNewHomeTooFarAway 错误。
+如果该方法执行成功，那么飞行器自动返航时，将飞到新的返航点，请谨慎调用该方法。
+飞行器每次启动电机都会从新将飞行的返航点更新为飞机的当前位置。
+你可以通过 <a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a>.homeLocation 知道飞行器的当前返航点。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELSDKFlightControllerError.html">AUTELSDKFlightControllerError</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AUTELMCSystemState.html">AUTELMCSystemState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openDroneUSB" title="openDroneUSB"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openDroneUSB">&ndash;&nbsp;openDroneUSB</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Open USB data port.</p>
+
+<p>打开飞行器的USB数据口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)openDroneUSB</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns NO if motors are on, else return YES.</p>
+
+<p>如果飞行器电机处于转动状态时，此方法将执行失败，返回NO，否则返回YES。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this function to open USB data port of the aircraft, and then the user can connect the aircraft to PC to read flight data.</p>
+
+<p>This function returns NO if motors are on. Otherwise it returns YES and disable the motors. App maybe not able to accept any data from main controller until the aircraft restarted.</p>
+
+<p>调用该方法，可以打开飞行器的USB数据口，打开USB数据口后，你的电脑可以通过USB读取飞行器数据。</p>
+
+<p>当飞行器电机转动时调用该方法，该方法将执行失败，返回 NO。
+如果该方法调用成功，飞行器的电机无法转动，App可能会接收不到飞控数据，直到你重启飞行器。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startCalibrationIMUWithCompletion:" title="startCalibrationIMUWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startCalibrationIMUWithCompletion:">&ndash;&nbsp;startCalibrationIMUWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invoke this method to start IMU calibration.</p>
+
+<p>调用该方法让飞行器进入IMU校准。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startCalibrationIMUWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>if main controller received the command, returns nil. Else returns error message.</p>
+
+<p>如果命令发送成功，block 的 error 返回 nil，否则返回错误信息。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method can be invoked when motors are on and returns AUTELSDKFlightControllerErrorMotorWorking error.</p>
+
+<p>当飞行器电机转动时，该方法将执行失败，返回 AUTELSDKFlightControllerErrorMotorWorking 错误</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELIMUCalibrationWarn.html">AUTELIMUCalibrationWarn</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/AUTELIMUCalibrationStatus.html">AUTELIMUCalibrationStatus</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDronBindInfoWithCompletion:" title="getDronBindInfoWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDronBindInfoWithCompletion:">&ndash;&nbsp;getDronBindInfoWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get aircraft binding information</p>
+
+<p>查询飞行器的绑定信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDronBindInfoWithCompletion:(void ( ^ _Nullable ) ( AUTELDroneBindUserState bindState , NSString *_Nullable sn , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block，bindState表示当前飞行器是否已经绑定了，sn表示飞行器的序列号，如果 bindState 为 AUTELDroneBindStateNoSupport 表示该飞行器不支持绑定功能，你应该忽略 sn，如果查询成功 error 为 nil，否则 error 包含错误信息。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bindDroneWithCompletion:" title="bindDroneWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bindDroneWithCompletion:">&ndash;&nbsp;bindDroneWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>set aircraft binding</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bindDroneWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>set aircraft binding</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setYawStickSensitivity:withCompletion:" title="setYawStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setYawStickSensitivity:withCompletion:">&ndash;&nbsp;setYawStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the yaw axis joystick sensitivity</p>
+
+<p>设置yaw轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setYawStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 0.8],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getYawStickSensitivityWithCompletion:" title="getYawStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getYawStickSensitivityWithCompletion:">&ndash;&nbsp;getYawStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get yaw axis joystick sensitivity</p>
+
+<p>查询yaw轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getYawStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPitchAndRollStickSensitivity:withCompletion:" title="setPitchAndRollStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPitchAndRollStickSensitivity:withCompletion:">&ndash;&nbsp;setPitchAndRollStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the Pitch And Roll axis joystick sensitivity</p>
+
+<p>设置pitch轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPitchAndRollStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 0.8],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPitchAndRollStickSensitivityWithCompletion:" title="getPitchAndRollStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPitchAndRollStickSensitivityWithCompletion:">&ndash;&nbsp;getPitchAndRollStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get Pitch And Roll axis joystick sensitivity</p>
+
+<p>查询Pitch And Roll轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPitchAndRollStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPitchStickSensitivity:withCompletion:" title="setPitchStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPitchStickSensitivity:withCompletion:">&ndash;&nbsp;setPitchStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the Pitch axis joystick sensitivity</p>
+
+<p>设置pitch轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPitchStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 0.8],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPitchStickSensitivityWithCompletion:" title="getPitchStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPitchStickSensitivityWithCompletion:">&ndash;&nbsp;getPitchStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get Pitch axis joystick sensitivity</p>
+
+<p>查询Pitch轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPitchStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRollStickSensitivity:withCompletion:" title="setRollStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRollStickSensitivity:withCompletion:">&ndash;&nbsp;setRollStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the Roll axis joystick sensitivity</p>
+
+<p>设置Roll轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRollStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 0.8],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRollStickSensitivityWithCompletion:" title="getRollStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRollStickSensitivityWithCompletion:">&ndash;&nbsp;getRollStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get Roll axis joystick sensitivity</p>
+
+<p>查询Roll轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRollStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setThrustStickSensitivity:withCompletion:" title="setThrustStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setThrustStickSensitivity:withCompletion:">&ndash;&nbsp;setThrustStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the Thrust axis joystick sensitivity</p>
+
+<p>设置Thrust轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setThrustStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 0.8],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getThrustStickSensitivityWithCompletion:" title="getThrustStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getThrustStickSensitivityWithCompletion:">&ndash;&nbsp;getThrustStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get Thrust axis joystick sensitivity</p>
+
+<p>查询Thrust轴摇杆感度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getThrustStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAttitudeStickSensitivity:withCompletion:" title="setAttitudeStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAttitudeStickSensitivity:withCompletion:">&ndash;&nbsp;setAttitudeStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the attitude  sensitivity</p>
+
+<p>设置姿态灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAttitudeStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.2, 1.0],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAttitudeStickSensitivityWithCompletion:" title="getAttitudeStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAttitudeStickSensitivityWithCompletion:">&ndash;&nbsp;getAttitudeStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get attitude  sensitivity</p>
+
+<p>查询姿态灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAttitudeStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBrakeStickSensitivity:withCompletion:" title="setBrakeStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBrakeStickSensitivity:withCompletion:">&ndash;&nbsp;setBrakeStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the brake  sensitivity</p>
+
+<p>设置刹车灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBrakeStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.5, 2.0],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBrakeStickSensitivityWithCompletion:" title="getBrakeStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBrakeStickSensitivityWithCompletion:">&ndash;&nbsp;getBrakeStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get brake sensitivity</p>
+
+<p>查询刹灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBrakeStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setYawSchStickSensitivity:withCompletion:" title="setYawSchStickSensitivity:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setYawSchStickSensitivity:withCompletion:">&ndash;&nbsp;setYawSchStickSensitivity:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the yaw sch sensitivity</p>
+
+<p>设置偏航行程灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setYawSchStickSensitivity:(float)<em>sensitivity</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensitivity</code></th>
+						<td><p>代设置的感度,范围为[0.5, 2.5],如果超过该范围block将返回错误。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getYawSchStickSensitivityWithCompletion:" title="getYawSchStickSensitivityWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getYawSchStickSensitivityWithCompletion:">&ndash;&nbsp;getYawSchStickSensitivityWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get pitch axis joystick sensitivity</p>
+
+<p>查询偏航行程灵敏度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getYawSchStickSensitivityWithCompletion:(void ( ^ _Nullable ) ( float sensitivity , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSDLogSen:withCompletion:" title="setSDLogSen:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSDLogSen:withCompletion:">&ndash;&nbsp;setSDLogSen:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the SD card reading frequency</p>
+
+<p>设置SD卡读取频率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSDLogSen:(uint8_t)<em>sen</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSDLogSenWithCompletion:" title="getSDLogSenWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDLogSenWithCompletion:">&ndash;&nbsp;getSDLogSenWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询SD卡读取频率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSDLogSenWithCompletion:(void ( ^ _Nullable ) ( uint8_t sen , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getParamList" title="getParamList"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getParamList">&ndash;&nbsp;getParamList</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取参数列表请求（仅用于内部测试）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getParamList</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取参数列表请求（仅用于内部测试）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setParameterWithData:withName:withParameterData:" title="setParameterWithData:withName:withParameterData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setParameterWithData:withName:withParameterData:">&ndash;&nbsp;setParameterWithData:withName:withParameterData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置参数（仅用于内部测试）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setParameterWithData:(float)<em>data</em> withName:(NSString *_Nonnull)<em>name</em> withParameterData:(int)<em>dataTyp</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置参数（仅用于内部测试）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessories Methods" name="task_Accessories Methods"></a>
+						<h2 class="task-title">Accessories Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/uploadIntercomMp3FileData:completion:" title="uploadIntercomMp3FileData:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadIntercomMp3FileData:completion:">&ndash;&nbsp;uploadIntercomMp3FileData:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上传mp3文件到喊话器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)uploadIntercomMp3FileData:(NSData *_Nullable)<em>mp3Data</em> completion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上传mp3文件到喊话器</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadRealTimeMp3FileData:completion:" title="uploadRealTimeMp3FileData:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadRealTimeMp3FileData:completion:">&ndash;&nbsp;uploadRealTimeMp3FileData:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>上传实时mp3文件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)uploadRealTimeMp3FileData:(NSData *_Nullable)<em>mp3Data</em> completion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>上传实时mp3文件</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelUploadInterMp3FileData" title="cancelUploadInterMp3FileData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelUploadInterMp3FileData">&ndash;&nbsp;cancelUploadInterMp3FileData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>取消上传</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelUploadInterMp3FileData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>取消上传</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateNlightLuminance:completion:" title="updateNlightLuminance:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateNlightLuminance:completion:">&ndash;&nbsp;updateNlightLuminance:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>控制夜航灯亮度命令</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateNlightLuminance:(int)<em>luminance</em> completion:(void ( ^ _Nullable ) ( NSDictionary *_Nullable answer , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>控制夜航灯亮度命令</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSlightLuminance:completion:" title="updateSlightLuminance:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSlightLuminance:completion:">&ndash;&nbsp;updateSlightLuminance:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>控制探照灯亮度命令</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSlightLuminance:(int)<em>luminance</em> completion:(void ( ^ _Nullable ) ( NSDictionary *_Nullable answer , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>控制探照灯亮度命令</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSpeakerVolume:completion:" title="updateSpeakerVolume:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSpeakerVolume:completion:">&ndash;&nbsp;updateSpeakerVolume:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>喊话器音量大小命令</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSpeakerVolume:(int)<em>volume</em> completion:(void ( ^ _Nullable ) ( NSDictionary *_Nullable answer , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>喊话器音量大小命令</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="RTK Methods" name="task_RTK Methods"></a>
+						<h2 class="task-title">RTK Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getRTKAuthInfoWithCompletion:" title="getRTKAuthInfoWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRTKAuthInfoWithCompletion:">&ndash;&nbsp;getRTKAuthInfoWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get network RTK authentication information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRTKAuthInfoWithCompletion:(AUTELGetRTKAuthInfoCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get network RTK authentication information</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:" title="setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:">&ndash;&nbsp;setRTKAuthInfo:pwd:deviceID:deviceType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置网络RTK账号信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRTKAuthInfo:(NSString *_Nonnull)<em>account</em> pwd:(NSString *_Nonnull)<em>pwd</em> deviceID:(NSString *_Nonnull)<em>deviceID</em> deviceType:(NSString *_Nonnull)<em>deviceType</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>result</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置网络RTK账号信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadeRTKDiffData:withCompletion:" title="uploadeRTKDiffData:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadeRTKDiffData:withCompletion:">&ndash;&nbsp;uploadeRTKDiffData:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Upload RTK差分数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)uploadeRTKDiffData:(NSData *_Nullable)<em>streamData</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>streamData</code></th>
+						<td><p>data</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>block result</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Upload RTK差分数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="VirtualStickControlMode Methods" name="task_VirtualStickControlMode Methods"></a>
+						<h2 class="task-title">VirtualStickControlMode Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isVirtualStickControlModeAvailable" title="isVirtualStickControlModeAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isVirtualStickControlModeAvailable">&ndash;&nbsp;isVirtualStickControlModeAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>is virtual stick control mode available</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isVirtualStickControlModeAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>bool</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>is virtual stick control mode available</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableVirtualJoyStickControlModeWithCompletion:" title="enableVirtualJoyStickControlModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableVirtualJoyStickControlModeWithCompletion:">&ndash;&nbsp;enableVirtualJoyStickControlModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable virtual joy stick control mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableVirtualJoyStickControlModeWithCompletion:(AUTELCompletionBlock)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>enable virtual joy stick control mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableVirtualJoyStickYawControlModeWithCompletion:" title="enableVirtualJoyStickYawControlModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableVirtualJoyStickYawControlModeWithCompletion:">&ndash;&nbsp;enableVirtualJoyStickYawControlModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable virtual joy stick yaw control mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableVirtualJoyStickYawControlModeWithCompletion:(AUTELCompletionBlock)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>enable virtual joy stick yaw control mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disableVirtualStickControlModeWithCompletion:" title="disableVirtualStickControlModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableVirtualStickControlModeWithCompletion:">&ndash;&nbsp;disableVirtualStickControlModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>disable virtual stick yaw control mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disableVirtualStickControlModeWithCompletion:(AUTELCompletionBlock)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>disable virtual stick yaw control mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendVirtualStickFlightControlData:withCompletion:" title="sendVirtualStickFlightControlData:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendVirtualStickFlightControlData:withCompletion:">&ndash;&nbsp;sendVirtualStickFlightControlData:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>send virtual stick flight control data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendVirtualStickFlightControlData:(AutelVirtualStickFlightControlData)<em>stickData</em> withCompletion:(AUTELCompletionBlock)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stickData</code></th>
+						<td><p>virtual stick flight control data</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>send virtual stick flight control data</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="TransferFile Methods" name="task_TransferFile Methods"></a>
+						<h2 class="task-title">TransferFile Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/checkNfzNeedUpload:andDigest:withCompletion:" title="checkNfzNeedUpload:andDigest:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkNfzNeedUpload:andDigest:withCompletion:">&ndash;&nbsp;checkNfzNeedUpload:andDigest:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if the designated  no-fly zone file needs to be uploaded.</p>
+
+<p>检查指定的禁飞区文件是否需要上传。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkNfzNeedUpload:(NSString *_Nonnull)<em>country</em> andDigest:(NSString *_Nullable)<em>digest</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>country</code></th>
+						<td><p>Country code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>digest</code></th>
+						<td><p>MD5 summary string of no-fly zone files.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p>
+
+<p>完成block。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkNfzNeedUpload:filePath:withCompletion:" title="checkNfzNeedUpload:filePath:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkNfzNeedUpload:filePath:withCompletion:">&ndash;&nbsp;checkNfzNeedUpload:filePath:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Check if the designated  no-fly zone file needs to be uploaded</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkNfzNeedUpload:(NSString *_Nonnull)<em>country</em> filePath:(NSString *_Nullable)<em>filePath</em> withCompletion:(void ( ^ _Nullable ) ( int code , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>country</code></th>
+						<td><p>Country code.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filePath</code></th>
+						<td><p>filePath</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block, code = 0 do not need upload, else need upload.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>   Check if the designated  no-fly zone file needs to be uploaded</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:" title="uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:">&ndash;&nbsp;uploadAuthfzFileWithModels:fileName:withProgress:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if the designated  no-fly zone file needs to be uploaded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)uploadAuthfzFileWithModels:(NSArray&lt;AUTELTransferAuthFlyzoneFileModel*&gt; *_Nonnull)<em>models</em> fileName:(NSString *_Nonnull)<em>fileName</em> withProgress:(AUTELProgressHandler)<em>progress</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>file name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>upload progress</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion Block.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check if the designated  no-fly zone file needs to be uploaded.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELDroneMainController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

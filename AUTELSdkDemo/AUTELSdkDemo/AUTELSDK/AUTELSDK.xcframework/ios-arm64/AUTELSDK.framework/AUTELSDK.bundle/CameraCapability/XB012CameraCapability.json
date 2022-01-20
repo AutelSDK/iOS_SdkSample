@@ -1,0 +1,377 @@
+{
+  "Commants": {
+    "FuctionType": "0:Get 1:Set 2:Operation",
+    "Supported": "true or false",
+    "ParameterType": "0:no parameter 1:enum 2:boolean 3:integer 4:float 5:时间 6:多种类型"
+  },
+  "SetCameraWorkMode": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetCameraWorkMode": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "StartShootPhoto": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StopShootPhoto": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StartRecordVideo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StopRecordVideo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "SetVideoResolutionAndFrameFate": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetVideoResolutionAndFrameFate": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetVideoCaptionEnabled": {
+    "ParameterType": 2,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetVideoCaptionEnabled": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetVideoFileFormat": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetVideoFileFormat": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetVideoStandard": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetVideoStandard": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "GetPhotoAspectRatio": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoAspectRatio": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPhotoFileFormat": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoFileFormat": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPhotoBurstCount": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoBurstCount": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPhotoAEBCaptureCount": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoAEBCaptureCount": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPhotoInterval": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoInterval": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetExposureMode": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetExposureMode": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetISO": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetISO": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetShutterSpeed": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetShutterSpeed": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetExposureCompensation": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetExposureCompensation": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetSpotMeteringArea": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetSpotMeteringArea": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetAELock": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetAELock": {
+    "ParameterType": 2,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetWhiteBalance": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetWhiteBalance": {
+    "ParameterType": 6,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetAntiFlicker": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetAntiFlicker": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPhotoStyle": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoStyle": {
+    "ParameterType": 6,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetDigitalFilter": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetDigitalFilter": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetAperture": {
+    "ParameterType": 0,
+    "Supported": false,
+    "FunctionType": 0
+  },
+  "SetAperture": {
+    "ParameterType": 1,
+    "Supported": false,
+    "FunctionType": 1
+  },
+  "GetLensFocusMode": {
+    "ParameterType": 0,
+    "Supported": false,
+    "FunctionType": 0
+  },
+  "SetLensFocusMode": {
+    "ParameterType": 1,
+    "Supported": false,
+    "FunctionType": 1
+  },
+  "GetAFLensFocusMode": {
+    "ParameterType": 0,
+    "Supported": false,
+    "FunctionType": 0
+  },
+  "SetAFLensFocusMode": {
+    "ParameterType": 6,
+    "Supported": false,
+    "FunctionType": 1
+  },
+  "GetObjectDistance": {
+    "ParameterType": 0,
+    "Supported": false,
+    "FunctionType": 0
+  },
+  "SetObjectDistance": {
+    "ParameterType": 3,
+    "Supported": false,
+    "FunctionType": 1
+  },
+  "Get3DNREnabled": {
+    "ParameterType": 0,
+    "Supported": false,
+    "FunctionType": 0
+  },
+  "Set3DNREnabled": {
+    "ParameterType": 2,
+    "Supported": false,
+    "FunctionType": 1
+  },
+  "GetHistogramEnabled": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetHistogramEnabled": {
+    "ParameterType": 2,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetSystemDateAndTime": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetSystemDateAndTime": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetDigitalZoomScale": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetDigitalZoomScale": {
+    "ParameterType": 4,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "FormatSDCard": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetAllSettings": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "LoadFactorySettings": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetDeviceInfor": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "GetSDCardInfo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPictureInVideo": {
+    "ParameterType": 6,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetPictureInVideo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetTrackPattern": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetTrackStatus": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetGoalArea": {
+    "ParameterType": 6,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "SetTrackObjectParameters": {
+    "ParameterType": 6,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "StopTracking": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetVideoFileComprassionStandar": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetVideoFileComprassionStandar": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  }
+}

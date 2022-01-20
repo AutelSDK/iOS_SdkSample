@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELPlaybackExecuteTaskState Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELPlaybackExecuteTaskState Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>AUTELPlaybackWorkState.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">AUTELPlaybackExecuteTaskState</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>A playback state represents a task that the Playback manager is executing.</p>
+
+<p>代表回放管理者当前进行的任务的回放状态。</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, AUTELPlaybackExecuteTaskState ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskFetchingFileList</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskFetchingThumbnail</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskFetchingPreview</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskDownloading</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskDeleting</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AUTELPlaybackExecuteTaskIdle</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskFetchingFileList"></a><code>AUTELPlaybackExecuteTaskFetchingFileList</code></dt>
+<dd>
+
+
+<p>Retrieving the file list.</p>
+
+<p>正在获取文件列表。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskFetchingThumbnail"></a><code>AUTELPlaybackExecuteTaskFetchingThumbnail</code></dt>
+<dd>
+
+
+<p>Retrieving the file thumbnail.</p>
+
+<p>正在获取文件缩略图。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskFetchingPreview"></a><code>AUTELPlaybackExecuteTaskFetchingPreview</code></dt>
+<dd>
+
+
+<p>Retrieving the file preview.</p>
+
+<p>正在获取文件预览图。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskDownloading"></a><code>AUTELPlaybackExecuteTaskDownloading</code></dt>
+<dd>
+
+
+<p>Retrieving the original file.</p>
+
+<p>正在下载原文件。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskDeleting"></a><code>AUTELPlaybackExecuteTaskDeleting</code></dt>
+<dd>
+
+
+<p>Deleting the file.</p>
+
+<p>正在删除文件。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AUTELPlaybackExecuteTaskIdle"></a><code>AUTELPlaybackExecuteTaskIdle</code></dt>
+<dd>
+
+
+<p>Idle state.</p>
+
+<p>空闲状态。</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">AUTELPlaybackWorkState.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">AUTELPlaybackWorkState.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

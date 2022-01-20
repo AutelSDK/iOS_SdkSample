@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AUTELCameraParameters Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AUTELSdkDoc </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AUTEL.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/supportedCameraAFLensFocusModeRange">- supportedCameraAFLensFocusModeRange</option>
+		
+		<option value="//api/name/supportedCameraAntiFlickerRange">- supportedCameraAntiFlickerRange</option>
+		
+		<option value="//api/name/supportedCameraApertureRange">- supportedCameraApertureRange</option>
+		
+		<option value="//api/name/supportedCameraContrastRange">- supportedCameraContrastRange</option>
+		
+		<option value="//api/name/supportedCameraDigitalFilterRange">- supportedCameraDigitalFilterRange</option>
+		
+		<option value="//api/name/supportedCameraDigitalZoomScaleRange">- supportedCameraDigitalZoomScaleRange</option>
+		
+		<option value="//api/name/supportedCameraDisplayMode">- supportedCameraDisplayMode</option>
+		
+		<option value="//api/name/supportedCameraExposureCompensationRange">- supportedCameraExposureCompensationRange</option>
+		
+		<option value="//api/name/supportedCameraExposureModeRange">- supportedCameraExposureModeRange</option>
+		
+		<option value="//api/name/supportedCameraHueRange">- supportedCameraHueRange</option>
+		
+		<option value="//api/name/supportedCameraISOModeRange">- supportedCameraISOModeRange</option>
+		
+		<option value="//api/name/supportedCameraISORange">- supportedCameraISORange</option>
+		
+		<option value="//api/name/supportedCameraIrColor">- supportedCameraIrColor</option>
+		
+		<option value="//api/name/supportedCameraLensFocusAreaColIndexRange">- supportedCameraLensFocusAreaColIndexRange</option>
+		
+		<option value="//api/name/supportedCameraLensFocusAreaRowIndexRange">- supportedCameraLensFocusAreaRowIndexRange</option>
+		
+		<option value="//api/name/supportedCameraLensFocusModeRange">- supportedCameraLensFocusModeRange</option>
+		
+		<option value="//api/name/supportedCameraModeRange">- supportedCameraModeRange</option>
+		
+		<option value="//api/name/supportedCameraPhotoAEBCaptureCountRange">- supportedCameraPhotoAEBCaptureCountRange</option>
+		
+		<option value="//api/name/supportedCameraPhotoAspectRatioRange">- supportedCameraPhotoAspectRatioRange</option>
+		
+		<option value="//api/name/supportedCameraPhotoBurstCountRange">- supportedCameraPhotoBurstCountRange</option>
+		
+		<option value="//api/name/supportedCameraPhotoFileFormatRange">- supportedCameraPhotoFileFormatRange</option>
+		
+		<option value="//api/name/supportedCameraPhotoStyleRange">- supportedCameraPhotoStyleRange</option>
+		
+		<option value="//api/name/supportedCameraPictureInVideoIntervalRange">- supportedCameraPictureInVideoIntervalRange</option>
+		
+		<option value="//api/name/supportedCameraSaturationRange">- supportedCameraSaturationRange</option>
+		
+		<option value="//api/name/supportedCameraSharpnessRange">- supportedCameraSharpnessRange</option>
+		
+		<option value="//api/name/supportedCameraShutterSpeedRange">- supportedCameraShutterSpeedRange</option>
+		
+		<option value="//api/name/supportedCameraSpotMeteringAreaColIndexRange">- supportedCameraSpotMeteringAreaColIndexRange</option>
+		
+		<option value="//api/name/supportedCameraSpotMeteringAreaRowIndexRange">- supportedCameraSpotMeteringAreaRowIndexRange</option>
+		
+		<option value="//api/name/supportedCameraTimeLapseIntervalRange">- supportedCameraTimeLapseIntervalRange</option>
+		
+		<option value="//api/name/supportedCameraVideoFileFormatRange">- supportedCameraVideoFileFormatRange</option>
+		
+		<option value="//api/name/supportedCameraVideoResolutionAndFrameRateRange">- supportedCameraVideoResolutionAndFrameRateRange</option>
+		
+		<option value="//api/name/supportedCameraVideoStandardRange">- supportedCameraVideoStandardRange</option>
+		
+		<option value="//api/name/supportedCameraWhiteBalanceCustomColorTemperatureRange">- supportedCameraWhiteBalanceCustomColorTemperatureRange</option>
+		
+		<option value="//api/name/supportedCameraWhiteBalanceRange">- supportedCameraWhiteBalanceRange</option>
+		
+		<option value="//api/name/supportedVideoResolutionAndFrameRateRange">- supportedVideoResolutionAndFrameRateRange</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AUTELCameraParameters Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AUTELCameraParameters.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>You can learn the currently supported parameter ranges .</p>
+
+<p>相机参数，可获取相机当前支持的参数范围</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/supportedCameraVideoResolutionAndFrameRateRange" title="supportedCameraVideoResolutionAndFrameRateRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraVideoResolutionAndFrameRateRange">&ndash;&nbsp;supportedCameraVideoResolutionAndFrameRateRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for video resolution (<a href="../Constants/AUTELCameraVideoResolution.html">AUTELCameraVideoResolution</a>) and frame rate(<a href="../Constants/AUTELCameraVideoFrameRate.html">AUTELCameraVideoFrameRate</a>). Returns an empty array if current camera does not support any video resolution or frame rate setting, returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前视频标准下支持的视频分辨率和帧率范围。当前相机不支持任何视频分辨率和帧率时，会返回一个空数组；相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSArray&lt;NSNumber*&gt; *&gt; *)supportedCameraVideoResolutionAndFrameRateRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of pairs. Each pair represents a valid <a href="../Constants/AUTELCameraVideoResolution.html">AUTELCameraVideoResolution</a> value and <a href="../Constants/AUTELCameraVideoFrameRate.html">AUTELCameraVideoFrameRate</a> value.</p>
+
+<p>数组对象，数组对象内会有多个数组，每个数组对应一个视频分辨率(<a href="../Constants/AUTELCameraVideoResolution.html">AUTELCameraVideoResolution</a>) 下支持的帧率(<a href="../Constants/AUTELCameraVideoFrameRate.html">AUTELCameraVideoFrameRate</a>)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedVideoResolutionAndFrameRateRange" title="supportedVideoResolutionAndFrameRateRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedVideoResolutionAndFrameRateRange">&ndash;&nbsp;supportedVideoResolutionAndFrameRateRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief Return to the resolution and frame rate info.
+*
+*
+返回相机当前视频制式支持的分辨率和帧率信息</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSNumber*,NSArray&lt;NSNumber*&gt; *&gt; *)supportedVideoResolutionAndFrameRateRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>一个字典对象，其中 key 为分辨率，参考 <a href="../Constants/AUTELCameraVideoResolution.html"><code>AUTELCameraVideoResolution</code></a>, value 为一个当前分辨率支持的帧率数组, 数组元素代表一个帧率，参考 <a href="../Constants/AUTELCameraVideoFrameRate.html"><code>AUTELCameraVideoFrameRate</code></a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>@brief Return to the resolution and frame rate info.
+*
+*
+返回相机当前视频制式支持的分辨率和帧率信息</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraModeRange" title="supportedCameraModeRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraModeRange">&ndash;&nbsp;supportedCameraModeRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera mode (<a href="../Constants/AUTELCameraWorkMode.html">AUTELCameraWorkMode</a>). Returns an empty array if current camera has no supported camera mode,returns nil if the camera is disconnected.</p>
+
+<p>返回当前相机支持的工作模式范围(<a href="../Constants/AUTELCameraWorkMode.html">AUTELCameraWorkMode</a>)。当前相机不支持任何工作模式时，会返回一个空数组；相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraModeRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represents one current supported camera mode.</p>
+
+<p>返回一个数组，数组中的每个元素都是 NSNumber 类型。每一个元素都代表一种当前支持的相机工作模式。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraExposureModeRange" title="supportedCameraExposureModeRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraExposureModeRange">&ndash;&nbsp;supportedCameraExposureModeRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s exposure mode (<a href="../Constants/AUTELCameraExposureMode.html">AUTELCameraExposureMode</a>). Returns an empty array if current camera does not support any exposure mode,returns nil the camera is disconnected.</p>
+
+<p>返回当前相机支持的曝光模式（AUTELCameraExposureMode）。当前相机不支持任何曝光模式会返回一个空数组；相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraExposureModeRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported exposure mode.</p>
+
+<p>返回一个数组，数组中的每个元素都是 NSNumber 类型。每一个元素都代表一种当前相机支持的曝光模式。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraISORange" title="supportedCameraISORange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraISORange">&ndash;&nbsp;supportedCameraISORange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s ISO (<a href="../Constants/AUTELCameraISO.html">AUTELCameraISO</a>) to set. Returns an empty array if current camera does not support any iso value to set. And returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前曝光模式下支持设置的 ISO (<a href="../Constants/AUTELCameraISO.html">AUTELCameraISO</a>) 值。当前相机不支持任何 ISO 值设置时会返回一个空数组，比如在 自动曝光模式(AUTELCameraExposureModeAuto)下，ISO值不可设置，将会返回一个空数组。当相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraISORange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported ISO value.</p>
+
+<p>返回一个数组，数组中每个元素都是 NSNumber 类型。每一个元素都代表一种当前相机支持设置的 ISO 值。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraISOModeRange" title="supportedCameraISOModeRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraISOModeRange">&ndash;&nbsp;supportedCameraISOModeRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s ISO mode (<a href="../Constants/AUTELCameraISOMode.html">AUTELCameraISOMode</a>). Returns an empty array if current camera does not support any ISO mode,returns nil the camera is disconnected.</p>
+
+<p>返回当前相机支持的曝光模式（AUTELCameraISOMode）。当前相机不支持任何感光度模式会返回一个空数组；相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraISOModeRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported ISO mode.</p>
+
+<p>返回一个数组，数组中的每个元素都是 NSNumber 类型。每一个元素都代表一种当前相机支持的感光度模式。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraShutterSpeedRange" title="supportedCameraShutterSpeedRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraShutterSpeedRange">&ndash;&nbsp;supportedCameraShutterSpeedRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s shutter speed (<a href="../Constants/AUTELCameraShutterSpeed.html">AUTELCameraShutterSpeed</a>) to set. Returns an empty array if current camera does not support any shutter speed value. And returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前曝光模式下支持设置的快门速度范围 (<a href="../Constants/AUTELCameraShutterSpeed.html">AUTELCameraShutterSpeed</a>)。当前相机不支持任何快门速度的设置时会返回一个空数组，类似ISO值。当相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraShutterSpeedRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported shutter speed value.</p>
+
+<p>返回一个数组，数组中每个元素都是 NSNumber 类型。每一个元素都代表当前相机支持设置的快门速度。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraExposureCompensationRange" title="supportedCameraExposureCompensationRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraExposureCompensationRange">&ndash;&nbsp;supportedCameraExposureCompensationRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s exposure compensation (<a href="../Constants/AUTELCameraExposureCompensation.html">AUTELCameraExposureCompensation</a>) to set. Returns an empty array if current camera does not support any exposure compensation value. And returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前曝光模式下支持设置的曝光补偿范围 (<a href="../Constants/AUTELCameraShutterSpeed.html">AUTELCameraShutterSpeed</a>)。当前相机不支持任何曝光补偿值的设置时会返回一个空数组，类似ISO值。当相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraExposureCompensationRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported exposure compensation value.</p>
+
+<p>返回一个数组，数组中每个元素都是 NSNumber 类型。每一个元素都代表当前相机支持设置的曝光补偿值。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraApertureRange" title="supportedCameraApertureRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraApertureRange">&ndash;&nbsp;supportedCameraApertureRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s aperture (<a href="../Constants/AUTELCameraAperture.html">AUTELCameraAperture</a>) to set. Returns an empty array if current camera does not support any aperture value. And returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前曝光模式下支持设置的光圈值范围 (<a href="../Constants/AUTELCameraAperture.html">AUTELCameraAperture</a>)。当前相机不支持任何光圈值的设置时会返回一个空数组，类似ISO值。当相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraApertureRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported aperture value.</p>
+
+<p>返回一个数组，数组中每个元素都是 NSNumber 类型。每一个元素都代表当前相机支持设置的光圈值。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraTimeLapseIntervalRange" title="supportedCameraTimeLapseIntervalRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraTimeLapseIntervalRange">&ndash;&nbsp;supportedCameraTimeLapseIntervalRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current valid range for camera&rsquo;s interval parameter (AUTELCameraInterval) to set. Returns an empty array if current camera does not support any interval parameter. And returns nil if the camera is disconnected.</p>
+
+<p>返回相机当前图片格式下支持设置的定时拍摄时间范围 (AUTELCameraInterval)。当前相机不支持任何定时拍摄时间的设置时会返回一个空数组。当相机断开连接时会返回nil。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraTimeLapseIntervalRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber. Each element represent one current supported interval parameter.</p>
+
+<p>返回一个数组，数组中每个元素都是 NSNumber 类型。每一个元素都代表当前相机支持设置的定时拍摄时间。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPhotoAEBCaptureCountRange" title="supportedCameraPhotoAEBCaptureCountRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPhotoAEBCaptureCountRange">&ndash;&nbsp;supportedCameraPhotoAEBCaptureCountRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the AEB selectable range.</p>
+
+<p>返回当前相机AEB拍摄张数可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPhotoAEBCaptureCountRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraVideoFileFormatRange" title="supportedCameraVideoFileFormatRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraVideoFileFormatRange">&ndash;&nbsp;supportedCameraVideoFileFormatRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the video format selectable range.</p>
+
+<p>返回当前相机视频格式可选择的范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraVideoFileFormatRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPictureInVideoIntervalRange" title="supportedCameraPictureInVideoIntervalRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPictureInVideoIntervalRange">&ndash;&nbsp;supportedCameraPictureInVideoIntervalRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the photo interval selectable range when recording.</p>
+
+<p>返回当前相机录像时拍照间隔的可选择的范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPictureInVideoIntervalRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraVideoStandardRange" title="supportedCameraVideoStandardRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraVideoStandardRange">&ndash;&nbsp;supportedCameraVideoStandardRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the video standard selectable range.</p>
+
+<p>返回当前相机视频标准可选择的范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraVideoStandardRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPhotoAspectRatioRange" title="supportedCameraPhotoAspectRatioRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPhotoAspectRatioRange">&ndash;&nbsp;supportedCameraPhotoAspectRatioRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the image ratio selectable range.</p>
+
+<p>返回当前相机拍照图片比例可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPhotoAspectRatioRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPhotoFileFormatRange" title="supportedCameraPhotoFileFormatRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPhotoFileFormatRange">&ndash;&nbsp;supportedCameraPhotoFileFormatRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the image format selectable range.</p>
+
+<p>返回当前相机拍照图片格式可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPhotoFileFormatRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPhotoBurstCountRange" title="supportedCameraPhotoBurstCountRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPhotoBurstCountRange">&ndash;&nbsp;supportedCameraPhotoBurstCountRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the snapshots selectable range.</p>
+
+<p>返回当前相机快拍张数可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPhotoBurstCountRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraSpotMeteringAreaRowIndexRange" title="supportedCameraSpotMeteringAreaRowIndexRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraSpotMeteringAreaRowIndexRange">&ndash;&nbsp;supportedCameraSpotMeteringAreaRowIndexRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the spot metering area horizontal axis selectable range.</p>
+
+<p>返回当前相机点测光横轴可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraSpotMeteringAreaRowIndexRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraSpotMeteringAreaColIndexRange" title="supportedCameraSpotMeteringAreaColIndexRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraSpotMeteringAreaColIndexRange">&ndash;&nbsp;supportedCameraSpotMeteringAreaColIndexRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the spot metering area vertical axis selectable range.</p>
+
+<p>返回当前相机点测光纵轴可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraSpotMeteringAreaColIndexRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraWhiteBalanceRange" title="supportedCameraWhiteBalanceRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraWhiteBalanceRange">&ndash;&nbsp;supportedCameraWhiteBalanceRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the white balance selectable range.</p>
+
+<p>返回当前相机白平衡可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraWhiteBalanceRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraWhiteBalanceCustomColorTemperatureRange" title="supportedCameraWhiteBalanceCustomColorTemperatureRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraWhiteBalanceCustomColorTemperatureRange">&ndash;&nbsp;supportedCameraWhiteBalanceCustomColorTemperatureRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to white balance color temperature range.</p>
+
+<p>返回当前相机白平衡自定义色温值范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSString*,NSNumber*&gt; *)supportedCameraWhiteBalanceCustomColorTemperatureRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回一个字典，其中表示最大值的 key 为 @&ldquo;Max"，最小值的 key 为 @"Min"，步进长度的 key 为 @"Step&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> 实际色温值 colorTemperature (K) = colorTemperature * 100,例如色温值为50，表示真实色温值为 5000K。</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraAntiFlickerRange" title="supportedCameraAntiFlickerRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraAntiFlickerRange">&ndash;&nbsp;supportedCameraAntiFlickerRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to anti-flicker mode selectable range.</p>
+
+<p>返回当前相机抗闪烁模式可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraAntiFlickerRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraPhotoStyleRange" title="supportedCameraPhotoStyleRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraPhotoStyleRange">&ndash;&nbsp;supportedCameraPhotoStyleRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to image style selectable range.</p>
+
+<p>返回当前相机图像风格可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraPhotoStyleRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraSharpnessRange" title="supportedCameraSharpnessRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraSharpnessRange">&ndash;&nbsp;supportedCameraSharpnessRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to sharpness selectable range.</p>
+
+<p>返回当前相机锐度可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraSharpnessRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraContrastRange" title="supportedCameraContrastRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraContrastRange">&ndash;&nbsp;supportedCameraContrastRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to contrast selectable range.</p>
+
+<p>返回当前相机对比度可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraContrastRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraSaturationRange" title="supportedCameraSaturationRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraSaturationRange">&ndash;&nbsp;supportedCameraSaturationRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to saturation selectable range.</p>
+
+<p>返回当前相机饱和度可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraSaturationRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraHueRange" title="supportedCameraHueRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraHueRange">&ndash;&nbsp;supportedCameraHueRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to camera chroma selectable range.</p>
+
+<p>返回当前相机色度可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraHueRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraDigitalFilterRange" title="supportedCameraDigitalFilterRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraDigitalFilterRange">&ndash;&nbsp;supportedCameraDigitalFilterRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to Digital filter type selectable range.</p>
+
+<p>返回当前相机数码滤波类型可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraDigitalFilterRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraLensFocusModeRange" title="supportedCameraLensFocusModeRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraLensFocusModeRange">&ndash;&nbsp;supportedCameraLensFocusModeRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to focus mode selectable range.</p>
+
+<p>返回当前相机对焦模式可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraLensFocusModeRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraAFLensFocusModeRange" title="supportedCameraAFLensFocusModeRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraAFLensFocusModeRange">&ndash;&nbsp;supportedCameraAFLensFocusModeRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to auto-focus mode selectable range.</p>
+
+<p>返回当前相机自动对焦模式可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraAFLensFocusModeRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraLensFocusAreaRowIndexRange" title="supportedCameraLensFocusAreaRowIndexRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraLensFocusAreaRowIndexRange">&ndash;&nbsp;supportedCameraLensFocusAreaRowIndexRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the point focus horizontal coordinate selectable range.</p>
+
+<p>返回当前相机点对焦横坐标可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraLensFocusAreaRowIndexRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraLensFocusAreaColIndexRange" title="supportedCameraLensFocusAreaColIndexRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraLensFocusAreaColIndexRange">&ndash;&nbsp;supportedCameraLensFocusAreaColIndexRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the point focus vertical coordinate selectable range.</p>
+
+<p>返回当前相机点对焦纵坐标可选择范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraLensFocusAreaColIndexRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraDigitalZoomScaleRange" title="supportedCameraDigitalZoomScaleRange"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraDigitalZoomScaleRange">&ndash;&nbsp;supportedCameraDigitalZoomScaleRange</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return to the digital zoom range.</p>
+
+<p>返回当前相机支持的数码变焦范围</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSString*,NSNumber*&gt; *)supportedCameraDigitalZoomScaleRange</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Dictionary with keys in {&ldquo;Max&rdquo;, &ldquo;Min&rdquo;, &ldquo;Step&rdquo;} and value is kinds of NSNumber</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraDisplayMode" title="supportedCameraDisplayMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraDisplayMode">&ndash;&nbsp;supportedCameraDisplayMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the selectable range of display modes supported by the current camera, only for dual-light cameras.</p>
+
+<p>返回当前相机支持的显示模式可选择范围，仅针对双光相机</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraDisplayMode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/supportedCameraIrColor" title="supportedCameraIrColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/supportedCameraIrColor">&ndash;&nbsp;supportedCameraIrColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the range of color types supported by the current camera pseudocolor, only for dual-light cameras.</p>
+
+<p>返回当前相机伪彩支持的颜色类型可选择范围，仅针对双光相机</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSNumber*&gt; *)supportedCameraIrColor</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of NSNumber.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELCameraParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

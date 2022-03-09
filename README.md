@@ -6,8 +6,7 @@ AUTELSDK功能 ：
 - 相机和云台的全⽅位实时控制
 - 获得Autel图传系统传回的⾼清影像
 - 照⽚和视频的实时回传下载
-- ⽀持任务：Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control, Precision Flight
-- ,Dual Stability, Waypoint Mission
+- ⽀持任务：Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control, Precision Flight, Dual Stability, Waypoint Mission
 - 电池和遥控器的状态信息获取及参数设置
 
 

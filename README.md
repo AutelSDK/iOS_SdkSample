@@ -19,6 +19,5 @@ AUTEL SDK Features:
 - Real-time and full control of camera and gimbal
 - HD image feedback from Autel image transmission system
 - Real-time upload and download of photos and videos
-- Supported Misssions: Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control,
-- Precision Flight ,Dual Stability, Waypoint Mission
+- Supported Misssions: Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control, Precision Flight ,Dual Stability, Waypoint Mission
 - The status and parameter settings of battery and remote controller

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		4HbJXwVM9xtZYLAoplx5L3El6X8=
-		</data>
 		<key>AUTELWidget.bundle/Root.plist</key>
 		<data>
 		jOhqEUF1/xyY+fuswiWT+ELC3dI=
@@ -31,7 +27,7 @@
 		</data>
 		<key>Headers/AUTELWidget-Swift.h</key>
 		<data>
-		MYiVAVFq+kLjaBZKO1fLWkmhEyA=
+		ehBKmgxsXohzhGad6h0eCt6Wtjo=
 		</data>
 		<key>Headers/AUTELWidget.h</key>
 		<data>
@@ -43,39 +39,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MuzK8rZhRt9UiUTdUVCq48scqlU=
+		ZDPwarkOiPTi7IZMFhJxwcynfAo=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		wRqcKAl/57vZM1gSoQsp0QnKlAo=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		wRqcKAl/57vZM1gSoQsp0QnKlAo=
+		mZlbM81cfEOkxJhkmVSEGbSWLoI=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		oge0wA1Yv7SywQCb/ndPSdlVo+k=
+		bhIKCYDopWegilLjidiarpGnzVA=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NWCtUa44QIqnP6L76IrXMJIteZM=
+		lO5j5SIMivtil6yEKoZx9twscgE=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mQuPe0t2dbBWaBAvo4eGrBMusu0=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		oge0wA1Yv7SywQCb/ndPSdlVo+k=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		NWCtUa44QIqnP6L76IrXMJIteZM=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		mQuPe0t2dbBWaBAvo4eGrBMusu0=
+		YVQm2yce5HKugc7JqvDXZLtAgn4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aiFcGS6xOFdAUcC3Wo632pakC3Mw0HJ77SpWJZkJIY=
+			m+ewU1WNEPxLW330G0zwDoj5ZjaApx4QSte2nWe1yXk=
 			</data>
 		</dict>
 		<key>Headers/AUTELWidget.h</key>
@@ -139,56 +119,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFU33so5LF+dUzL7ouVV/bDpruFWiyfb3LngTa0q57U=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yFU33so5LF+dUzL7ouVV/bDpruFWiyfb3LngTa0q57U=
+			+nBkKuUovC9qOKNkYUU+/zLs/PBUG7yoZcptp6FwqUA=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			si/wCNCvGYm1Nbo+BvQTbsqnliM1zjLJ7NebWt4ga/c=
+			Dmn97F2T/gOo9DaJtP45yRCXU1YUfdkru1iaVeIRU20=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sqXBgK+jWiucnd6aHRjCHhxr8NVbICikhZ6+gXM+OkM=
+			TWdAjHY/M7vMjLibkjqppuFTRxX+y7W5c9xWeq3bn4M=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LU5DzX7/VgVifB61fnY/qOT5HDQhTa1gseGufc56uZ0=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			si/wCNCvGYm1Nbo+BvQTbsqnliM1zjLJ7NebWt4ga/c=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sqXBgK+jWiucnd6aHRjCHhxr8NVbICikhZ6+gXM+OkM=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LU5DzX7/VgVifB61fnY/qOT5HDQhTa1gseGufc56uZ0=
+			bIzUJ+6Egiaw2MopR7djczmwyHtQqn4iyvsqIj4tYzU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

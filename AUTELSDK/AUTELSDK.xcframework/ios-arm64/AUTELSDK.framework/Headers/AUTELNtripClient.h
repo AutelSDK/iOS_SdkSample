@@ -35,8 +35,8 @@ typedef NS_ENUM(uint8_t, AUTELNtripClientError) {
 
 /// 获取挂载点回调
 typedef void (^ClientFetchMountpointsBlock)(NSArray <NSString*>* _Nullable mountpoints, NSError * _Nullable error);
-/// 连接挂载点回调
-typedef void (^ClientConnectedMountpointBlock)(NSError * _Nullable error);
+/// 连接挂载点回调  AUTELCompletionBlock
+//typedef void (^ClientConnectedMountpointBlock)(NSError * _Nullable error);
 /// 收到差分数据(String)的回调
 typedef void (^ClientReceivedDataBlock)(NSString *_Nullable _NuntripClienttring);
 
@@ -78,7 +78,7 @@ typedef void (^ClientReceivedDataBlock)(NSString *_Nullable _NuntripClienttring)
 /// -error = nil : 成功
 /// -error.code = -1 : 认证失败（用户过期）
 /// -error.code = 0 : 认证失败（其它）
-- (void)connectWithConfig:(AUTELNtripConfigration * _Nonnull)config completion:(ClientConnectedMountpointBlock _Nullable )block;
+- (void)connectWithConfig:(AUTELNtripConfigration * _Nonnull)config completion:(AUTELCompletionBlock _Nullable )block;
 
 /// 发送数据data
 - (void)sendData:(NSData *_Nonnull)data;
@@ -88,6 +88,8 @@ typedef void (^ClientReceivedDataBlock)(NSString *_Nullable _NuntripClienttring)
 
 /// 断开连接
 - (void)disconnect;
+/// 断开连接
+- (void)disconnectWithCompletion:(AUTELCompletionBlock _Nullable )block;
 
 /// 差分Data -> String
 - (NSString * _Nonnull)diffStringFor:(NSData *_Nonnull)data;

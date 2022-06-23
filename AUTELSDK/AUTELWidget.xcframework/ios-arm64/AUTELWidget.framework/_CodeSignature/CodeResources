@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		ou2fssh//6N/jtgzn3dsSfBHb5Q=
-		</data>
 		<key>AUTELWidget.bundle/Root.plist</key>
 		<data>
 		jOhqEUF1/xyY+fuswiWT+ELC3dI=
@@ -31,7 +27,7 @@
 		</data>
 		<key>Headers/AUTELWidget-Swift.h</key>
 		<data>
-		MYiVAVFq+kLjaBZKO1fLWkmhEyA=
+		ehBKmgxsXohzhGad6h0eCt6Wtjo=
 		</data>
 		<key>Headers/AUTELWidget.h</key>
 		<data>
@@ -43,43 +39,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oJHmE/h5bZCWlM1ULKdv24dHjCg=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		aEL028Dlm0j8+tLQTMUvgf3hPB4=
+		lNCx0CztlT+oygr9rws3Z3ywHEI=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		npICTCIEDj+JtGBsh76GcnSmht4=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		npICTCIEDj+JtGBsh76GcnSmht4=
+		x7xu/tJga/wXJh2Fim+4YH9ZfxU=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		f+BdEQj8jEU4098+y9degGQ71fI=
+		q9o3qDN1NMU+mGyfjW/iBOCMRuY=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		P8mkXCHPDdWGE5XHWy68xWtRfa8=
+		EQnpZ+KuWad9YUGFvKtG/RDKvAs=
 		</data>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		L+M75TiGjEXZyYmLNo4QRBN29NM=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		f+BdEQj8jEU4098+y9degGQ71fI=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		P8mkXCHPDdWGE5XHWy68xWtRfa8=
-		</data>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		L+M75TiGjEXZyYmLNo4QRBN29NM=
+		ZZCNUbMnFPKW9qaLqRZgFiR0GD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aiFcGS6xOFdAUcC3Wo632pakC3Mw0HJ77SpWJZkJIY=
+			m+ewU1WNEPxLW330G0zwDoj5ZjaApx4QSte2nWe1yXk=
 			</data>
 		</dict>
 		<key>Headers/AUTELWidget.h</key>
@@ -143,56 +119,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			efDTA8mgl734rak0mLHVHdUl8ggAMvl1KFmKEi7BxgI=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			efDTA8mgl734rak0mLHVHdUl8ggAMvl1KFmKEi7BxgI=
+			fib5olSgH9Wm4ggH2MjNU92noObtIx5MMCsj97+wNxw=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0gNbupdBP568HnrnHwBacugqIxTVzvLxw1lVxSisG9M=
+			LRCqcMTxhKuzx8by77ck+H0rraZm0/kje2A3YTEngp4=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O4LyusBeomFMBKmBm3DIZZmLLUu9M9Z7IrTfaucERpc=
+			+1TJhGXCh2Hb6BOtFeObyLVkuYQCQdP7kCq4iOrYYlw=
 			</data>
 		</dict>
 		<key>Modules/AUTELWidget.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RkoiGxvOE/3YrI3e+MUSRwvfBgU3xtNmV/LYvxXkHq4=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0gNbupdBP568HnrnHwBacugqIxTVzvLxw1lVxSisG9M=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O4LyusBeomFMBKmBm3DIZZmLLUu9M9Z7IrTfaucERpc=
-			</data>
-		</dict>
-		<key>Modules/AUTELWidget.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RkoiGxvOE/3YrI3e+MUSRwvfBgU3xtNmV/LYvxXkHq4=
+			qFbXCGIPFruLJLGm2jf+RqepoRAh/P9ajtHCJ+qCU7A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

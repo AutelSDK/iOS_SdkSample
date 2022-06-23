@@ -194,6 +194,13 @@ typedef NS_ENUM (uint8_t, AUTELDronePhotoFileFormat) {
 @property (nonatomic, assign) int gridEnable;
 
 /**
+*  @brief Elevation optimization  flag,0:disable,1:enagle
+*
+*  高程优化标记
+*/
+@property (nonatomic, assign) int elevationOpt;
+
+/**
 *  @brief Automatic switch of main course angle
 *
 *  主航线角度自动开关
@@ -262,6 +269,20 @@ typedef NS_ENUM (uint8_t, AUTELDronePhotoFileFormat) {
 *  失联动作
 */
 @property (nonatomic, assign) AUTELMissionSignalLostHandleType lostConnectAction;
+
+/**
+*  @brief lost connection action
+*
+*  拍摄模式
+*/
+@property (nonatomic, assign) AUTELMissionShootingType shootingType;
+
+/**
+*  @brief image format
+*
+*  图片格式
+*/
+@property (nonatomic, assign) AUTELMissionImageFormat imageFormat;
 
 /**
 *  @brief Add a  waypoint to the waypoint mission.

@@ -246,6 +246,63 @@ typedef NS_ENUM(int, AUTELMissionSignalLostHandleType) {
 };
 
 /**
+ *  Shooting Mode
+ *
+ *  拍摄模式
+ */
+typedef NS_ENUM(int, AUTELMissionShootingType) {
+    
+    /**
+     *  @brief Avoidance is invalid
+     *
+     *  无效动作
+     */
+    AUTELMissionShootingTypeNone,
+    
+    /**
+     *  @brief Avoidance is invalid
+     *
+     *  晴天
+     */
+    AUTELMissionShootingTypeSunny,
+    
+    /**
+     *  @brief Avoidance is invalid
+     *
+     *  阴天
+     */
+    AUTELMissionShootingTypeCloudyDay,
+};
+
+/**
+ *  image format
+ *
+ *  图片格式
+ */
+typedef NS_ENUM(int, AUTELMissionImageFormat) {
+    
+    /**
+     *  @brief  invalid
+     *
+     *  无效动作
+     */
+    AUTELMissionImageFormatNone,
+    
+    /**
+     *  @brief A
+     *
+     *  A格式
+     */
+    AUTELMissionImageFormatA,
+    
+    /**
+     *  @brief D
+     *
+     *  D格式
+     */
+    AUTELMissionImageFormatD,
+};
+/*
  *  This protocol provides real-time status of the Autopilot task.
  *
  *  该协议实时提供智能飞行任务的状态

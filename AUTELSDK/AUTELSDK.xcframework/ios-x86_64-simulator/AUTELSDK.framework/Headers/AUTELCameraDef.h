@@ -2902,4 +2902,15 @@ typedef enum : NSUInteger {
 } AUTELCameraAFWorkStatus;
 
 
+///接口类型
+typedef NS_ENUM (uint8_t, AUTELCameraCommonAPISetType) {
+    ///
+    AUTELCameraCommonAPISetTypeNone = 0,
+    AUTELCameraCommonAPISetTypeGPSMapDatum = 1,
+    AUTELCameraCommonAPISetTypeMisstionFlyImageFormat = 2,
+    AUTELCameraCommonAPISetTypeMisstionFlyImageMode = 3,
+
+}; 
+
+
 #endif /* AUTELCameraDef_h */

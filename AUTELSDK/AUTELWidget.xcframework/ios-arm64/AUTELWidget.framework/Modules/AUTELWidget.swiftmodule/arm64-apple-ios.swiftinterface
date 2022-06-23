@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AUTELWidget
 import AUTELSDK
 @_exported import AUTELWidget
@@ -11,12 +11,13 @@ import QuartzCore
 import Swift
 import UIKit
 import VideoToolbox
-@objc @_inheritsConvenienceInitializers open class VideoOpenGLView : UIKit.UIView {
-  @objc override dynamic open class var layerClass: Swift.AnyClass {
-    @objc get
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VideoOpenGLView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers open class AppDebugLog {
@@ -44,7 +45,7 @@ public func printLog(_ items: Any..., separator: Swift.String = " ", terminator:
     get
     set
   }
-  public var insertNewFrameHandler: ((AUTELWidget.VideoFrameYUV) -> ())?
+  public var insertNewFrameHandler: ((_ frame: AUTELWidget.VideoFrameYUV) -> ())?
   public static func sharedInstance() -> AUTELWidget.VideoStreamPlayManager
   open func setPlayView(to view: UIKit.UIView)
   open func stopPlayAndRemoveView()

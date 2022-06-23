@@ -384,21 +384,6 @@
 
 
 //#pragma mark 以下接口仅内部使用，不对外发布
-//
-//
-///// 查询飞行器IMU Modeule ID
-///// @param block Completion Blok.
-//- (void)getIMUModelIDWithCompletion:(void(^_Nullable)(uint64_t id, NSError * _Nullable error))block;
-//
-//
-///// 设置飞行器激活状态（仅内部使用！！！！！）
-///// @param enable 激活状态
-///// @param block 完成block
-//- (void)setActivateState:(BOOL)enable withCompletion:(AUTELCompletionBlock)block;
-//
-///// 设置当前国家禁飞区是否禁飞状态（仅内部使用！！！！！）
-///// @param enable 禁飞状态
-///// @param block 完成block
-//- (void)setNFZNoflyState:(BOOL)enable withCompletion:(AUTELCompletionBlock)block;
+
 
 @end

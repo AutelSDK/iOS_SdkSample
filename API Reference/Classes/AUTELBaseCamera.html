@@ -228,6 +228,8 @@
 		
 		<option value="//api/name/setExposureMode:withCompletion:">- setExposureMode:withCompletion:</option>
 		
+		<option value="//api/name/setGPSMapDatum:withCompletion:">- setGPSMapDatum:withCompletion:</option>
+		
 		<option value="//api/name/setGimbalLockState:withCompletion:">- setGimbalLockState:withCompletion:</option>
 		
 		<option value="//api/name/setHistogramEnabled:withCompletion:">- setHistogramEnabled:withCompletion:</option>
@@ -281,6 +283,10 @@
 		<option value="//api/name/setMFAssistFocusEnable:withCompletion:">- setMFAssistFocusEnable:withCompletion:</option>
 		
 		<option value="//api/name/setMFSportAreaRowIndex:andColIndex:withCompletion:">- setMFSportAreaRowIndex:andColIndex:withCompletion:</option>
+		
+		<option value="//api/name/setMisstionFlyImageFormat:withCompletion:">- setMisstionFlyImageFormat:withCompletion:</option>
+		
+		<option value="//api/name/setMisstionFlyImageMode:withCompletion:">- setMisstionFlyImageMode:withCompletion:</option>
 		
 		<option value="//api/name/setObjectDistance:withCompletion:">- setObjectDistance:withCompletion:</option>
 		
@@ -383,11 +389,11 @@
 
 <p>AUTELBaseCamera 的 SDCardOperations 类别，该类别主要实现SD卡信息的读取和相关操作。</p>
 
-<p>**</p>
-
 <p>Camera Settings Class for AUTELBaseCamera, which mainly sets and reads camera <a href="#//api/name/parameters">parameters</a>.</p>
 
 <p>AUTELBaseCamera 的 CameraSetting 类别，该类别主要实现相机参数的设置和读取。</p>
+
+<p>**</p>
 					</div>
 					
 					
@@ -1510,2560 +1516,6 @@ self 的 <a href="#//api/name/delegate">delegate</a> 代理对象可以通过实
 						<td><p>Error information,when Error is nil, retrieving data succeeded; when Error is not nil, retrieving data failed.</p>
 
 <p>错误信息，error 为nil表示获取成功，error不为nil时，表示获取失败。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="CameraDeviceInfor Methods" name="task_CameraDeviceInfor Methods"></a>
-						<h2 class="task-title">CameraDeviceInfor Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/getCameraDeviceInfoWithCompletion:" title="getCameraDeviceInfoWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getCameraDeviceInfoWithCompletion:">&ndash;&nbsp;getCameraDeviceInfoWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get camera device information, eg. firmware version, device type etc.</p>
-
-<p>获取相机设备信息，如固件版本号，设备类型等</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getCameraDeviceInfoWithCompletion:(void ( ^ _Nullable ) ( NSDictionary *_Nullable info , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="ToolMethod Methods" name="task_ToolMethod Methods"></a>
-						<h2 class="task-title">ToolMethod Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/analyPhotoAspectRatioWithHorizintal:vertical:" title="analyPhotoAspectRatioWithHorizintal:vertical:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/analyPhotoAspectRatioWithHorizintal:vertical:">+&nbsp;analyPhotoAspectRatioWithHorizintal:vertical:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>解析照片分辨率</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (AUTELCameraPhotoAspectRatio)analyPhotoAspectRatioWithHorizintal:(NSString *_Nonnull)<em>horizintal</em> vertical:(NSString *_Nonnull)<em>vertical</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>horizintal</code></th>
-						<td><p>传感器水平分辨率</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>vertical</code></th>
-						<td><p>传感器垂直分辨率</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>解析结果</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera+ToolMethod.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="CameraStorageType Methods" name="task_CameraStorageType Methods"></a>
-						<h2 class="task-title">CameraStorageType Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/getCameraStorageTypeWithCompletion:" title="getCameraStorageTypeWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getCameraStorageTypeWithCompletion:">&ndash;&nbsp;getCameraStorageTypeWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get camera storage type.</p>
-
-<p>获取存储设备类型。</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getCameraStorageTypeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraStorageType type , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block which including two <a href="#//api/name/parameters">parameters</a>, error and storageType.  When error is nil, it means succeeded to obtain. If not, storageType is set as AUTELCameraStorageTypeUnknown.</p>
-
-<p>完成 block，该 block 包含两个参数，error 为错误信息，error 为nil表示获取成功，error不为nil时，storageType 为AUTELCameraStorageTypeUnknown。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELCameraStorageType.html">AUTELCameraStorageType</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setCameraStorageType:withCompletion:" title="setCameraStorageType:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setCameraStorageType:withCompletion:">&ndash;&nbsp;setCameraStorageType:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set Get camera storage type.</p>
-
-<p>设置存储设备类型。</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setCameraStorageType:(AUTELCameraStorageType)<em>type</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block.</p>
-
-<p>完成 block。</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>AUTELCameraStorageType</code></th>
-						<td><p>Storage Type.</p>
-
-<p>存储类型。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELCameraStorageType.html">AUTELCameraStorageType</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="ThermalCamera Methods" name="task_ThermalCamera Methods"></a>
-						<h2 class="task-title">ThermalCamera Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/isThermalImagingCamera" title="isThermalImagingCamera"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isThermalImagingCamera">&ndash;&nbsp;isThermalImagingCamera</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<ul>
-<li>@brief  Whether it is a thermal imaging camera.
-*</li>
-<li>返回相机是否是热成像相机。
-*</li>
-</ul>
-
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)isThermalImagingCamera</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YES 当前连接的是热成像相机, NO 当前返回的不是热成像相机
-*
-*                  YES is currently connected to a thermal imaging camera, NO currently returned is not a thermal imaging camera</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<ul>
-<li>@brief  Whether it is a thermal imaging camera.
-*</li>
-<li>返回相机是否是热成像相机。
-*</li>
-</ul>
-
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getThermalDisplayModeWithCompletion:" title="getThermalDisplayModeWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getThermalDisplayModeWithCompletion:">&ndash;&nbsp;getThermalDisplayModeWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Query the display mode of the thermal imaging camera</p>
-
-<p>查询热成像相机显示模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getThermalDisplayModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraThermalDisplayMode displaMode , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setThermalDisplayMode:withCompletion:" title="setThermalDisplayMode:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setThermalDisplayMode:withCompletion:">&ndash;&nbsp;setThermalDisplayMode:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set the thermal imaging camera display mode</p>
-
-<p>设置热成像相机显示模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setThermalDisplayMode:(AUTELCameraThermalDisplayMode)<em>displayMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>displayMode</code></th>
-						<td><p>待设置的显示模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELCameraThermalDisplayMode.html">AUTELCameraThermalDisplayMode</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/GetIrColorWithCompletion:" title="GetIrColorWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/GetIrColorWithCompletion:">&ndash;&nbsp;GetIrColorWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get thermal imaging pseudo color information of thermal imaging camera</p>
-
-<p>获取热成像相机热成像伪彩信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)GetIrColorWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrColorType color , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELCameraIrColorType.html">AUTELCameraIrColorType</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrColor:withCompletion:" title="setIrColor:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrColor:withCompletion:">&ndash;&nbsp;setIrColor:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set the thermal imaging pseudo color information of the thermal imaging camera</p>
-
-<p>设置热成像相机热成像伪彩信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrColor:(AUTELCameraIrColorType)<em>color</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>color</code></th>
-						<td><p>Thermal imaging pseudo color information to be set</p>
-
-<p>待设置的热成像伪彩信息</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELCameraIrColorType.html">AUTELCameraIrColorType</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrFlushShutterWithCompletion:" title="setIrFlushShutterWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrFlushShutterWithCompletion:">&ndash;&nbsp;setIrFlushShutterWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set the thermal imaging shutter (FFC)</p>
-
-<p>设置热成像快门(FFC)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrFlushShutterWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrPositionWithCompletion:" title="getIrPositionWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrPositionWithCompletion:">&ndash;&nbsp;getIrPositionWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>查询 画中画的热成像位置信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrPositionWithCompletion:(void ( ^ _Nullable ) ( NSInteger deltaX , NSInteger deltaY , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>TO OD translate.</p>
-
-<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，deltaX 为水平偏移，deltaY 为垂直偏移。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrPositionDeltaX:DeltaY:withCompletion:" title="setIrPositionDeltaX:DeltaY:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrPositionDeltaX:DeltaY:withCompletion:">&ndash;&nbsp;setIrPositionDeltaX:DeltaY:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置 画中画的热成像位置信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrPositionDeltaX:(NSInteger)<em>deltaX</em> DeltaY:(NSInteger)<em>deltaY</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>deltaX</code></th>
-						<td><p>水平偏移,范围[-5, 5]</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>deltaY</code></th>
-						<td><p>垂直偏移,范围[-5, 5]</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrTempAttrWithCompletion:" title="getIrTempAttrWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrTempAttrWithCompletion:">&ndash;&nbsp;getIrTempAttrWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像温度属性</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrTempAttrWithCompletion:(void ( ^ _Nullable ) ( AUTELIrTempAttrModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempAttr:withCompletion:" title="setIrTempAttr:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttr:withCompletion:">&ndash;&nbsp;setIrTempAttr:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像温度属性</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttr:(AUTELIrTempAttrModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>model</code></th>
-						<td><p>待设置的热成像温度属性</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempAttrModel:withCompletion:" title="setIrTempAttrModel:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrModel:withCompletion:">&ndash;&nbsp;setIrTempAttrModel:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像测温模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrModel:(AUTELCameraTempMode)<em>tempMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>tempMode</code></th>
-						<td><p>待设置的热成像测温模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempAttrTouchX:touchY:withCompletion:" title="setIrTempAttrTouchX:touchY:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrTouchX:touchY:withCompletion:">&ndash;&nbsp;setIrTempAttrTouchX:touchY:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像指点测温坐标</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrTouchX:(float)<em>touchX</em> touchY:(float)<em>touchY</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>touchX</code></th>
-						<td><p>待设置的热成像指点测温坐标X</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>touchY</code></th>
-						<td><p>待设置的热成像指点测温坐标Y</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:" title="setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:">&ndash;&nbsp;setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像区域测温位置</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrRegionX:(float)<em>regionX</em> regionY:(float)<em>regionY</em> regionW:(float)<em>regionW</em> regionH:(float)<em>regionH</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>regionX</code></th>
-						<td><p>待设置的热成像区域起点X</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>regionY</code></th>
-						<td><p>待设置的热成像区域起点Y</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>regionW</code></th>
-						<td><p>待设置的热成像区域宽度</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>regionH</code></th>
-						<td><p>待设置的热成像区域高度</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrTempAlarmWithCompletion:" title="getIrTempAlarmWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrTempAlarmWithCompletion:">&ndash;&nbsp;getIrTempAlarmWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像温度告警属性</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrTempAlarmWithCompletion:(void ( ^ _Nullable ) ( AUTELIrTempAlarmModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempAlarm:withCompletion:" title="setIrTempAlarm:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempAlarm:withCompletion:">&ndash;&nbsp;setIrTempAlarm:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像温度告警属性</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempAlarm:(AUTELIrTempAlarmModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>model</code></th>
-						<td><p>待设置的热成像温度告警属性</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrTempEmitWithCompletion:" title="getIrTempEmitWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrTempEmitWithCompletion:">&ndash;&nbsp;getIrTempEmitWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>查询热成像辐射率</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrTempEmitWithCompletion:(void ( ^ _Nullable ) ( int emit , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrTempEmit:withCompletion:" title="setIrTempEmit:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrTempEmit:withCompletion:">&ndash;&nbsp;setIrTempEmit:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像辐射率</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrTempEmit:(int)<em>emit</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>emit</code></th>
-						<td><p>待设置的热成像辐射率</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrImageModeWithCompletion:" title="getIrImageModeWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrImageModeWithCompletion:">&ndash;&nbsp;getIrImageModeWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像图像模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrImageModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrImageMode imageMode , NSInteger contrast , NSInteger lum , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, imageMode is image mode, contrast is contrast, and lum is brightness.</p>
-
-<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，imageMode为图像模式，contrast为 对比度，lum为亮度。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrImageMode:withCompletion:" title="setIrImageMode:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrImageMode:withCompletion:">&ndash;&nbsp;setIrImageMode:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像图像模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrImageMode:(AUTELCameraIrImageMode)<em>imageMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>imageMode</code></th>
-						<td><p>图像模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrImageContrast:lum:withCompletion:" title="setIrImageContrast:lum:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrImageContrast:lum:withCompletion:">&ndash;&nbsp;setIrImageContrast:lum:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像图像对比度和亮度</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrImageContrast:(NSInteger)<em>contrast</em> lum:(NSInteger)<em>lum</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>contrast</code></th>
-						<td><p>对比度0~255</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>lum</code></th>
-						<td><p>亮度0~511</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrEnhanceWithCompletion:" title="getIrEnhanceWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrEnhanceWithCompletion:">&ndash;&nbsp;getIrEnhanceWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像图像增强</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrEnhanceWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSInteger strength , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, enable is enabled, and strength is intensity.</p>
-
-<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，enable为使能，strength为 强度。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrEnhance:strength:withCompletion:" title="setIrEnhance:strength:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrEnhance:strength:withCompletion:">&ndash;&nbsp;setIrEnhance:strength:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像图像增强</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrEnhance:(BOOL)<em>enable</em> strength:(NSInteger)<em>strength</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>enable</code></th>
-						<td><p>使能0~1</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>strength</code></th>
-						<td><p>强度1~8</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrEnhanceEnable:withCompletion:" title="setIrEnhanceEnable:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrEnhanceEnable:withCompletion:">&ndash;&nbsp;setIrEnhanceEnable:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像图像增强开关</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrEnhanceEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>enable</code></th>
-						<td><p>使能0~1</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrEnhanceStrength:withCompletion:" title="setIrEnhanceStrength:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrEnhanceStrength:withCompletion:">&ndash;&nbsp;setIrEnhanceStrength:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像图像增强强度</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrEnhanceStrength:(NSInteger)<em>strength</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>strength</code></th>
-						<td><p>强度1~8</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Completion block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrNrWithCompletion:" title="getIrNrWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrNrWithCompletion:">&ndash;&nbsp;getIrNrWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像图像去噪</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrNrWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrNr:withCompletion:" title="setIrNr:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrNr:withCompletion:">&ndash;&nbsp;setIrNr:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像去噪</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrNr:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>enable</code></th>
-						<td><p>待设置的热成像去噪开关</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrGainWithCompletion:" title="getIrGainWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrGainWithCompletion:">&ndash;&nbsp;getIrGainWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像图像增益</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrGainWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrGainType gainType , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrGain:withCompletion:" title="setIrGain:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrGain:withCompletion:">&ndash;&nbsp;setIrGain:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像增益</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrGain:(AUTELCameraIrGainType)<em>gainType</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>gainType</code></th>
-						<td><p>待设置的热成像增益类型</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getIrIsoThermWithCompletion:" title="getIrIsoThermWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getIrIsoThermWithCompletion:">&ndash;&nbsp;getIrIsoThermWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取热成像等温线信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getIrIsoThermWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrIsoThermMode mode , NSInteger hotThred , NSInteger coldThred , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, mode is thermal imaging isotherm mode, hotThred is high threshold in custom mode, and coldThred is low threshold in custom mode.</p>
-
-<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，mode为热成像等温线模式，hotThred为 自定义模式时高阈值，coldThred为自定义模式时低阈值。</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrIsoThermMode:withCompletion:" title="setIrIsoThermMode:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrIsoThermMode:withCompletion:">&ndash;&nbsp;setIrIsoThermMode:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像等温线模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrIsoThermMode:(AUTELCameraIrIsoThermMode)<em>mode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mode</code></th>
-						<td><p>待设置的热成像等温线模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setIrIsoThermHotThred:coldThred:withCompletion:" title="setIrIsoThermHotThred:coldThred:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setIrIsoThermHotThred:coldThred:withCompletion:">&ndash;&nbsp;setIrIsoThermHotThred:coldThred:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置热成像等温线阈值</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setIrIsoThermHotThred:(NSInteger)<em>hotThred</em> coldThred:(NSInteger)<em>coldThred</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>hotThred</code></th>
-						<td><p>待设置的自定义模式时高阈值</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>coldThred</code></th>
-						<td><p>待设置的自定义模式时低阈值</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="XT701 Methods" name="task_XT701 Methods"></a>
-						<h2 class="task-title">XT701 Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/setCameraPattern:withCompletion:" title="setCameraPattern:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setCameraPattern:withCompletion:">&ndash;&nbsp;setCameraPattern:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置相机任务模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setCameraPattern:(AUTELMisstionCameraPattern)<em>pattern</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>pattern</code></th>
-						<td><p>任务模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block, 返回设置结果</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<div class="note"><p><strong>Note:</strong> 飞控、视觉的任务需要与相机任务模式一致，才能正常工作，入延时摄影任务，相机任务模式需要设置为AUTELMisstionCameraPatternDelayPhoto</p></div>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Constants/AUTELMisstionCameraPattern.html">AUTELMisstionCameraPattern</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getGimbalLockStateWithCompletion:" title="getGimbalLockStateWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getGimbalLockStateWithCompletion:">&ndash;&nbsp;getGimbalLockStateWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>查询相机云台锁定状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getGimbalLockStateWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraGimbalLockState lockState , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setGimbalLockState:withCompletion:" title="setGimbalLockState:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setGimbalLockState:withCompletion:">&ndash;&nbsp;setGimbalLockState:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置相机云台锁定状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setGimbalLockState:(AUTELCameraGimbalLockState)<em>lockState</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>lockState</code></th>
-						<td><p>待设置的云台锁定状态</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getVideoTransmissionModeWithCompletion:" title="getVideoTransmissionModeWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getVideoTransmissionModeWithCompletion:">&ndash;&nbsp;getVideoTransmissionModeWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>查询图传视频横竖屏模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getVideoTransmissionModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraVideoTransmissionMode state , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setVideoTransmissionMode:withCompletion:" title="setVideoTransmissionMode:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setVideoTransmissionMode:withCompletion:">&ndash;&nbsp;setVideoTransmissionMode:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置图传视频横竖屏模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setVideoTransmissionMode:(AUTELCameraVideoTransmissionMode)<em>state</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>state</code></th>
-						<td><p>待设置的图传视频横竖屏模式</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getRecordPacketStateWithCompletion:" title="getRecordPacketStateWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getRecordPacketStateWithCompletion:">&ndash;&nbsp;getRecordPacketStateWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取录像分段打包大小</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getRecordPacketStateWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraRecordPacketModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>completion block</p>
-
-<p>完成 block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setRecordPacketState:withCompletion:" title="setRecordPacketState:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setRecordPacketState:withCompletion:">&ndash;&nbsp;setRecordPacketState:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置录像分段打包大小</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setRecordPacketState:(AUTELCameraRecordPacketModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>model</code></th>
-						<td><p>待设置的任务录制状态</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>完成 block</p></td>
 					</tr>
 				
 				</table>
@@ -9310,6 +6762,2733 @@ NTSC:4096x2160_24fps
 </div>
 						</div>
 						
+
+						<a title="CameraDeviceInfor Methods" name="task_CameraDeviceInfor Methods"></a>
+						<h2 class="task-title">CameraDeviceInfor Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getCameraDeviceInfoWithCompletion:" title="getCameraDeviceInfoWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCameraDeviceInfoWithCompletion:">&ndash;&nbsp;getCameraDeviceInfoWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get camera device information, eg. firmware version, device type etc.</p>
+
+<p>获取相机设备信息，如固件版本号，设备类型等</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCameraDeviceInfoWithCompletion:(void ( ^ _Nullable ) ( NSDictionary *_Nullable info , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="CameraStorageType Methods" name="task_CameraStorageType Methods"></a>
+						<h2 class="task-title">CameraStorageType Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getCameraStorageTypeWithCompletion:" title="getCameraStorageTypeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCameraStorageTypeWithCompletion:">&ndash;&nbsp;getCameraStorageTypeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get camera storage type.</p>
+
+<p>获取存储设备类型。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCameraStorageTypeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraStorageType type , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block which including two <a href="#//api/name/parameters">parameters</a>, error and storageType.  When error is nil, it means succeeded to obtain. If not, storageType is set as AUTELCameraStorageTypeUnknown.</p>
+
+<p>完成 block，该 block 包含两个参数，error 为错误信息，error 为nil表示获取成功，error不为nil时，storageType 为AUTELCameraStorageTypeUnknown。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraStorageType.html">AUTELCameraStorageType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCameraStorageType:withCompletion:" title="setCameraStorageType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCameraStorageType:withCompletion:">&ndash;&nbsp;setCameraStorageType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Get camera storage type.</p>
+
+<p>设置存储设备类型。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCameraStorageType:(AUTELCameraStorageType)<em>type</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block.</p>
+
+<p>完成 block。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>AUTELCameraStorageType</code></th>
+						<td><p>Storage Type.</p>
+
+<p>存储类型。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraStorageType.html">AUTELCameraStorageType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ThermalCamera Methods" name="task_ThermalCamera Methods"></a>
+						<h2 class="task-title">ThermalCamera Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isThermalImagingCamera" title="isThermalImagingCamera"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isThermalImagingCamera">&ndash;&nbsp;isThermalImagingCamera</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief  Whether it is a thermal imaging camera.
+*</li>
+<li>返回相机是否是热成像相机。
+*</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isThermalImagingCamera</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES 当前连接的是热成像相机, NO 当前返回的不是热成像相机
+*
+*                  YES is currently connected to a thermal imaging camera, NO currently returned is not a thermal imaging camera</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>@brief  Whether it is a thermal imaging camera.
+*</li>
+<li>返回相机是否是热成像相机。
+*</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getThermalDisplayModeWithCompletion:" title="getThermalDisplayModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getThermalDisplayModeWithCompletion:">&ndash;&nbsp;getThermalDisplayModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query the display mode of the thermal imaging camera</p>
+
+<p>查询热成像相机显示模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getThermalDisplayModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraThermalDisplayMode displaMode , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setThermalDisplayMode:withCompletion:" title="setThermalDisplayMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setThermalDisplayMode:withCompletion:">&ndash;&nbsp;setThermalDisplayMode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the thermal imaging camera display mode</p>
+
+<p>设置热成像相机显示模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setThermalDisplayMode:(AUTELCameraThermalDisplayMode)<em>displayMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>displayMode</code></th>
+						<td><p>待设置的显示模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraThermalDisplayMode.html">AUTELCameraThermalDisplayMode</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GetIrColorWithCompletion:" title="GetIrColorWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GetIrColorWithCompletion:">&ndash;&nbsp;GetIrColorWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get thermal imaging pseudo color information of thermal imaging camera</p>
+
+<p>获取热成像相机热成像伪彩信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)GetIrColorWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrColorType color , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraIrColorType.html">AUTELCameraIrColorType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrColor:withCompletion:" title="setIrColor:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrColor:withCompletion:">&ndash;&nbsp;setIrColor:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the thermal imaging pseudo color information of the thermal imaging camera</p>
+
+<p>设置热成像相机热成像伪彩信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrColor:(AUTELCameraIrColorType)<em>color</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Thermal imaging pseudo color information to be set</p>
+
+<p>待设置的热成像伪彩信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELCameraIrColorType.html">AUTELCameraIrColorType</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrFlushShutterWithCompletion:" title="setIrFlushShutterWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrFlushShutterWithCompletion:">&ndash;&nbsp;setIrFlushShutterWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the thermal imaging shutter (FFC)</p>
+
+<p>设置热成像快门(FFC)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrFlushShutterWithCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrPositionWithCompletion:" title="getIrPositionWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrPositionWithCompletion:">&ndash;&nbsp;getIrPositionWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询 画中画的热成像位置信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrPositionWithCompletion:(void ( ^ _Nullable ) ( NSInteger deltaX , NSInteger deltaY , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>TO OD translate.</p>
+
+<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，deltaX 为水平偏移，deltaY 为垂直偏移。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrPositionDeltaX:DeltaY:withCompletion:" title="setIrPositionDeltaX:DeltaY:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrPositionDeltaX:DeltaY:withCompletion:">&ndash;&nbsp;setIrPositionDeltaX:DeltaY:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置 画中画的热成像位置信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrPositionDeltaX:(NSInteger)<em>deltaX</em> DeltaY:(NSInteger)<em>deltaY</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deltaX</code></th>
+						<td><p>水平偏移,范围[-5, 5]</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deltaY</code></th>
+						<td><p>垂直偏移,范围[-5, 5]</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrTempAttrWithCompletion:" title="getIrTempAttrWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrTempAttrWithCompletion:">&ndash;&nbsp;getIrTempAttrWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像温度属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrTempAttrWithCompletion:(void ( ^ _Nullable ) ( AUTELIrTempAttrModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempAttr:withCompletion:" title="setIrTempAttr:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttr:withCompletion:">&ndash;&nbsp;setIrTempAttr:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像温度属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttr:(AUTELIrTempAttrModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>model</code></th>
+						<td><p>待设置的热成像温度属性</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempAttrModel:withCompletion:" title="setIrTempAttrModel:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrModel:withCompletion:">&ndash;&nbsp;setIrTempAttrModel:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像测温模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrModel:(AUTELCameraTempMode)<em>tempMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tempMode</code></th>
+						<td><p>待设置的热成像测温模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempAttrTouchX:touchY:withCompletion:" title="setIrTempAttrTouchX:touchY:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrTouchX:touchY:withCompletion:">&ndash;&nbsp;setIrTempAttrTouchX:touchY:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像指点测温坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrTouchX:(float)<em>touchX</em> touchY:(float)<em>touchY</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>touchX</code></th>
+						<td><p>待设置的热成像指点测温坐标X</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>touchY</code></th>
+						<td><p>待设置的热成像指点测温坐标Y</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:" title="setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:">&ndash;&nbsp;setIrTempAttrRegionX:regionY:regionW:regionH:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像区域测温位置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempAttrRegionX:(float)<em>regionX</em> regionY:(float)<em>regionY</em> regionW:(float)<em>regionW</em> regionH:(float)<em>regionH</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>regionX</code></th>
+						<td><p>待设置的热成像区域起点X</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>regionY</code></th>
+						<td><p>待设置的热成像区域起点Y</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>regionW</code></th>
+						<td><p>待设置的热成像区域宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>regionH</code></th>
+						<td><p>待设置的热成像区域高度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrTempAlarmWithCompletion:" title="getIrTempAlarmWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrTempAlarmWithCompletion:">&ndash;&nbsp;getIrTempAlarmWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像温度告警属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrTempAlarmWithCompletion:(void ( ^ _Nullable ) ( AUTELIrTempAlarmModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempAlarm:withCompletion:" title="setIrTempAlarm:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempAlarm:withCompletion:">&ndash;&nbsp;setIrTempAlarm:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像温度告警属性</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempAlarm:(AUTELIrTempAlarmModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>model</code></th>
+						<td><p>待设置的热成像温度告警属性</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrTempEmitWithCompletion:" title="getIrTempEmitWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrTempEmitWithCompletion:">&ndash;&nbsp;getIrTempEmitWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询热成像辐射率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrTempEmitWithCompletion:(void ( ^ _Nullable ) ( int emit , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrTempEmit:withCompletion:" title="setIrTempEmit:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrTempEmit:withCompletion:">&ndash;&nbsp;setIrTempEmit:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像辐射率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrTempEmit:(int)<em>emit</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emit</code></th>
+						<td><p>待设置的热成像辐射率</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrImageModeWithCompletion:" title="getIrImageModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrImageModeWithCompletion:">&ndash;&nbsp;getIrImageModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像图像模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrImageModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrImageMode imageMode , NSInteger contrast , NSInteger lum , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, imageMode is image mode, contrast is contrast, and lum is brightness.</p>
+
+<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，imageMode为图像模式，contrast为 对比度，lum为亮度。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrImageMode:withCompletion:" title="setIrImageMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrImageMode:withCompletion:">&ndash;&nbsp;setIrImageMode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像图像模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrImageMode:(AUTELCameraIrImageMode)<em>imageMode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageMode</code></th>
+						<td><p>图像模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrImageContrast:lum:withCompletion:" title="setIrImageContrast:lum:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrImageContrast:lum:withCompletion:">&ndash;&nbsp;setIrImageContrast:lum:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像图像对比度和亮度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrImageContrast:(NSInteger)<em>contrast</em> lum:(NSInteger)<em>lum</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contrast</code></th>
+						<td><p>对比度0~255</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lum</code></th>
+						<td><p>亮度0~511</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrEnhanceWithCompletion:" title="getIrEnhanceWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrEnhanceWithCompletion:">&ndash;&nbsp;getIrEnhanceWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像图像增强</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrEnhanceWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSInteger strength , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, enable is enabled, and strength is intensity.</p>
+
+<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，enable为使能，strength为 强度。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrEnhance:strength:withCompletion:" title="setIrEnhance:strength:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrEnhance:strength:withCompletion:">&ndash;&nbsp;setIrEnhance:strength:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像图像增强</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrEnhance:(BOOL)<em>enable</em> strength:(NSInteger)<em>strength</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>使能0~1</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strength</code></th>
+						<td><p>强度1~8</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrEnhanceEnable:withCompletion:" title="setIrEnhanceEnable:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrEnhanceEnable:withCompletion:">&ndash;&nbsp;setIrEnhanceEnable:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像图像增强开关</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrEnhanceEnable:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>使能0~1</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrEnhanceStrength:withCompletion:" title="setIrEnhanceStrength:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrEnhanceStrength:withCompletion:">&ndash;&nbsp;setIrEnhanceStrength:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像图像增强强度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrEnhanceStrength:(NSInteger)<em>strength</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strength</code></th>
+						<td><p>强度1~8</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrNrWithCompletion:" title="getIrNrWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrNrWithCompletion:">&ndash;&nbsp;getIrNrWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像图像去噪</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrNrWithCompletion:(void ( ^ _Nullable ) ( BOOL enable , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrNr:withCompletion:" title="setIrNr:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrNr:withCompletion:">&ndash;&nbsp;setIrNr:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像去噪</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrNr:(BOOL)<em>enable</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>待设置的热成像去噪开关</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrGainWithCompletion:" title="getIrGainWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrGainWithCompletion:">&ndash;&nbsp;getIrGainWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像图像增益</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrGainWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrGainType gainType , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrGain:withCompletion:" title="setIrGain:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrGain:withCompletion:">&ndash;&nbsp;setIrGain:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像增益</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrGain:(AUTELCameraIrGainType)<em>gainType</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gainType</code></th>
+						<td><p>待设置的热成像增益类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIrIsoThermWithCompletion:" title="getIrIsoThermWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIrIsoThermWithCompletion:">&ndash;&nbsp;getIrIsoThermWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热成像等温线信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getIrIsoThermWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraIrIsoThermMode mode , NSInteger hotThred , NSInteger coldThred , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Complete the block. The block contains three <a href="#//api/name/parameters">parameters</a>. error is error information, error is nil, indicating successful acquisition, mode is thermal imaging isotherm mode, hotThred is high threshold in custom mode, and coldThred is low threshold in custom mode.</p>
+
+<p>完成 block，该 block 包含三个参数，error 为错误信息，error 为nil表示获取成功，mode为热成像等温线模式，hotThred为 自定义模式时高阈值，coldThred为自定义模式时低阈值。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrIsoThermMode:withCompletion:" title="setIrIsoThermMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrIsoThermMode:withCompletion:">&ndash;&nbsp;setIrIsoThermMode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像等温线模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrIsoThermMode:(AUTELCameraIrIsoThermMode)<em>mode</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>待设置的热成像等温线模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setIrIsoThermHotThred:coldThred:withCompletion:" title="setIrIsoThermHotThred:coldThred:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setIrIsoThermHotThred:coldThred:withCompletion:">&ndash;&nbsp;setIrIsoThermHotThred:coldThred:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置热成像等温线阈值</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setIrIsoThermHotThred:(NSInteger)<em>hotThred</em> coldThred:(NSInteger)<em>coldThred</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hotThred</code></th>
+						<td><p>待设置的自定义模式时高阈值</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>coldThred</code></th>
+						<td><p>待设置的自定义模式时低阈值</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="XT701 Methods" name="task_XT701 Methods"></a>
+						<h2 class="task-title">XT701 Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setCameraPattern:withCompletion:" title="setCameraPattern:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCameraPattern:withCompletion:">&ndash;&nbsp;setCameraPattern:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置相机任务模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCameraPattern:(AUTELMisstionCameraPattern)<em>pattern</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pattern</code></th>
+						<td><p>任务模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block, 返回设置结果</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> 飞控、视觉的任务需要与相机任务模式一致，才能正常工作，入延时摄影任务，相机任务模式需要设置为AUTELMisstionCameraPatternDelayPhoto</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/AUTELMisstionCameraPattern.html">AUTELMisstionCameraPattern</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGimbalLockStateWithCompletion:" title="getGimbalLockStateWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGimbalLockStateWithCompletion:">&ndash;&nbsp;getGimbalLockStateWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询相机云台锁定状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getGimbalLockStateWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraGimbalLockState lockState , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGimbalLockState:withCompletion:" title="setGimbalLockState:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGimbalLockState:withCompletion:">&ndash;&nbsp;setGimbalLockState:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置相机云台锁定状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGimbalLockState:(AUTELCameraGimbalLockState)<em>lockState</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lockState</code></th>
+						<td><p>待设置的云台锁定状态</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVideoTransmissionModeWithCompletion:" title="getVideoTransmissionModeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVideoTransmissionModeWithCompletion:">&ndash;&nbsp;getVideoTransmissionModeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询图传视频横竖屏模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getVideoTransmissionModeWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraVideoTransmissionMode state , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setVideoTransmissionMode:withCompletion:" title="setVideoTransmissionMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setVideoTransmissionMode:withCompletion:">&ndash;&nbsp;setVideoTransmissionMode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置图传视频横竖屏模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setVideoTransmissionMode:(AUTELCameraVideoTransmissionMode)<em>state</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>待设置的图传视频横竖屏模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRecordPacketStateWithCompletion:" title="getRecordPacketStateWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRecordPacketStateWithCompletion:">&ndash;&nbsp;getRecordPacketStateWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取录像分段打包大小</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRecordPacketStateWithCompletion:(void ( ^ _Nullable ) ( AUTELCameraRecordPacketModel *_Nullable model , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>completion block</p>
+
+<p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRecordPacketState:withCompletion:" title="setRecordPacketState:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRecordPacketState:withCompletion:">&ndash;&nbsp;setRecordPacketState:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置录像分段打包大小</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRecordPacketState:(AUTELCameraRecordPacketModel *_Nonnull)<em>model</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>model</code></th>
+						<td><p>待设置的任务录制状态</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGPSMapDatum:withCompletion:" title="setGPSMapDatum:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGPSMapDatum:withCompletion:">&ndash;&nbsp;setGPSMapDatum:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置GPS坐标系</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGPSMapDatum:(int)<em>value</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>待设置的GPS坐标系, 0 ：WGS-84，1：CGCS-2000</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMisstionFlyImageFormat:withCompletion:" title="setMisstionFlyImageFormat:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMisstionFlyImageFormat:withCompletion:">&ndash;&nbsp;setMisstionFlyImageFormat:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置任务飞行图像格式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMisstionFlyImageFormat:(int)<em>value</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>待设置的任务飞行图像格式，0 ：A格式，1：D格式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>完成 block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMisstionFlyImageMode:withCompletion:" title="setMisstionFlyImageMode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMisstionFlyImageMode:withCompletion:">&ndash;&nbsp;setMisstionFlyImageMode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>@brief 设置任务飞行图像模式
+*</li>
+<li>@param value 待设置的任务飞行图像模式，0 ：晴天，1：阴天</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMisstionFlyImageMode:(int)<em>value</em> withCompletion:(AUTELCompletionBlock)<em>block</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>@brief 设置任务飞行图像模式
+*</li>
+<li><p>@param value 待设置的任务飞行图像模式，0 ：晴天，1：阴天</p></li>
+<li><p>@param block 完成 block</p></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ToolMethod Methods" name="task_ToolMethod Methods"></a>
+						<h2 class="task-title">ToolMethod Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/analyPhotoAspectRatioWithHorizintal:vertical:" title="analyPhotoAspectRatioWithHorizintal:vertical:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/analyPhotoAspectRatioWithHorizintal:vertical:">+&nbsp;analyPhotoAspectRatioWithHorizintal:vertical:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>解析照片分辨率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (AUTELCameraPhotoAspectRatio)analyPhotoAspectRatioWithHorizintal:(NSString *_Nonnull)<em>horizintal</em> vertical:(NSString *_Nonnull)<em>vertical</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>horizintal</code></th>
+						<td><p>传感器水平分辨率</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vertical</code></th>
+						<td><p>传感器垂直分辨率</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>解析结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AUTELBaseCamera+ToolMethod.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -9322,7 +9501,7 @@ NTSC:4096x2160_24fps
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2021 AUTEL. All rights reserved. Updated: 2021-07-12</p>
+						<p class="copyright">Copyright &copy; 2022 AUTEL. All rights reserved. Updated: 2022-06-23</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

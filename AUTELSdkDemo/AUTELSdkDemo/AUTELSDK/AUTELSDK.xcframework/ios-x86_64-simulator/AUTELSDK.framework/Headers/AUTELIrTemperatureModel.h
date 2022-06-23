@@ -16,23 +16,60 @@
 *   测温模式
 */
 typedef NS_ENUM(int, AUTELCameraTempMode) {
-    /// None
+    /**
+    *  @brief  None
+    *
+    *  无
+    */
     AUTELCameraTempModeNone = 0,
-    /// Center temperature measurement
+    /**
+    *  @brief  Center temperature measurement
+    *
+    *  中心测温
+    */
     AUTELCameraTempModeCenter = 1,
-    /// Hot temperature measurement
+    /**
+    *  @brief  Hot temperature measurement
+    *
+    *  热测温
+    */
     AUTELCameraTempModeHot = 2,
-    /// Cold temperature measurement
+    /**
+    *  @brief Cold temperature measurement
+    *
+    *  冷测温
+    */
     AUTELCameraTempModeCold = 3,
+    /**
+    *  @brief  Touch temperature measurement
+    *
+    *  点击位置测温
+    */
     /// Touch temperature measurement
     AUTELCameraTempModeTouch = 4,
-    /// Region temperature measurement
+    /**
+    *  @brief  Region temperature measurement
+    *
+    *  区域测温
+    */
     AUTELCameraTempModeRegion = 5,
-    /// Track temperature measurement
+    /**
+    *  @brief  Track temperature measurement
+    *
+    *  跟踪测温
+    */
     AUTELCameraTempModeTrack = 6,
-    /// User1 temperature measurement
+    /**
+    *  @brief  User1 temperature measurement
+    *
+    *  用户1测温
+    */
     AUTELCameraTempModeUser1 = 7,
-    /// User2 temperature measurement
+    /**
+    *  @brief User2 temperature measurement
+    *
+    *  用户2测温
+    */
     AUTELCameraTempModeUser2 = 8
     
 };

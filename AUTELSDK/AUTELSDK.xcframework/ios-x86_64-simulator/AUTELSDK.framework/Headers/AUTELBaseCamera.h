@@ -794,15 +794,7 @@ extern NSString *const AUTELCameraDeviceInforLensSoftVersionKey;
 
 #pragma mark 以下接口仅内部使用，不对外发布
 
-///// 内部接口
-///// @param block 内部接口
-//- (void)getEncryptionPubKeyWithCompletion:(void(^_Nullable)(NSString * _Nullable pubKey, NSError * _Nullable error))block;
-///// 内部接口
-///// @param block 内部接口
-//- (void)startEncryptionText:(NSString *_Nullable)text withCompletion:(void(^_Nullable)(NSDictionary * _Nullable dic, NSError * _Nullable error))block;
-///// 内部接口
-///// @param block 内部接口
-//- (void)startDecryptionText:(NSString *_Nullable)text withCompletion:(void(^_Nullable)(NSDictionary * _Nullable dic, NSError * _Nullable error))block;
+
 
 @end
 
@@ -3047,6 +3039,39 @@ extern NSString *const AUTELCameraDeviceInforLensSoftVersionKey;
  */
 - (void)setRecordPacketState:(AUTELCameraRecordPacketModel *_Nonnull)model withCompletion:(AUTELCompletionBlock)block;
 
+///**
+// *  @brief 获取GPS坐标系
+// *
+// *  @param block completion block
+// *
+// *  完成 block
+// */
+//- (void)getGPSMapDatumWithCompletion:(void(^_Nullable)(AUTELCameraVideoTransmissionMode state, NSError * _Nullable error))block;
 
+/**
+ *  @brief 设置GPS坐标系
+ *
+ *  @param value 待设置的GPS坐标系, 0 ：WGS-84，1：CGCS-2000
+ *  @param block 完成 block
+ */
+- (void)setGPSMapDatum:(int)value withCompletion:(AUTELCompletionBlock)block;
+
+/**
+ *  @brief 设置任务飞行图像格式
+ *
+ *  @param value 待设置的任务飞行图像格式，0 ：A格式，1：D格式
+ *  @param block 完成 block
+ */
+- (void)setMisstionFlyImageFormat:(int)value withCompletion:(AUTELCompletionBlock)block;
+
+/**
+ *  @brief 设置任务飞行图像模式
+ *
+ *  @param value 待设置的任务飞行图像模式，0 ：晴天，1：阴天
+
+ *  @param block 完成 block
+ */
+- (void)setMisstionFlyImageMode:(int)value withCompletion:(AUTELCompletionBlock)block;
+ 
 
 @end

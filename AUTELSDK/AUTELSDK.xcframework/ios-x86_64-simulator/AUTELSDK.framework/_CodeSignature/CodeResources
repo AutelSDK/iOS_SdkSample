@@ -99,7 +99,7 @@
 		</data>
 		<key>Headers/AUTELBaseCamera.h</key>
 		<data>
-		tNWUI17ty2cvzScO7kul82tZLK4=
+		UHtSEv6dAlQlIts/Oy53wk/JxHE=
 		</data>
 		<key>Headers/AUTELBattery.h</key>
 		<data>
@@ -111,7 +111,7 @@
 		</data>
 		<key>Headers/AUTELCameraDef.h</key>
 		<data>
-		CqLu/YaJmgqb3z9VIcAe0inOGX4=
+		KzfweBAE2PCFbm2sAUkXqguvvEU=
 		</data>
 		<key>Headers/AUTELCameraError.h</key>
 		<data>
@@ -187,7 +187,7 @@
 		</data>
 		<key>Headers/AUTELDroneMainController.h</key>
 		<data>
-		816gnGYZcbSk5FxN4JEa2xGcXIE=
+		LCrxiaaYUGxvnovkeequN6qU/9I=
 		</data>
 		<key>Headers/AUTELError.h</key>
 		<data>
@@ -199,7 +199,7 @@
 		</data>
 		<key>Headers/AUTELFlightLimitation.h</key>
 		<data>
-		yzGwUFwvd2J0+eoqyyl7mOTMtew=
+		/G38FdCSMQ9oAbgbo4dwjj5yISI=
 		</data>
 		<key>Headers/AUTELFollowMeMission.h</key>
 		<data>
@@ -227,7 +227,7 @@
 		</data>
 		<key>Headers/AUTELIrTemperatureModel.h</key>
 		<data>
-		kctuhLAMEPTBJcF0AW67S78C6SM=
+		zo200Tv64r+24LsxZX2KZiRpJ2k=
 		</data>
 		<key>Headers/AUTELLinkGen2.h</key>
 		<data>
@@ -243,7 +243,7 @@
 		</data>
 		<key>Headers/AUTELMCWaypointMission.h</key>
 		<data>
-		e3/hf1B3Z3pLgx3c9pCjZawHmWI=
+		EpDolQFzgQh7UUiC11E6G0Pg8XU=
 		</data>
 		<key>Headers/AUTELMainControllerDef.h</key>
 		<data>
@@ -267,11 +267,11 @@
 		</data>
 		<key>Headers/AUTELNavigation.h</key>
 		<data>
-		mUpYWhT36UzGjvWfTam3+b6tOpg=
+		HRzGxylY6p02+Z0qv1BcliHChYE=
 		</data>
 		<key>Headers/AUTELNtripClient.h</key>
 		<data>
-		dqPdjBvlp9qPGyhNmu/2JSHuJL4=
+		rR7OBwTYkFIXp92EoALENbKJBXk=
 		</data>
 		<key>Headers/AUTELNtripConfigration.h</key>
 		<data>
@@ -323,7 +323,7 @@
 		</data>
 		<key>Headers/AUTELRTKModel.h</key>
 		<data>
-		WZSfbAWtTGubzty5khi3USDvJ9o=
+		dSbzZpxMb1MUzkPsYiyhQS8YAao=
 		</data>
 		<key>Headers/AUTELRemoteController.h</key>
 		<data>
@@ -427,7 +427,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZTs10ADgSnl7E6QnNNaLMJJCW/8=
+		jpOJr0VclN6l1ASDeYX+fW/TKj4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -684,11 +684,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tNWUI17ty2cvzScO7kul82tZLK4=
+			UHtSEv6dAlQlIts/Oy53wk/JxHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9LrLjg4Qh7zRFpT64b3ebevQRLFRFHdeLZHRdgXJmI4=
+			WMOYtZq/ycCRoZJff8SdE3jn6Teq+X4oY2hOE4DYU5M=
 			</data>
 		</dict>
 		<key>Headers/AUTELBattery.h</key>
@@ -717,11 +717,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CqLu/YaJmgqb3z9VIcAe0inOGX4=
+			KzfweBAE2PCFbm2sAUkXqguvvEU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XTW2WXw3fIXzfiqcPabiEztuCPl0X93Vv0sMG3dWZg4=
+			wd4LgGFzPv/Lf8T3fREds0ELS/xddEMGxKkStivik40=
 			</data>
 		</dict>
 		<key>Headers/AUTELCameraError.h</key>
@@ -926,11 +926,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			816gnGYZcbSk5FxN4JEa2xGcXIE=
+			LCrxiaaYUGxvnovkeequN6qU/9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			DX4YAwEwwwJYztK3l6ORMGk02/Z2xOx1aWRPM/uBn8A=
+			xnMy0dz9dPFh6IoKusDWKizq4HHAup1xqWFrqtU+7Vk=
 			</data>
 		</dict>
 		<key>Headers/AUTELError.h</key>
@@ -959,11 +959,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yzGwUFwvd2J0+eoqyyl7mOTMtew=
+			/G38FdCSMQ9oAbgbo4dwjj5yISI=
 			</data>
 			<key>hash2</key>
 			<data>
-			MC5xhidiBEiNyNfMv5MTPKibMm2MSedDc8XGDcG0nxA=
+			D3oRWBQJAMba+Z66InFUoTnhVwLplwEQZaFasAyjwpg=
 			</data>
 		</dict>
 		<key>Headers/AUTELFollowMeMission.h</key>
@@ -1036,11 +1036,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kctuhLAMEPTBJcF0AW67S78C6SM=
+			zo200Tv64r+24LsxZX2KZiRpJ2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			rxnOBGMIRXEkSMLm0aTX8mdCET0XtUop6eJlpVfEkGM=
+			xjk4tMEHpMF6KWrLro9MDRex9lmDjx8j8xE8nOKNPgY=
 			</data>
 		</dict>
 		<key>Headers/AUTELLinkGen2.h</key>
@@ -1080,11 +1080,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e3/hf1B3Z3pLgx3c9pCjZawHmWI=
+			EpDolQFzgQh7UUiC11E6G0Pg8XU=
 			</data>
 			<key>hash2</key>
 			<data>
-			KgphBxpIkXR4zITF8ToZImduKNTw/bTn2hH0elp9Egs=
+			8mZlMGQywmia/DfB5aoJeuueCtK2LE2CzcWLYBxbbz0=
 			</data>
 		</dict>
 		<key>Headers/AUTELMainControllerDef.h</key>
@@ -1146,22 +1146,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUpYWhT36UzGjvWfTam3+b6tOpg=
+			HRzGxylY6p02+Z0qv1BcliHChYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			X5afxQfU9mGzhVk1OXwjZcIuZAVe0B6ZpE/vlW6rBvg=
+			CFAw2f39RBWkSbHsXL3g8X4V/UIcY2FvuVHXR7K61Uw=
 			</data>
 		</dict>
 		<key>Headers/AUTELNtripClient.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dqPdjBvlp9qPGyhNmu/2JSHuJL4=
+			rR7OBwTYkFIXp92EoALENbKJBXk=
 			</data>
 			<key>hash2</key>
 			<data>
-			2R5akxFQGUsCw1jv/homigp1IMfRpbEI+f9knjEFuJA=
+			/Udpkpd5m3M4S25LAYHBs8oA0mJ1oTCNd/jWrpVwn9o=
 			</data>
 		</dict>
 		<key>Headers/AUTELNtripConfigration.h</key>
@@ -1300,11 +1300,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WZSfbAWtTGubzty5khi3USDvJ9o=
+			dSbzZpxMb1MUzkPsYiyhQS8YAao=
 			</data>
 			<key>hash2</key>
 			<data>
-			80kILoiFjvhTr6KaK9zcx2h+1vV23TFOVW0Q8ROQu+w=
+			Hd89vE1MoUpUDY9V0n2R49dTLRh0GEgYSQ3FKkD/a3s=
 			</data>
 		</dict>
 		<key>Headers/AUTELRemoteController.h</key>

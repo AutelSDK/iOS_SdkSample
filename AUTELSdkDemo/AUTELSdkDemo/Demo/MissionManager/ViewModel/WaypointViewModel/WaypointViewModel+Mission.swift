@@ -143,12 +143,7 @@ extension WaypointViewModel {
             dataSets.append(dataSetTuple)
         }
         
-//        let dataSetTuple0: dataSetTuple = (0, 0, CLLocationCoordinate2DMake(22.5984680, 113.9989462))
-//        dataSets.append(dataSetTuple0)
-//        let dataSetTuple1: dataSetTuple = (19, 43, CLLocationCoordinate2DMake(22.5982287, 113.9992863))
-//        dataSets.append(dataSetTuple1)
-//        let dataSetTuple2: dataSetTuple = (41, 102, CLLocationCoordinate2DMake(22.5981040, 113.9987331))
-//        dataSets.append(dataSetTuple2)
+
  
         for i in 0..<dataSets.count {
             let waypoint = AUTELWaypointMC()

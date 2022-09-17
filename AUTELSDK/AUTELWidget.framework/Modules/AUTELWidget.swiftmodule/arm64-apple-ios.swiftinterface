@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AUTELWidget
+import AUTELSDK
+@_exported import AUTELWidget
+import AVFoundation
+import CoreVideo
+import Foundation
+import GLKit
+import QuartzCore
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VideoOpenGLView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class AppDebugLog {
+  public static func ddLogError(File file: Swift.String = #file, Function function: Swift.String = #function, Line line: Swift.Int = #line, Tag tag: Swift.String = "", Format format: Swift.String, _ args: Swift.CVarArg...)
+  public static func ddLogWarning(File file: Swift.String = #file, Function function: Swift.String = #function, Line line: Swift.Int = #line, Tag tag: Swift.String = "", Format format: Swift.String, _ args: Swift.CVarArg...)
+  public static func ddLogInfo(File file: Swift.String = #file, Function function: Swift.String = #function, Line line: Swift.Int = #line, Tag tag: Swift.String = "", Format format: Swift.String, _ args: Swift.CVarArg...)
+  public static func ddLogDebug(File file: Swift.String = #file, Function function: Swift.String = #function, Line line: Swift.Int = #line, Tag tag: Swift.String = "", Format format: Swift.String, _ args: Swift.CVarArg...)
+  public static func ddLogVerbose(File file: Swift.String = #file, Function function: Swift.String = #function, Line line: Swift.Int = #line, Tag tag: Swift.String = "", Format format: Swift.String, _ args: Swift.CVarArg...)
+  @objc deinit
+}
+public func printLog(_ message: Any, file: Swift.String = #file, line: Swift.Int = #line, method: Swift.String = #function)
+public func printLog(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n", file: Swift.String = #file, line: Swift.Int = #line, method: Swift.String = #function)
+@_hasMissingDesignatedInitializers open class VideoFrameYUV {
+  public var pixelBuffer: CoreVideo.CVPixelBuffer?
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var pts: Swift.Int64
+  public var createIndex: Swift.Int
+  public var timeStamp: Swift.UInt64
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class VideoStreamPlayManager {
+  public var resolutionScale: Swift.Int
+  public var showOverExpose: Swift.Bool {
+    get
+    set
+  }
+  public var insertNewFrameHandler: ((_ frame: AUTELWidget.VideoFrameYUV) -> ())?
+  public static func sharedInstance() -> AUTELWidget.VideoStreamPlayManager
+  open func setPlayView(to view: UIKit.UIView)
+  open func stopPlayAndRemoveView()
+  @objc deinit
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,10 +29,6 @@
 		7F23C807246CE15F000650E8 /* AutelAircraftAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C803246CE15F000650E8 /* AutelAircraftAnnotationView.swift */; };
 		7F23C808246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C804246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift */; };
 		7F23C809246CE15F000650E8 /* AutelHomeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C805246CE15F000650E8 /* AutelHomeAnnotationView.swift */; };
-		7F3C8DAB26F22C8500A3A99D /* AUTELSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */; };
-		7F3C8DAC26F22C8500A3A99D /* AUTELSDK.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7F3C8DAD26F22C8700A3A99D /* AUTELWidget.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */; };
-		7F3C8DAE26F22C8700A3A99D /* AUTELWidget.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F48251024653CC70021F001 /* MapCorrect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48250E24653CC70021F001 /* MapCorrect.m */; };
 		7F48251224655C990021F001 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48251124655C990021F001 /* UIImageExtension.swift */; };
 		7F4E62CB25F7AC8C006F219F /* GimbalChangeSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E62C925F7AC8C006F219F /* GimbalChangeSubmission.swift */; };
@@ -60,6 +56,10 @@
 		7F91F856245BFF39004412D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91F855245BFF39004412D4 /* SceneDelegate.swift */; };
 		7F91F85D245BFF3B004412D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F91F85C245BFF3B004412D4 /* Assets.xcassets */; };
 		7F91F860245BFF3B004412D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F91F85E245BFF3B004412D4 /* LaunchScreen.storyboard */; };
+		7F9DD1BB288809F200CD13F3 /* AUTELSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD1B72888098500CD13F3 /* AUTELSDK.framework */; };
+		7F9DD1BC288809F200CD13F3 /* AUTELSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F9DD1B72888098500CD13F3 /* AUTELSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F9DD1BD288809F600CD13F3 /* AUTELWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD1B82888098500CD13F3 /* AUTELWidget.framework */; };
+		7F9DD1BE288809F600CD13F3 /* AUTELWidget.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F9DD1B82888098500CD13F3 /* AUTELWidget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F9FC5E2246D59ED001CD6DA /* AircraftStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5DF246D59ED001CD6DA /* AircraftStatusViewController.swift */; };
 		7F9FC5E4246D5A30001CD6DA /* AircraftStatusParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5E3246D5A30001CD6DA /* AircraftStatusParameters.swift */; };
 		7F9FC5E6246D5B65001CD6DA /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FC5E5246D5B65001CD6DA /* NSObjectExtension.swift */; };
@@ -140,8 +140,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7F3C8DAC26F22C8500A3A99D /* AUTELSDK.xcframework in CopyFiles */,
-				7F3C8DAE26F22C8700A3A99D /* AUTELWidget.xcframework in CopyFiles */,
+				7F9DD1BE288809F600CD13F3 /* AUTELWidget.framework in CopyFiles */,
+				7F9DD1BC288809F200CD13F3 /* AUTELSDK.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +180,6 @@
 		7F23C803246CE15F000650E8 /* AutelAircraftAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelAircraftAnnotationView.swift; sourceTree = "<group>"; };
 		7F23C804246CE15F000650E8 /* AutelAircraftToHomeLacationLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelAircraftToHomeLacationLine.swift; sourceTree = "<group>"; };
 		7F23C805246CE15F000650E8 /* AutelHomeAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutelHomeAnnotationView.swift; sourceTree = "<group>"; };
-		7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AUTELSDK.xcframework; sourceTree = "<group>"; };
-		7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AUTELWidget.xcframework; sourceTree = "<group>"; };
 		7F48250E24653CC70021F001 /* MapCorrect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapCorrect.m; sourceTree = "<group>"; };
 		7F48250F24653CC70021F001 /* MapCorrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCorrect.h; sourceTree = "<group>"; };
 		7F48251124655C990021F001 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -213,6 +211,8 @@
 		7F91F85C245BFF3B004412D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F91F85F245BFF3B004412D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F91F861245BFF3B004412D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9DD1B72888098500CD13F3 /* AUTELSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AUTELSDK.framework; sourceTree = "<group>"; };
+		7F9DD1B82888098500CD13F3 /* AUTELWidget.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AUTELWidget.framework; sourceTree = "<group>"; };
 		7F9FC5DF246D59ED001CD6DA /* AircraftStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AircraftStatusViewController.swift; sourceTree = "<group>"; };
 		7F9FC5E3246D5A30001CD6DA /* AircraftStatusParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AircraftStatusParameters.swift; sourceTree = "<group>"; };
 		7F9FC5E5246D5B65001CD6DA /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
@@ -293,9 +293,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9DD1BB288809F200CD13F3 /* AUTELSDK.framework in Frameworks */,
+				7F9DD1BD288809F600CD13F3 /* AUTELWidget.framework in Frameworks */,
 				E7F53128FFB2FBFBB29A106C /* Pods_AUTELSdkDemo.framework in Frameworks */,
-				7F3C8DAD26F22C8700A3A99D /* AUTELWidget.xcframework in Frameworks */,
-				7F3C8DAB26F22C8500A3A99D /* AUTELSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,8 +610,8 @@
 		7FE4D83A247010BC009BBA18 /* AUTELSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7F3C8DA726F22AAF00A3A99D /* AUTELSDK.xcframework */,
-				7F3C8DA826F22AAF00A3A99D /* AUTELWidget.xcframework */,
+				7F9DD1B72888098500CD13F3 /* AUTELSDK.framework */,
+				7F9DD1B82888098500CD13F3 /* AUTELWidget.framework */,
 				FE7F8F1925F35B4C0030B2AA /* shader_fsh_myExpose.strings */,
 				FE7F8F1A25F35B4C0030B2AA /* shader_vsh_myExpose.strings */,
 			);

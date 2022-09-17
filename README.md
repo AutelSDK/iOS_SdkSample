@@ -1,23 +1,43 @@
-AUTELSDK功能 ：
+## iOS MSDK V1.15.0 正式版发布记录
 
-- 上层及底层的⻜⾏控制
-- ⻜⾏数据实时回传
-- ⾃主避障
-- 相机和云台的全⽅位实时控制
-- 获得Autel图传系统传回的⾼清影像
-- 照⽚和视频的实时回传下载
-- ⽀持任务：Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control, Precision Flight, Dual Stability, Waypoint Mission
-- 电池和遥控器的状态信息获取及参数设置
+### 发布日期
+
+2022.09.17
+
+### 更新说明
+
+1. [Autel开发者平台](https://develop.autelrobotics.cn)已上线，为开发者提供Mobile SDK软件开发工具包，入门文档，API说明文档，教程文档，沟通平台等功能；
+
+2. 已知问题修复和优化；
 
 
 
-AUTEL SDK Features:
+## iOS MSDK V1.14.15 正式版发布记录
 
-- Fight control of the upper and infrastructure layers
-- Real-time flight data transmission
-- Autonomous obstacle avoidance
-- Real-time and full control of camera and gimbal
-- HD image feedback from Autel image transmission system
-- Real-time upload and download of photos and videos
-- Supported Misssions: Dynamic Track, Viewpoint, Orbit, Smart Orbit , Gesture Control, Precision Flight ,Dual Stability, Waypoint Mission
-- The status and parameter settings of battery and remote controller
+### 发布日期
+
+2022.07.09
+
+### 更新说明
+
+1. 适配新的双光云台XK729；
+
+2. 已知问题修复和优化；
+
+    
+
+### Mobile SDK功能 
+
+定制专属移动 APP，为无人机用户提供你想要的一切 ！
+
+通过 Autel Mobile SDK，开发者可以实现自主飞行，控制相机和云台，接收实时视频图传和传感器数据，下载媒体文件，以及实现多种智能任务等等。
+
+
+
+### 支持产品列表和固件版本
+
+| 产品列表         | 固件版本 |
+| ---------------- | -------- |
+| EVO II V1 Series | V2.7.35  |
+| EVO II V2 Series | V2.3.23  |
+

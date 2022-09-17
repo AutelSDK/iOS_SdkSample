@@ -1,0 +1,72 @@
+{
+    "GetThermalRadiometryTempUnit": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometryTempUnit": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometrySpotMeterEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometrySpotMeterEnable": {
+    "ParameterType": 2,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometryEmissivity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometryEmissivity": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometryAirTemp": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometryAirTemp": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometrySkyCond": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometrySkyCond": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometryHumidity": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometryHumidity": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalRadiometrySubjectDistance": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalRadiometrySubjectDistance": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  }
+}

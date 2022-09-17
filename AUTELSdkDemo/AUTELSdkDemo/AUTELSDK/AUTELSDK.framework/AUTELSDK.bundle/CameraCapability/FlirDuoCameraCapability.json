@@ -1,0 +1,172 @@
+{
+  "SetCameraWorkMode": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetCameraWorkMode": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "StartShootPhoto": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StopShootPhoto": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StartRecordVideo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "StopRecordVideo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetPhotoFileFormat": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetPhotoFileFormat": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "SetSystemDateAndTime": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalDisplayMode": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalDisplayMode": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalPalette": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalPalette": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalMSXEnable": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalMSXEnable": {
+    "ParameterType": 2,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalMSXStrenght": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalMSXStrenght": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalMSXAlign": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalMSXAlign": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalPhotoIntervalAndDuration": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalPhotoIntervalAndDuration": {
+    "ParameterType": 3,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalVideoSavingMode": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalVideoSavingMode": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "FormatSDCard": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetAllSettings": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "LoadFactorySettings": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 2
+  },
+  "GetDeviceInfor": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "GetSDCardInfo": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "GetThermalPIPPosition": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalPIPPosition": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalIRVideoFileFormat": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalIRVideoFileFormat": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  },
+  "GetThermalLEDSettings": {
+    "ParameterType": 0,
+    "Supported": true,
+    "FunctionType": 0
+  },
+  "SetThermalLEDSettings": {
+    "ParameterType": 1,
+    "Supported": true,
+    "FunctionType": 1
+  }
+}

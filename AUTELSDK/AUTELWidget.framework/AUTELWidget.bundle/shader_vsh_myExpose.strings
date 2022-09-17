@@ -1,0 +1,24 @@
+/* 
+  shader_vsh_myExpose.strings
+  AutelGen2
+
+  Created by IOS on 2017/10/11.
+  Copyright © 2017年 AUTEL. All rights reserved.
+*/
+
+attribute vec4 position;
+attribute vec2 texCoord;
+uniform float preferredRotation;
+uniform vec4 overexp_texture_param;
+varying vec2 texCoordVarying;
+varying vec4 v_overexp_texcoord;
+void main()
+{
+    mat4 rotationMatrix = mat4(cos(preferredRotation), -sin(preferredRotation), 0.0, 0.0,
+                               sin(preferredRotation),  cos(preferredRotation), 0.0, 0.0,
+                               0.0,                        0.0, 1.0, 0.0,
+                               0.0,                        0.0, 0.0, 1.0);
+    gl_Position = position * rotationMatrix;
+    texCoordVarying = texCoord;
+    v_overexp_texcoord = vec4(texCoordVarying.x * overexp_texture_param.x + overexp_texture_param.z, texCoordVarying.y * overexp_texture_param.y, ceil(overexp_texture_param.w), overexp_texture_param.w*64.0);
+}

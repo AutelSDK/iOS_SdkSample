@@ -1,0 +1,48 @@
+/* 
+  shader_fsh_myExpose.strings
+  AutelGen2
+
+  Created by IOS on 2017/10/11.
+  Copyright © 2017年 AUTEL. All rights reserved.
+*/
+
+varying highp vec2 texCoordVarying;
+varying highp vec4 v_overexp_texcoord;
+precision mediump float;
+uniform sampler2D SamplerY;
+uniform sampler2D SamplerUV;
+uniform mat3 colorConversionMatrix;
+uniform int showGray;
+uniform int showOverExpose;
+uniform sampler2D s_texture_overexp;
+uniform sampler2D SamplerV;
+uniform int softwareDecode;
+void main()
+{
+    mediump vec3 yuv;
+    lowp vec3 rgb;
+    yuv.x = (texture2D(SamplerY, texCoordVarying).r - (16.0/255.0));
+    if (showGray == 1) {
+      if (softwareDecode == 1) {
+         yuv.y = texture2D(SamplerUV, texCoordVarying).r - 0.5;
+         yuv.z = texture2D(SamplerV, texCoordVarying).r - 0.5;
+      } else {
+        yuv.yz = (texture2D(SamplerUV, texCoordVarying).rg - vec2(0.5, 0.5));
+      }
+      rgb = colorConversionMatrix * yuv;
+      if (showOverExpose == 1) {
+         highp vec4 rgb_color = vec4(rgb, 1.0);
+         highp vec4 over_exposed_tex_color = texture2D(s_texture_overexp, texCoordVarying);
+         highp float lumaince = 0.2568*rgb_color.r+0.5041*rgb_color.g+0.0979*rgb_color.b+0.0625;
+         highp float blend_factor = clamp(lumaince*64.0 - v_overexp_texcoord.w, 0.0 ,1.0)*v_overexp_texcoord.z;
+         highp vec4 ret_color = mix(rgb_color, over_exposed_tex_color, blend_factor);
+         gl_FragColor = vec4(ret_color.xyz, 1.0);
+      } else {
+         gl_FragColor = vec4(rgb, 1.0);
+      }
+    } else {
+      yuv.yz = vec2(0.0, 0.0);
+      rgb = colorConversionMatrix * yuv;
+      gl_FragColor = vec4(rgb, 1.0);
+    }
+}

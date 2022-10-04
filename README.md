@@ -1,43 +1,45 @@
-## iOS MSDK V1.15.0 正式版发布记录
+## Mobile SDK Feature
 
-### 发布日期
+You can customize your own mobile app, enjoying everything the SDK provides.
+
+By using the Autel Mobile SDK, developers can automate flight, control the camera and gimbal, receive video transmitted in real time and sensor data, download media files, and implement multiple types of intelligent missions.
+
+[AUTEL Developer Platform](https://developer.autelrobotics.com) provide developers with Mobile SDK software development kit, introductory documentation, API documentation, tutorial documentation, communication platform and other functions.
+
+
+
+## Supported Product List and Firmware Version
+
+| Product List     | Firmware Version    |
+| ---------------- | ------------------- |
+| EVO II V1 Series | V2.7.35             |
+| EVO II V2 Series | V2.3.23<br/>V2.1.77 |
+
+
+
+## iOS MSDK V1.15.0 Release Notes
+
+### Release Date
 
 2022.09.17
 
-### 更新说明
+### Update Description
 
-1. [Autel开发者平台](https://develop.autelrobotics.cn)已上线，为开发者提供Mobile SDK软件开发工具包，入门文档，API说明文档，教程文档，沟通平台等功能；
+1.  [AUTEL Developer Platform](https://developer.autelrobotics.com) is online, provide developers with Mobile SDK software development kit, introductory documentation, API documentation, tutorial documentation, communication platform and other functions;
 
-2. 已知问题修复和优化；
+2.  bug fixes and optimizations；
 
 
 
-## iOS MSDK V1.14.15 正式版发布记录
+## iOS Mobile SDK V1.14.15 Release Notes
 
-### 发布日期
+### Release Date
 
 2022.07.09
 
-### 更新说明
+### Update Description
 
-1. 适配新的双光云台XK729；
+1. The SDK now is compatible with the new dual-vision gimbal XK729.
 
-2. 已知问题修复和优化；
-
-    
-
-### Mobile SDK功能 
-
-定制专属移动 APP，为无人机用户提供你想要的一切 ！
-
-通过 Autel Mobile SDK，开发者可以实现自主飞行，控制相机和云台，接收实时视频图传和传感器数据，下载媒体文件，以及实现多种智能任务等等。
-
-
-
-### 支持产品列表和固件版本
-
-| 产品列表         | 固件版本 |
-| ---------------- | -------- |
-| EVO II V1 Series | V2.7.35  |
-| EVO II V2 Series | V2.3.23  |
+2. Fixed known issues and added enhancements.
 

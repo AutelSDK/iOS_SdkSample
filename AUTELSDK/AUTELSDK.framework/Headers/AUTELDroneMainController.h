@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <AUTELSDK/AUTELRTKModel.h>
 #import "AUTELTransferFileModel.h"
+#import "AUTELMCWaypointMission.h"
 
 @class AUTELDroneMainController;
 @class AUTELMCSystemState;
@@ -19,38 +20,26 @@
 @protocol AUTELCompass;
 @class AUTELNavigation;
 @class AUTELFlightAssistant;
-
 /**
- *  The vertical control velocity MIN value is -4 m/s in `VirtualStickControlMode`. Negative velocity is down.
- *
- *  `VirtualStickControlMode`模式下最小速度是-4，负代表向下。
+ *  The vertical control velocity MIN value is -4 m/s in `VirtualStickControlMode`. Positive velocity is up.
  */
 extern const float AUTELVirtualStickVerticalControlMinVelocity;
 /**
  *  The vertical control velocity MAX value is 4 m/s in VirtualStickControlMode. Positive velocity is up.
- *
- *  `VirtualStickControlMode`模式下最大速度是4，正代表向上。
- *
  */
 extern const float AUTELVirtualStickVerticalControlMaxVelocity;
 
 /**
  *  The vertical control position MIN value is 0 m for `VirtualStickVerticalControlModePosition`.
- *
- *  竖向控制位置最小值为0米 `VirtualStickVerticalControlModePosition`
  */
 extern const float AUTELVirtualStickVerticalControlMinPosition;
 /**
  *  The vertical control position MAX value is 500 m for `VirtualStickVerticalControlModePosition`.
- *
- *  竖向控制最大值为500米 `VirtualStickVerticalControlModePosition`
  */
 extern const float AUTELVirtualStickVerticalControlMaxPosition;
 
 /**
  *  Defines how vertical control values are interpreted by the aircraft.
- *
- *  定义飞机竖向的控制类型
  */
 typedef NS_ENUM (uint8_t, AUTELVirtualStickVerticalControlMode){
     /**
@@ -58,53 +47,34 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickVerticalControlMode){
      *  Positive and negative vertical velocity is for the aircraft ascending and descending
      *  respectively. Maximum vertical velocity is defined as `AUTELVirtualStickVerticalControlMaxVelocity`.
      *  Minimum vertical velocity is defined as `AUTELVirtualStickVerticalControlMinVelocity`.
-     *
-     *  给 Virtual Stick Control vertical control 设置速度值
-     *  正负速度分别代表飞机上升和下降，
-     *  `AUTELVirtualStickVerticalControlMaxVelocity` 是最大速度
-     *  `AUTELVirtualStickVerticalControlMinVelocity` 是最小速度
      */
     AUTELVirtualStickVerticalControlModeVelocity,
     /**
      *  Sets the `VirtualStickControlMode` vertical control values to be an altitude. Maximum position is defined as `AUTELVirtualStickVerticalControlMaxPosition`.
      *  Minimum position is defined as `AUTELVirtualStickVerticalControlMinPosition`.
-     *
-     *  给 `VirtualStickControlMode` vertical control 设置高度值。
-     *  `AUTELVirtualStickVerticalControlMaxPosition` 是最大值
-     *  `AUTELVirtualStickVerticalControlMinPosition` 是最小值
      */
     AUTELVirtualStickVerticalControlModePosition,
 };
 
 /**
  *  Roll/Pitch control velocity MAX value is 15m/s.
- *
- *  滚动、俯仰的控制的最大值是15米每秒
  */
 extern const float AUTELVirtualStickRollPitchControlMaxVelocity;
 /**
  *  Roll/Pitch control velocity MIN value is -15m/s.
- *
- *  滚动、俯仰的控制的最大小值是-15米每秒
  */
 extern const float AUTELVirtualStickRollPitchControlMinVelocity;
 /**
  *  Roll/Pitch control angle MAX value is 30 degrees.
- *
- *  滚动、俯仰的控制的最大小值是30度
  */
 extern const float AUTELVirtualStickRollPitchControlMaxAngle;
 /**
  *  Roll/Pitch control angle MIN value is -30 degrees.
- *
- *  滚动、俯仰的控制的最大小值是-30度
  */
 extern const float AUTELVirtualStickRollPitchControlMinAngle;
 
 /**
  *  Defines how manual roll and pitch values are interpreted by the aircraft.
- *
- *  定义了飞机的手动滚动和俯仰方式，
  */
 typedef NS_ENUM (uint8_t, AUTELVirtualStickRollPitchControlMode){
     /**
@@ -116,12 +86,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickRollPitchControlMode){
      *  north, respectively. Positive and negative roll angle is the angle when the aircraft is moving east and west, respectively.
      *  Maximum angle is defined as `AUTELVirtualStickRollPitchControlMaxAngle`.
      *  Minimum angle is defined as `AUTELVirtualStickRollPitchControlMinAngle`.
-     *
-     *  给 飞机`VirtualStickControlMode` 的滚动和俯仰设置一个角度值。在体坐标系下，俯仰角值是指飞机自身平面相对于Y轴的角度，
-     *  滚动角度是飞机自身平面相对于的X轴的角度
-     *  地面坐标系下，  pitch angle 表示相对于南北方向的角度，roll angle 表示相对于东西的角度。
-     *  `AUTELVirtualStickRollPitchControlMaxAngle` 是最大值
-     *  `AUTELVirtualStickRollPitchControlMinAngle` 是最小值
      */
     AUTELVirtualStickRollPitchControlModeAngle,
     /**
@@ -133,45 +97,29 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickRollPitchControlMode){
      *  Positive and negative roll velocity is when the aircraft is moving north and south, respectively.
      *  Maximum velocity is defined as `AUTELVirtualStickRollPitchControlMaxVelocity`.
      *  Minimum velocity is defined as `AUTELVirtualStickRollPitchControlMinVelocity`.
-     *
-     *  给 飞机`VirtualStickControlMode` 的滚动和俯仰设置一个角度速度值。在体坐标系下，俯仰角速度值是指飞机自身平面相对于Y轴的角速度，
-     *  滚动角速度是飞机自身平面相对于的X轴的角速度
-     *  地面坐标系下，  pitch velocity angle 表示相对于南北方向的角速度，roll velocity angle 表示相对于东西的角速度。
-     *
      */
     AUTELVirtualStickRollPitchControlModeVelocity,
 };
 
 /**
  *  Yaw control angle MAX value is 180 degrees.
- *
- *  最大偏航角 180度
  */
 extern const float AUTELVirtualStickYawControlMaxAngle;
 /**
  *  Yaw control angle MIN value is -180 degrees.
- *
- *  最小偏航角 -180度
  */
 extern const float AUTELVirtualStickYawControlMinAngle;
 /**
  *  Yaw control angular velocity MAX value is 100 degrees/second.
- *
- *  最大偏航角速度 100度每秒
  */
 extern const float AUTELVirtualStickYawControlMaxAngularVelocity;
 /**
  *  Yaw control angular velocity MIN value is -100 degrees/second.
- *
- *  最小偏航角速度 -100度每秒
- *
  */
 extern const float AUTELVirtualStickYawControlMinAngularVelocity;
 
 /**
  *  Defines how manual yaw values are interpreted by the aircraft.
- *
- *  飞机偏航角类型
  */
 typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
     /**
@@ -179,11 +127,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
      * Positive and negative yaw angle is for the aircraft rotating clockwise and counterclockwise,
      * respectively. Maximum yaw angle is defined as `AUTELVirtualStickYawControlMaxAngle`. Minimum yaw
      * angle is defined as `AUTELVirtualStickYawControlMinAngle`.
-     *
-     * 设置机头一个偏航角，正负值表示顺时针或者逆时针；
-     * `AUTELVirtualStickYawControlMaxAngle` 是最大偏航角
-     * `AUTELVirtualStickYawControlMinAngle` 是最小偏航角
-     *
      */
     AUTELVirtualStickYawControlModeAngle,
     /**
@@ -191,11 +134,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
      * angular velocity is for the aircraft rotating clockwise and counterclockwise, respectively. Maximum
      * yaw angular velocity is defined as `AUTELVirtualStickYawControlMaxAngularVelocity`. Minimum yaw angular
      * velocity is defined as `AUTELVirtualStickYawControlMinAngularVelocity`.
-     *
-     *  设置机头一个偏航角速度，正负值表示顺时针或者逆时针；
-     * `AUTELVirtualStickYawControlMaxAngle` 是最大偏航角速度
-     * `AUTELVirtualStickYawControlMinAngle` 是最小偏航角速度
-     *
      */
     AUTELVirtualStickYawControlModeAngularVelocity,
 };
@@ -229,7 +167,7 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 - (void)mainController:(AUTELDroneMainController *_Nonnull)mc didUpdateSystemState:(AUTELMCSystemState *_Nonnull)state NS_SWIFT_NAME(mainController(_:didUpdateSystemState:));
 
 @optional
- 
+
 /**
  *  @brief This callback method updates the current status data of the aircraft's RTK. The flight controller reports once every 1s..
  *
@@ -280,7 +218,7 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
  *  @see AUTELLTEModuleInfoModel
  **/
 - (void)mainController:(AUTELDroneMainController *_Nonnull)mc didUpdateLTEModuleState:(AUTELLTEModuleInfoModel *_Nonnull)state NS_SWIFT_NAME(mainController(_:didUpdateLTEModuleState:));
- 
+
 @end
 
 
@@ -346,27 +284,20 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 @property (nonatomic, readonly) AUTELNavigation * _Nonnull navigationManager;
 
 /**
-*  Get real-time vision status and send command to control vision.
-*
-*  通过该类，你可以获得视觉的实时状态，也可以向视觉发送命令，控制视觉。
-*/
+ flight Assistant, you can get all setting in flight
+ */
 @property (nonatomic, readonly) AUTELFlightAssistant * _Nonnull flightAssistant;
 
 /**
  *  Vertical control mode
- *  垂直控制方式
  */
 @property(nonatomic, assign) AUTELVirtualStickVerticalControlMode verticalControlMode;
-
 /**
  *  Roll/Pitch control mode.
- *  滚动/俯仰控制模式。
  */
 @property(nonatomic, assign) AUTELVirtualStickRollPitchControlMode rollPitchControlMode;
-
 /**
  *  Yaw control mode.
- *  偏航控制模式。
  */
 @property(nonatomic, assign) AUTELVirtualStickYawControlMode yawControlMode;
 
@@ -1198,8 +1129,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
  is virtual stick control mode available
- 
- virtual stick control mode 是否可用
 
  @return bool
  */
@@ -1207,8 +1136,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
  enable virtual joy stick control mode
- 
- 激活虚拟摇杆模式
 
  @param result completion block
  */
@@ -1216,8 +1143,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
  enable virtual joy stick yaw control mode
-
- 启用虚拟摇杆偏航控制模式
  
  @param result completion block
  */
@@ -1225,8 +1150,6 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
  disable virtual stick yaw control mode
-
- 禁用虚拟摇杆偏航控制模式
  
  @param result completion block
  */
@@ -1234,10 +1157,8 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
  send virtual stick flight control data
- 发送虚拟摇杆飞控数据
 
  @param stickData virtual stick flight control data
- @param 虚拟摇杆飞控数据
  @param result completion block
  */
 - (void)sendVirtualStickFlightControlData:(AutelVirtualStickFlightControlData)stickData withCompletion:(AUTELCompletionBlock)result;
@@ -1248,56 +1169,32 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 
 /// Get network RTK authentication information
-/// 获取网络RTK认证信息
 /// @param block completion block
 - (void)getRTKAuthInfoWithCompletion:(AUTELGetRTKAuthInfoCompletionBlock)block ;
 
-/// Set network RTK account information
-/// 设置网络 RTK 账户信息
-/// @param account Account
-/// 账户
-/// @param pwd password
-/// 密码
-/// @param deviceID device ID
-/// 设备ID
-/// @param deviceType device type
-/// 设备类型
-/// @param Completion block
-/// 完成回调
+/// 设置网络RTK账号信息
+/// @param block result
 - (void)setRTKAuthInfo:(NSString * _Nonnull)account pwd:(NSString * _Nonnull)pwd deviceID:(NSString * _Nonnull)deviceID deviceType:(NSString * _Nonnull)deviceType withCompletion:(AUTELCompletionBlock)block;
 
-/// Upload RTK Different Data
-/// 上传RTK查分数据
+/// Upload RTK差分数据
 /// @param streamData data
-/// 数据
-/// @param Completion Completion block
-/// 完成回调
+/// @param block block result
 - (void)uploadeRTKDiffData:(NSData *_Nullable)streamData withCompletion:(AUTELCompletionBlock)block;
 
-/// Get Ntrip authentication information
-/// 获取 Ntrip 授权信息
-/// @param Completion Completion block
-/// 完成回调
+/// Get Ntrip Auth Info
+/// @param block completion block
 - (void)getNtripAuthInfoWithCompletion:(void(^_Nullable)(AUTELNtripAuthInfoModel * _Nullable model, NSError* _Nullable error))block;
-
-/// Set Ntrip authentication information
 /// 设置Ntrip RTK账号信息
-/// @param Completion Completion block
-/// 完成回调
+/// @param block result
 - (void)setNtripAuthInfo:(AUTELNtripAuthInfoModel * _Nullable)model withCompletion:(AUTELCompletionBlock)block;
 
-/// Get MQTT authentication information
-/// 获取 MQTT 授权信息
-/// @param Completion Completion block
-/// 完成回调
+/// Get MQTT Auth Info
+/// @param block completion block
 - (void)getMQTTAuthInfoWithCompletion:(void(^_Nullable)(AUTELMQTTAuthInfoModel * _Nullable model, NSError* _Nullable error))block;
-
-/// Set MQTT authentication information
-/// 设置 MQTT RTK账号信息
-/// @param Completion Completion block
-/// 完成回调
+/// 设置MQTT RTK账号信息
+/// @param block result
 - (void)setMQTTAuthInfo:(AUTELMQTTAuthInfoModel * _Nullable)model withCompletion:(AUTELCompletionBlock)block;
- 
+
 @end
 
 
@@ -1305,31 +1202,22 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 /**
 *  @brief Check if the designated  no-fly zone file needs to be uploaded.
+*
 *  检查指定的禁飞区文件是否需要上传。
 *
 *  @param country Country code.
-*  国家码
-*
 *  @param digest MD5 summary string of no-fly zone files.
-*  禁飞区文件的 MD5 摘要字符串
-*
 *  @param block Completion Block.
+*
 *  完成block。
 */
 - (void)checkNfzNeedUpload:(NSString *_Nonnull)country andDigest:(NSString *_Nullable)digest withCompletion:(AUTELCompletionBlock)block;
 
 
-/// Check if the designated  no-fly zone file needs to be uploaded
-/// 检查指定禁飞区文件是否需要上传
-///
+///   Check if the designated  no-fly zone file needs to be uploaded
 /// @param country  Country code.
-/// 国家码
-///
 /// @param filePath filePath
-/// 文件路径
-///
 /// @param block  Completion Block, code = 0 do not need upload, else need upload.
-/// 完成回调，code = 0 不需要上传，否则需要上传。
 - (void)checkNfzNeedUpload:(NSString * _Nonnull)country filePath:(NSString * _Nullable)filePath withCompletion:(void(^_Nullable)(int code, NSError* _Nullable error))block;
 
 - (void)uploadNfzFileWithCountry:(NSString *_Nonnull)country
@@ -1340,20 +1228,26 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 
 /// Check if the designated  no-fly zone file needs to be uploaded.
-/// 检查指定禁飞区文件是否需要上传。
-///
 /// @param fileName file name
-/// 文件名
-///
 /// @param progress upload progress
-/// 上传进度
-///
 /// @param block Completion Block.
-/// 完成回调
 - (void)uploadAuthfzFileWithModels:(NSArray <AUTELTransferAuthFlyzoneFileModel *> *_Nonnull)models
                             fileName:(NSString *_Nonnull)fileName
                     withProgress:(AUTELProgressHandler)progress
                       withCompletion:(AUTELCompletionBlock)block;
+
+/// upload mission file
+/// @param fileName file name
+/// @param progress upload progress
+/// @param block Completion Block.
+- (void)uploadMissionFile:(NSString *_Nonnull)path
+          withProgress:(AUTELProgressHandler)progress
+           withCompletion:(AUTELCompletionBlock)completion;
+
+/**
+ * 获取飞机正在执行的任务
+ */
+- (void)getCurrentMissionWithCompletion:(void (^_Nullable)(AUTELWaypointMission * _Nullable mission, NSError * _Nullable error))block;
 
 @end
 
@@ -1361,60 +1255,26 @@ typedef NS_ENUM (uint8_t, AUTELVirtualStickYawControlMode){
 
 @interface AUTELDroneMainController (Accessories)
 
-/// Upload mp3 file to Accessories
 /// 上传mp3文件到喊话器
-///
-/// @param mp3Data mp3 Data
-/// mp3 数据
-///
-/// @param block completion block
-/// 完成回调
 - (void)uploadIntercomMp3FileData:(NSData *_Nullable)mp3Data
                         completion:(AUTELCompletionBlock)block;
 
-/// Upload real time mp3 file to Accessories
-/// 上传实时mp3文件到喊话器
-///
-/// @param mp3Data mp3 Data
-/// mp3 数据
-///
-/// @param block completion block
-/// 完成回调
+/// 上传实时mp3文件
 - (void)uploadRealTimeMp3FileData:(NSData *_Nullable)mp3Data
                        completion:(AUTELCompletionBlock)block;
 
-/// Cancel upload mp3 data
 /// 取消上传
 - (void)cancelUploadInterMp3FileData;
 
-/// Control night light brightness command
 /// 控制夜航灯亮度命令
-///
-/// @param luminance luminance
-/// 亮度
-///
-/// @param block ompletion block
-/// 完成回调
 - (void)updateNlightLuminance:(int)luminance
                    completion:(void (^_Nullable)(NSDictionary * _Nullable answer, NSError * _Nullable error))block;
 
-
-/// Control searchlight brightness command
 /// 控制探照灯亮度命令
-///
-/// @param luminance luminance
-/// 亮度
-///
-/// @param block ompletion block
-/// 完成回调
 - (void)updateSlightLuminance:(int)luminance
                    completion:(void (^_Nullable)(NSDictionary * _Nullable answer, NSError * _Nullable error))block;
 
-/// Megaphone volume command
 /// 喊话器音量大小命令
-/// @param volume volume
-/// @param block ompletion block
-/// 完成回调
 - (void)updateSpeakerVolume:(int)volume
                  completion:(void (^_Nullable)(NSDictionary * _Nullable answer, NSError * _Nullable error))block;
 

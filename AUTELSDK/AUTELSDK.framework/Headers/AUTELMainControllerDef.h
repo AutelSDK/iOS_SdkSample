@@ -495,6 +495,11 @@ typedef NS_ENUM(uint8_t, AUTELTransferFileType) {
     AUTELTransferFileTypeAuthFlyZone = 7,
 
     /**
+     *  @brief 新航线任务数据文件
+     */
+    AUTELTransferFileTypeMisssionFileData = 8,
+
+    /**
      *  @brief Unknown
      */
     AUTELTransferFileTypeUnknown = -1,

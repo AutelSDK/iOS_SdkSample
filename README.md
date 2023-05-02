@@ -10,10 +10,24 @@ By using the Autel Mobile SDK, developers can automate flight, control the camer
 
 ## Supported Product List and Firmware Version
 
-| Product List     | Firmware Version    |
-| ---------------- | ------------------- |
-| EVO II V1 Series | V2.7.35             |
-| EVO II V2 Series | V2.3.23<br/>V2.1.77 |
+| Product List     | Firmware Version    | MSDK Version |
+| ---------------- | ------------------- | ------------ |
+| EVO II V1 Series | V2.7.35             | V1.15.0      |
+| EVO II V2 Series | V2.3.23<br/>V2.1.77 | V1.15.0      |
+| EVO II V2 Series | V2.4.35             | V1.16.0      |
+
+
+
+## iOS MSDK V1.16.0 Release Notes
+
+### Release Date
+
+2023.05.02
+
+### Update Description
+
+1.  Support new waypoint mission: add waypoint mission planning API and  upload API;
+2.  bug fixes and optimizations；
 
 
 

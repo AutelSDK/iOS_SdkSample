@@ -1,0 +1,4917 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AUTELSDK",
+        "printedName": "AUTELSDK",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoOpenGLView",
+        "printedName": "VideoOpenGLView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "layerClass",
+            "printedName": "layerClass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "AnyObject.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView(cpy)layerClass",
+            "mangledName": "$s11AUTELWidget15VideoOpenGLViewC10layerClassyXlXpvpZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "layerClass",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExistentialMetatype",
+                    "printedName": "AnyObject.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "AnyObject"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView(cm)layerClass",
+                "mangledName": "$s11AUTELWidget15VideoOpenGLViewC10layerClassyXlXpvgZ",
+                "moduleName": "AUTELWidget",
+                "static": true,
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "layerClass",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoOpenGLView",
+                "printedName": "AUTELWidget.VideoOpenGLView",
+                "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView(im)initWithFrame:",
+            "mangledName": "$s11AUTELWidget15VideoOpenGLViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "AUTELWidget",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AUTELWidget.VideoOpenGLView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoOpenGLView",
+                    "printedName": "AUTELWidget.VideoOpenGLView",
+                    "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView(im)initWithCoder:",
+            "mangledName": "$s11AUTELWidget15VideoOpenGLViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "AUTELWidget",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AUTELWidget@objc(cs)VideoOpenGLView",
+        "mangledName": "$s11AUTELWidget15VideoOpenGLViewC",
+        "moduleName": "AUTELWidget",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppDebugLog",
+        "printedName": "AppDebugLog",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "ddLogError",
+            "printedName": "ddLogError(File:Function:Line:Tag:Format:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.CVarArg]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVarArg",
+                    "printedName": "Swift.CVarArg",
+                    "usr": "s:s7CVarArgP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget11AppDebugLogC02ddD5Error4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "mangledName": "$s11AUTELWidget11AppDebugLogC02ddD5Error4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ddLogWarning",
+            "printedName": "ddLogWarning(File:Function:Line:Tag:Format:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.CVarArg]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVarArg",
+                    "printedName": "Swift.CVarArg",
+                    "usr": "s:s7CVarArgP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget11AppDebugLogC02ddD7Warning4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "mangledName": "$s11AUTELWidget11AppDebugLogC02ddD7Warning4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ddLogInfo",
+            "printedName": "ddLogInfo(File:Function:Line:Tag:Format:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.CVarArg]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVarArg",
+                    "printedName": "Swift.CVarArg",
+                    "usr": "s:s7CVarArgP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget11AppDebugLogC02ddD4Info4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "mangledName": "$s11AUTELWidget11AppDebugLogC02ddD4Info4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ddLogDebug",
+            "printedName": "ddLogDebug(File:Function:Line:Tag:Format:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.CVarArg]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVarArg",
+                    "printedName": "Swift.CVarArg",
+                    "usr": "s:s7CVarArgP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget11AppDebugLogC02dddC04File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "mangledName": "$s11AUTELWidget11AppDebugLogC02dddC04File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ddLogVerbose",
+            "printedName": "ddLogVerbose(File:Function:Line:Tag:Format:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.CVarArg]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVarArg",
+                    "printedName": "Swift.CVarArg",
+                    "usr": "s:s7CVarArgP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget11AppDebugLogC02ddD7Verbose4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "mangledName": "$s11AUTELWidget11AppDebugLogC02ddD7Verbose4File8Function4Line3Tag6Format_ySS_SSSiS2Ss7CVarArg_pdtFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11AUTELWidget11AppDebugLogC",
+        "mangledName": "$s11AUTELWidget11AppDebugLogC",
+        "moduleName": "AUTELWidget",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Function",
+        "name": "printLog",
+        "printedName": "printLog(_:file:line:method:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ProtocolComposition",
+            "printedName": "Any"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11AUTELWidget8printLog_4file4line6methodyyp_SSSiSStF",
+        "mangledName": "$s11AUTELWidget8printLog_4file4line6methodyyp_SSSiSStF",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "printLog",
+        "printedName": "printLog(_:separator:terminator:file:line:method:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Any]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11AUTELWidget8printLog_9separator10terminator4file4line6methodyypd_S3SSiSStF",
+        "mangledName": "$s11AUTELWidget8printLog_9separator10terminator4file4line6methodyypd_S3SSiSStF",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AUTELSDK",
+        "printedName": "AUTELSDK",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VideoToolbox",
+        "printedName": "VideoToolbox",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "AUTELSDK",
+        "printedName": "AUTELSDK",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoFrameYUV",
+        "printedName": "VideoFrameYUV",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pixelBuffer",
+            "printedName": "pixelBuffer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreVideo.CVBuffer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CVBuffer",
+                    "printedName": "CoreVideo.CVBuffer",
+                    "usr": "c:@T@CVBufferRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreVideo.CVBuffer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreVideo.CVBuffer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CVBuffer",
+                        "printedName": "CoreVideo.CVBuffer",
+                        "usr": "c:@T@CVBufferRef"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11pixelBufferSo11CVBufferRefaSgvM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC5widthSivp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC5widthSivp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC5widthSivg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC5widthSivg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC5widthSivs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC5widthSivs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC5widthSivM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC5widthSivM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC6heightSivp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC6heightSivp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC6heightSivg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC6heightSivg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC6heightSivs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC6heightSivs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC6heightSivM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC6heightSivM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pts",
+            "printedName": "pts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC3ptss5Int64Vvs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC3ptss5Int64VvM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC3ptss5Int64VvM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createIndex",
+            "printedName": "createIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC11createIndexSivp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC11createIndexSivp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11createIndexSivg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11createIndexSivg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11createIndexSivs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11createIndexSivs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC11createIndexSivM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC11createIndexSivM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeStamp",
+            "printedName": "timeStamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvp",
+            "mangledName": "$s11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvg",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt64",
+                    "printedName": "Swift.UInt64",
+                    "usr": "s:s6UInt64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvs",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64Vvs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64VvM",
+                "mangledName": "$s11AUTELWidget13VideoFrameYUVC9timeStamps6UInt64VvM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11AUTELWidget13VideoFrameYUVC",
+        "mangledName": "$s11AUTELWidget13VideoFrameYUVC",
+        "moduleName": "AUTELWidget",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AUTELSDK",
+        "printedName": "AUTELSDK",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoStreamPlayManager",
+        "printedName": "VideoStreamPlayManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "resolutionScale",
+            "printedName": "resolutionScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivp",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivg",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivs",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivM",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC15resolutionScaleSivM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showOverExpose",
+            "printedName": "showOverExpose",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvp",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvg",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvs",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvM",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC14showOverExposeSbvM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "insertNewFrameHandler",
+            "printedName": "insertNewFrameHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((AUTELWidget.VideoFrameYUV) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AUTELWidget.VideoFrameYUV) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoFrameYUV",
+                        "printedName": "AUTELWidget.VideoFrameYUV",
+                        "usr": "s:11AUTELWidget13VideoFrameYUVC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvp",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvp",
+            "moduleName": "AUTELWidget",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((AUTELWidget.VideoFrameYUV) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AUTELWidget.VideoFrameYUV) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoFrameYUV",
+                            "printedName": "AUTELWidget.VideoFrameYUV",
+                            "usr": "s:11AUTELWidget13VideoFrameYUVC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvg",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvg",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((AUTELWidget.VideoFrameYUV) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AUTELWidget.VideoFrameYUV) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoFrameYUV",
+                            "printedName": "AUTELWidget.VideoFrameYUV",
+                            "usr": "s:11AUTELWidget13VideoFrameYUVC"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvs",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvs",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvM",
+                "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC21insertNewFrameHandleryAA0bH3YUVCcSgvM",
+                "moduleName": "AUTELWidget",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoStreamPlayManager",
+                "printedName": "AUTELWidget.VideoStreamPlayManager",
+                "usr": "s:11AUTELWidget22VideoStreamPlayManagerC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC14sharedInstanceACyFZ",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC14sharedInstanceACyFZ",
+            "moduleName": "AUTELWidget",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPlayView",
+            "printedName": "setPlayView(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC03setD4View2toySo6UIViewC_tF",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC03setD4View2toySo6UIViewC_tF",
+            "moduleName": "AUTELWidget",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPlayAndRemoveView",
+            "printedName": "stopPlayAndRemoveView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11AUTELWidget22VideoStreamPlayManagerC04stopD13AndRemoveViewyyF",
+            "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC04stopD13AndRemoveViewyyF",
+            "moduleName": "AUTELWidget",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11AUTELWidget22VideoStreamPlayManagerC",
+        "mangledName": "$s11AUTELWidget22VideoStreamPlayManagerC",
+        "moduleName": "AUTELWidget",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      },
+      {
+        "kind": "Import",
+        "name": "GLKit",
+        "printedName": "GLKit",
+        "declKind": "Import",
+        "moduleName": "AUTELWidget"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "Array",
+      "offset": 198,
+      "length": 12,
+      "value": "[0, 0, 0, 1]"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 688,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 725,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 731,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 851,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1074,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1100,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1116,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1189,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1555,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1619,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoDataParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1759,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1320,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 2234,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 3138,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 4043,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 5752,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/AppLog.swift",
+      "kind": "StringLiteral",
+      "offset": 5782,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 904,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1116,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1929,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 18,
+      "value": "\"AUTELWidget.VideoStreamDecoder\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 17,
+      "value": "\"HardwareDecoder\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 375,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 420,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1478,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1514,
+      "length": 4,
+      "value": "2048"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1551,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1587,
+      "length": 4,
+      "value": "2048"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2124,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1870,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2279,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2315,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2373,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2408,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2439,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2466,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 2552,
+      "length": 22,
+      "value": "\"HandleAfterDecodeGCD\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2699,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2825,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3259,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3761,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3866,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5437,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5570,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6221,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6368,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6918,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6992,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7135,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7480,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7560,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10087,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10161,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10210,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 10233,
+      "length": 38,
+      "value": "\"videoFeed decoder request IDR 1 init\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10318,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10476,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10490,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10678,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10723,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10739,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10787,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10803,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10851,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10867,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10915,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11004,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11009,
+      "length": 4,
+      "value": "0x1F"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11068,
+      "length": 4,
+      "value": "0x05"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11233,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11253,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11450,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11633,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11660,
+      "length": 4,
+      "value": "0x07"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11712,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11765,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11818,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12160,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12182,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12215,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12284,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12337,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12973,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13038,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 13077,
+      "length": 53,
+      "value": "\"videoFeed decoder request IDR 2 SPS frame didChange\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13222,
+      "length": 4,
+      "value": "0x08"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13274,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13327,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13380,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13457,
+      "length": 4,
+      "value": "0x06"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13510,
+      "length": 4,
+      "value": "0x09"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13757,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13777,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13915,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13967,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14039,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14537,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14615,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 14666,
+      "length": 52,
+      "value": "\"videoFeed decoder request IDR 3 decodeFial30 had_i\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15151,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15229,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "StringLiteral",
+      "offset": 15280,
+      "length": 52,
+      "value": "\"videoFeed decoder request IDR 3 decodeFial30 nil_I\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15539,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16124,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16212,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamHardwareDecoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16350,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 454,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 547,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 573,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 615,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 354,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 388,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 766,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 847,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "StringLiteral",
+      "offset": 971,
+      "length": 13,
+      "value": "\"VideoStream\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2221,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2451,
+      "length": 46,
+      "value": "\"videoFeed videoFeedopen and new RendarThread\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2565,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2655,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2875,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3210,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3931,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4078,
+      "length": 39,
+      "value": "\"videoFeed videoFeedclose and stopPlay\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4222,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoStreamPlayManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 13,
+      "value": "\"VideoRender\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 329,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "Array",
+      "offset": 382,
+      "length": 77,
+      "value": "[1.164, 1.164, 1.164, 0.0, -0.392, 2.017, 1.596, -0.813, 0.0]"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 22,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 31,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 593,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 616,
+      "length": 25,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 22,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 675,
+      "length": 25,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 706,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 17,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 12,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 22,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 31,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 593,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 616,
+      "length": 25,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 22,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 675,
+      "length": 25,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 706,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 17,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 12,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 22,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 31,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 593,
+      "length": 17,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 616,
+      "length": 25,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 22,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 675,
+      "length": 25,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 706,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 17,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 12,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 853,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 874,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 853,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 874,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 853,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 874,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 968,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 983,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 999,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1051,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1070,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1089,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1109,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 968,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 983,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 999,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1051,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1070,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1089,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1109,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 968,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 983,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 999,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1051,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1070,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1089,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1109,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1179,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 1533,
+      "length": 34,
+      "value": "\"enableRender set \""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1345,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1685,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1890,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2100,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 2418,
+      "length": 13,
+      "value": "\"AutelRender\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2628,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2866,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 3203,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 3249,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 3942,
+      "length": 13,
+      "value": "\"exit render\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4549,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 12,
+      "value": "\"AUTELWidget.RenderThread\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5073,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5275,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5328,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5397,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5430,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5466,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5550,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5632,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5674,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5912,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5959,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6124,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6156,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6345,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6380,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6415,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 6466,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 6494,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 6521,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6711,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6757,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6801,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6848,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6891,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6956,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6966,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 8545,
+      "length": 22,
+      "value": "\"Img_console_over_exp\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9160,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9244,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 9629,
+      "length": 42,
+      "value": "\"Error at CVOpenGLESTextureCacheCreate %d\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 9993,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 9998,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 10003,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 10008,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 10115,
+      "length": 21,
+      "value": "\"shader_vsh_myExpose\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 10158,
+      "length": 21,
+      "value": "\"shader_fsh_myExpose\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10281,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 10343,
+      "length": 20,
+      "value": "\"load sharder faile\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10529,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11331,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11463,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11758,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11808,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12003,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12053,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12290,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12519,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 13599,
+      "length": 47,
+      "value": "\"Failed to make complete framebuffer object %x\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 13851,
+      "length": 102,
+      "value": "\"Success to make complete framebuffer object width:\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 13922,
+      "length": 1,
+      "value": "\", heigth:\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 13952,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14209,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14244,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14380,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14417,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14509,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14656,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14693,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14785,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 14969,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 15183,
+      "length": 10,
+      "value": "\"texCoord\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15517,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15552,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 15821,
+      "length": 10,
+      "value": "\"SamplerY\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 15918,
+      "length": 11,
+      "value": "\"SamplerUV\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16240,
+      "length": 19,
+      "value": "\"preferredRotation\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16367,
+      "length": 23,
+      "value": "\"colorConversionMatrix\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16484,
+      "length": 10,
+      "value": "\"showGray\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16596,
+      "length": 19,
+      "value": "\"s_texture_overexp\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16714,
+      "length": 23,
+      "value": "\"overexp_texture_param\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16839,
+      "length": 16,
+      "value": "\"showOverExpose\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 16955,
+      "length": 16,
+      "value": "\"softwareDecode\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 17065,
+      "length": 10,
+      "value": "\"SamplerV\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17401,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17483,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17577,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17687,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17840,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17844,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17942,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 18036,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 18041,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 18046,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 18051,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18143,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18422,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18916,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18941,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18967,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19419,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19444,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19601,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 19758,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19981,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20006,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20031,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20392,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20417,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20442,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 20614,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 20733,
+      "length": 4,
+      "value": "90.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22305,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 22342,
+      "length": 5,
+      "value": "-50.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22603,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22628,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22653,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 22737,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 22987,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23065,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23090,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23115,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24284,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24333,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 24383,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24530,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24578,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26620,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26649,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26712,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27404,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27439,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27474,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 29004,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 29141,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 29246,
+      "length": 58,
+      "value": "\"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 29964,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30528,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30578,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30699,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30789,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 30902,
+      "length": 58,
+      "value": "\"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31808,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31812,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 33158,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 33234,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33434,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33437,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33627,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33737,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33890,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 33894,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 34202,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 34214,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 34689,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 34707,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 34826,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 34879,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35152,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35327,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35669,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35727,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35837,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 35896,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36204,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36225,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36228,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36578,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36592,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 36602,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37067,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37088,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37091,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37236,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37239,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38190,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38346,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38469,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38625,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38704,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 39211,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 39337,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 39350,
+      "length": 2,
+      "value": "\" be called\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39673,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39730,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39786,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39817,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39852,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39937,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39980,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40061,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40103,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40253,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 40493,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 40612,
+      "length": 9,
+      "value": "\"strings\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40736,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41448,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41575,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41774,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41921,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41978,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 42192,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 42714,
+      "length": 23,
+      "value": "\"Shader build success!\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "StringLiteral",
+      "offset": 42828,
+      "length": 23,
+      "value": "\"Shader create failed!\""
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 42988,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 43174,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 43211,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 43388,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 43855,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "BooleanLiteral",
+      "offset": 43886,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 44630,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 45075,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 45129,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 45451,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 45504,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 45512,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 45669,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/zhiganglet\/Documents\/04_Repo\/Autel\/autel_SDKDemo\/autel_SDKDemo\/AUTELWidget\/AUTELWidget\/VideoRender.swift",
+      "kind": "FloatLiteral",
+      "offset": 45677,
+      "length": 3,
+      "value": "0.0"
+    }
+  ]
+}

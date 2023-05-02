@@ -6,6 +6,6 @@ framework module AUTELWidget {
 }
 
 module AUTELWidget.Swift {
-    header "AUTELWidget-Swift.h"
-    requires objc
+  header "AUTELWidget-Swift.h"
+  requires objc
 }

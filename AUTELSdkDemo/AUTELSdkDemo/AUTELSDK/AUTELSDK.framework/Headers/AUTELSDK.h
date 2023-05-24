@@ -98,6 +98,19 @@ FOUNDATION_EXPORT const unsigned char AUTELSDKVersionString[];
 #import <AUTELSDK/AUTELViewpointMission.h>
 #import <AUTELSDK/AUTELViewpointMissionHandler.h>
 
+//PathPlanning
+#import <AUTELSDK/AUTELMissionPathPlanTool.h>
+#import <AUTELSDK/AUTELConvertFileMissionMode.h>
+#import <AUTELSDK/AUTELWayPointPathInputModel.h>
+#import <AUTELSDK/AUTELWayPointPathModel.h>
+#import <AUTELSDK/AUTELPathCoordinate3D.h>
+#import <AUTELSDK/AUTELPathMissionDef.h>
+#import <AUTELSDK/AUTELPathMissionLine.h>
+#import <AUTELSDK/AUTELPathPlanningInputModel.h>
+#import <AUTELSDK/AUTELPathPlanningOutputModel.h>
+#import <AUTELSDK/AUTELPathPlanningPara.h>
+
+
 #pragma mark 以下接口仅内部使用，不对外发布
 //#import <AUTELSDK/AutelVideo.h>
 

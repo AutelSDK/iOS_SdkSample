@@ -15,14 +15,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AUTELPathPlanningAction : NSObject
 
+///飞机机头朝向
 @property (nonatomic) float droneYaw;
+///云台角度：0 ~ 90
 @property (nonatomic) float gimbalPitch;
 @property (nonatomic) float gimbalRoll;
+///云台yaw
 @property (nonatomic) float gimbalYaw;
+///相机动作类型 1拍照、2录像、3定时拍照、4定距拍照、5定距扫拍、6停止录像、7停止拍照
 @property (nonatomic) int cameraActionType;
+
+///定时拍照间隔、或定距拍照距离
 @property (nonatomic) float cameraInterval;
+/// 变焦倍数
 @property (nonatomic) float cameraZoom;
+
+///录像时长、或悬停时长
 @property (nonatomic) int actionTimeLen;
+/// 动作触发方式：0飞向下个航点过程中执行、1停在航点处执行
+@property (nonatomic) int triggerMode;
+
+//保持上一个动作 0 不保持，1 保持
+@property (nonatomic) int keep;
 
 @end
 

@@ -16,6 +16,7 @@
 		76F99598246800F600BD7F19 /* EarthStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F99597246800F600BD7F19 /* EarthStationViewModel.swift */; };
 		76F9959B2468070200BD7F19 /* MissionDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9959A2468070200BD7F19 /* MissionDef.swift */; };
 		76F9959D24683A3C00BD7F19 /* MapCorrectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9959C24683A3C00BD7F19 /* MapCorrectUtils.swift */; };
+		7C99A8752A18772100B2E128 /* NewWaypointDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99A8742A18772100B2E128 /* NewWaypointDemoViewController.swift */; };
 		7F23C710246B8B00000650E8 /* CameraActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C70F246B8B00000650E8 /* CameraActionsViewController.swift */; };
 		7F23C712246B8B12000650E8 /* CameraWorkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C711246B8B12000650E8 /* CameraWorkModeViewController.swift */; };
 		7F23C7E4246B9692000650E8 /* ActionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23C7D7246B9692000650E8 /* ActionData.swift */; };
@@ -167,6 +168,7 @@
 		76F99597246800F600BD7F19 /* EarthStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthStationViewModel.swift; sourceTree = "<group>"; };
 		76F9959A2468070200BD7F19 /* MissionDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDef.swift; sourceTree = "<group>"; };
 		76F9959C24683A3C00BD7F19 /* MapCorrectUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCorrectUtils.swift; sourceTree = "<group>"; };
+		7C99A8742A18772100B2E128 /* NewWaypointDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWaypointDemoViewController.swift; sourceTree = "<group>"; };
 		7F23C70F246B8B00000650E8 /* CameraActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraActionsViewController.swift; sourceTree = "<group>"; };
 		7F23C711246B8B12000650E8 /* CameraWorkModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraWorkModeViewController.swift; sourceTree = "<group>"; };
 		7F23C7D7246B9692000650E8 /* ActionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionData.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				7FA25FD92629826B0096A4FC /* WaypointDemoViewController.swift */,
 				7FA25FDA2629826B0096A4FC /* OrbitDemoViewController.swift */,
 				FE11487C269844460025696E /* WayPointParameterViewController.swift */,
+				7C99A8742A18772100B2E128 /* NewWaypointDemoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1114,6 +1117,7 @@
 				FEB700D02699ADB3004D3037 /* MissionSliderView.swift in Sources */,
 				FE3FFB3026CB9DBB00610EBF /* ATVideoDataParser.swift in Sources */,
 				FEB700C626999203004D3037 /* ReuseableCell+Extension.swift in Sources */,
+				7C99A8752A18772100B2E128 /* NewWaypointDemoViewController.swift in Sources */,
 				7F768734245C031600F5C73E /* DroneConnection.swift in Sources */,
 				FEB700C226996D6A004D3037 /* WaypointViewModel+Parameter.swift in Sources */,
 				7FE52310245C214100A438D5 /* AutelEnumExtension.swift in Sources */,

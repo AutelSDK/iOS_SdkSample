@@ -207,6 +207,11 @@ typedef NS_ENUM (uint8_t, AUTELDronePhotoFileFormat) {
 */
 @property (nonatomic, assign) int elevationOpt;
 
+/// 边距是自动还是手动定义 （0是自动，1是手动）
+@property (nonatomic) int enlargeSwitch;
+/// 用户定义的边距距离
+@property (nonatomic) double enlargeValue;
+
 /**
 *  @brief Automatic switch of main course angle
 *
@@ -290,6 +295,14 @@ typedef NS_ENUM (uint8_t, AUTELDronePhotoFileFormat) {
 *  图片格式
 */
 @property (nonatomic, assign) AUTELMissionImageFormat imageFormat;
+
+/**
+*  @brief mission broken position.
+*
+*  断点续飞位置
+*/
+@property (nonatomic, copy)  AUTELCoordinate3D * _Nullable brokenPosition;
+
 
 /**
 *  @brief Add a  waypoint to the waypoint mission.

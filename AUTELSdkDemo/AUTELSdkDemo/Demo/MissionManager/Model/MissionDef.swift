@@ -57,19 +57,21 @@ enum MissionFinishActionType: Int {
 }
 
 enum CameraAction: Int {
-    /// 无
     case none             = 0
     /// 拍照
     case takePhoto
+    /// 录像或开始录像
+    case recordVideo
     /// 定时拍照
     case timeTakePhoto
     /// 定距拍照
     case distanceTakePhoto
-    /// 录像或开始录像
-    case recordVideo
+    /// 定距扫拍
+    case distanceScan
     /// 停止录像
     case stopRecordVideo
-    case unkown
+    /// 停止拍照
+    case stopTakePhoto
 }
 
 enum DroneHeadingControl: Int, Equatable{

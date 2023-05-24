@@ -56,7 +56,16 @@ class MissionManagerViewController: BaseViewController, UITableViewDelegate, UIT
             strongSelf.view.makeToast("TO DO Track Demo")
         })
         
-        return [[wpMissionItem, orbitMissionItem, trackMissionItem]]
+        let waypointMissionItem = CellItem("New Waypoint Demo", { [weak self] _ in
+            guard let strongSelf = self else { return }
+            let nav = UINavigationController(rootViewController: NewWaypointDemoViewController())
+            nav.modalPresentationStyle = .fullScreen
+            strongSelf.present(nav, animated: true, completion: nil)
+
+        })
+
+        
+        return [[wpMissionItem, orbitMissionItem, trackMissionItem, waypointMissionItem]]
 
     }
     
